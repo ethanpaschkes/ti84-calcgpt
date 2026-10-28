@@ -4,6 +4,10 @@
 through a small ESP32-S3 board.** This repository also has a Desmos-style equation solver, a text web browser, a video and
 screen-share player, and a home-screen shell, all written in C for the TI-84 Plus CE.
 
+<p align="center">
+  <img src="docs/calcgpt-demo.gif" alt="CalcGPT answering a question about Newton's laws on a TI-84 Plus CE, over Wi-Fi through an ESP32-S3 board" width="360">
+</p>
+
 ![TI-84 Plus CE](https://img.shields.io/badge/calculator-TI--84%20Plus%20CE-0a7bbb)
 ![ESP32-S3](https://img.shields.io/badge/wireless-ESP32--S3-e7352c)
 ![C](https://img.shields.io/badge/language-C%20%2B%20Python-555)
@@ -23,6 +27,10 @@ screen-share player, and a home-screen shell, all written in C for the TI-84 Plu
 | [`calcos/`](calcos/) | **CalcOS**: a home-screen shell with app tiles, a clock, a stopwatch, notes and system info, on top of TI-OS. | Tested on a computer |
 | [`usbtest/`](usbtest/) | Measures the USB link speed (about 180 KB/s) and checks key presses. Start here if something doesn't connect. | Works on a real calculator |
 | [`experiments/`](experiments/) | Earlier experiments: physics simulations (orbits, pendulum, gas box, Maxwell distribution and more), an offline ELIZA-style chat, TrigGPT, a grapher, a trig tool, and a photo-equation demo. | Mixed |
+
+| ![CalcGPT's answer on the calculator screen](docs/calcgpt-answer.jpg) | ![The wireless setup: calculator, OTG adapter and ESP32-S3 board](docs/calcgpt-wireless-setup.jpg) |
+|---|---|
+| A CalcGPT answer, streamed over Wi-Fi | The wireless setup: the calculator powers the ESP32-S3 board |
 
 ## How it works
 
