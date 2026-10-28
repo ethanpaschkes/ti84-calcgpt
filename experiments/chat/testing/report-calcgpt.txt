@@ -1,0 +1,1414 @@
+MISS   [0] ur u ai
+OTHER  [0] who r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [0] wat is ur name                     -> [5] I don't have a real name. You can call me CalcGPT.
+OTHER  [0] hi are u human                     -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+OTHER  [0] how big r u                        -> [16] I'm doing well, thanks for asking! How can I help?
+MISS   [0] can u tell me abt u
+MISS   [0] r u smart
+MISS   [0] why u so small
+OTHER  [0] what kind of ai r u                -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [0] do u have a name
+OTHER  [0] im testing u, who r u              -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [1] who r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [1] wat kind of program are u          -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [1] are u a bot                        -> [0] Yes, I'm an AI assistant, a small one. I run on your calcula
+MISS   [1] is this a human talking
+MISS   [1] ur a robot rite
+MISS   [1] am i talking to a person
+MISS   [1] is anyone real on this
+OTHER  [1] wat are u                          -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [2] are u alive                        -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+MISS   [2] is this bot sentient
+OTHER  [2] r u a real person                  -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+MISS   [2] do u have consciousness
+OTHER  [2] wat r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [2] are u human                        -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+OTHER  [2] i think u are alive                -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+OTHER  [2] are you a robot                    -> [0] Yes, I'm an AI assistant, a small one. I run on your calcula
+MISS   [2] does this calc think
+MISS   [2] are u conscious
+OTHER  [2] r u alive                          -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+MISS   [3] r u openai
+OTHER  [3] wat ai r u                         -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [3] is this chatgpt
+OTHER  [3] are u the real deal                -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+MISS   [3] not chatgpt rite
+OTHER  [3] who made u                         -> [6] You did, with help. I'm a small C program that was sent to y
+MISS   [3] this is chatgpt?
+MISS   [3] r u the actual thing
+MISS   [3] fake chatgpt?
+MISS   [3] u not gpt
+MISS   [4] wat is this
+OTHER  [4] hello calcgpt                      -> [15] Hello! How can I help you today?
+OTHER  [4] what can u do                      -> [14] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [4] tell me about urself
+OTHER  [4] who made u                         -> [6] You did, with help. I'm a small C program that was sent to y
+MISS   [4] is this ti84
+OTHER  [4] hey calcgpt                        -> [15] Hi there! What's on your mind?
+MISS   [4] what do u do
+OTHER  [4] im lost help                       -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [4] calcgpt status
+OTHER  [5] who r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [5] what are you called                -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [5] u got a name?
+MISS   [5] does u have a name
+MISS   [5] can i call u something
+MISS   [5] what should i call u
+MISS   [6] wat is this
+MISS   [6] who coded this
+MISS   [6] is this a c program
+MISS   [6] how did u get on my calc
+MISS   [6] did u come thru usb
+MISS   [6] who built this chatbot
+MISS   [6] r u a c program
+OTHER  [6] who sent u to my ti                -> [72] This is a TI-84 Plus CE: a 48 MHz eZ80 processor and a 320x2
+MISS   [6] is this c code
+MISS   [6] did someone install u
+OTHER  [6] how r u on my calc                 -> [16] I'm doing well, thanks for asking! How can I help?
+OTHER  [7] who made u                         -> [6] You did, with help. I'm a small C program that was sent to y
+MISS   [7] ur based on which ai
+OTHER  [7] is u gpt-oss?                      -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+MISS   [7] u look like openai 2025
+MISS   [7] are u the 120b one
+MISS   [7] tell me about ur style
+MISS   [7] why do u look like gpt
+MISS   [7] is this the real 20b model
+MISS   [7] whats ur architecture
+MISS   [7] u seem like open weights
+MISS   [8] r u sentient
+OTHER  [8] are u alive                        -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+OTHER  [8] do u get sad                       -> [29] I'm sorry you feel that way. Talking to someone you trust ca
+MISS   [8] u have emotions rite
+MISS   [8] wat about feelings
+OTHER  [8] can u feel love                    -> [26] That's kind of you! I'm just a little calculator app, but I'
+OTHER  [8] are u a real person                -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+MISS   [8] do u have a heart
+OTHER  [8] r u just code                      -> [96] I can't write real programs here, but a tiny calculator app 
+OTHER  [8] do u get lonely                    -> [29] I'm sorry you feel that way. Talking to someone you trust ca
+OTHER  [9] wat r u exactly                    -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [9] do u remmber me
+OTHER  [9] is u ai or just code               -> [96] I can't write real programs here, but a tiny calculator app 
+OTHER  [9] do u have memory                   -> [73] A TI-84 Plus CE has about 154 KB of usable RAM and about 3 M
+MISS   [9] r u smart or just matching
+MISS   [9] why do u answer this way
+MISS   [9] how do u work
+MISS   [9] can u rember past chats
+MISS   [9] wat is ur logic
+MISS   [9] do u store my info
+MISS   [9] u just a lookup right
+OTHER  [10] hey ur new?                        -> [15] Hello! How can I help you today?
+OTHER  [10] wat year r u                       -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [10] are u installed yet
+MISS   [10] just got u
+MISS   [10] is this a fresh calc
+MISS   [10] ur born when
+MISS   [10] new here?
+MISS   [10] did u just load
+MISS   [10] when did u start
+MISS   [10] first boot?
+MISS   [10] r u brand new
+MISS   [10] fresh install?
+MISS   [11] where is the calc data stored
+OTHER  [11] how much ram does my calc use      -> [73] A TI-84 Plus CE has about 154 KB of usable RAM and about 3 M
+OTHER  [11] is my program saved in memory      -> [73] A TI-84 Plus CE has about 154 KB of usable RAM and about 3 M
+MISS   [11] where do programs live on ti84
+OTHER  [11] how big is the calculator memory   -> [73] A TI-84 Plus CE has about 154 KB of usable RAM and about 3 M
+MISS   [11] wat takes up space in my calc
+MISS   [11] do files use lots of kb
+MISS   [11] where are the apps stored
+OTHER  [11] how much storage does calc have    -> [73] A TI-84 Plus CE has about 154 KB of usable RAM and about 3 M
+MISS   [11] is my code in the flash mem
+MISS   [11] why is my calc running low on mem
+MISS   [11] how many kb for one program
+MISS   [12] u big deal?
+MISS   [12] are u smart
+MISS   [12] is u smart
+MISS   [12] wat is ur iq
+OTHER  [12] are u dumb                         -> [27] Sorry I let you down. I'm small, so I know less than I'd lik
+MISS   [12] r u just a demo
+MISS   [12] how much can u do
+MISS   [12] u good at math?
+MISS   [12] are u limited
+MISS   [12] how big is u
+MISS   [12] is u a demo
+OTHER  [13] what can u do                      -> [14] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [13] can u do math and chat
+MISS   [13] wat is ur purpose
+MISS   [13] can i ask jokes too
+MISS   [13] capabilities?
+MISS   [13] do u convert units
+MISS   [13] show me ur functions
+OTHER  [13] tell me what u can do              -> [14] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [14] hey what r u                       -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [14] can u do math?
+OTHER  [14] tell me a joke                     -> [32] Why was the math book sad? It had too many problems.
+MATH   [14] convert 5 ft to m
+OTHER  [14] whats ur name                      -> [5] I don't have a real name. You can call me CalcGPT.
+MISS   [14] do u know jokes
+OTHER  [14] help                               -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [14] how do i use u
+MATH   [14] whats 2+2
+OTHER  [14] any fun facts                      -> [33] A day on Venus is longer than its year.
+MISS   [15] wat
+MISS   [15] hlo
+MISS   [15] hola
+MISS   [16] u good?
+MISS   [16] yo chatbot how's it going
+MISS   [16] how do u do
+OTHER  [16] whats up                           -> [17] Not much, just here on your calculator. What's up with you?
+OTHER  [16] hey are u ok                       -> [23] Got it! Anything else?
+OTHER  [16] what's up with u                   -> [17] Not much, just here on your calculator. What's up with you?
+MISS   [16] how's life
+OTHER  [17] wat r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [17] hru
+OTHER  [17] who r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [17] hey                                -> [15] Hello! How can I help you today?
+MISS   [17] whats the deal
+OTHER  [17] helo                               -> [15] Hi there! What's on your mind?
+OTHER  [17] sup                                -> [15] Hello! How can I help you today?
+OTHER  [17] what r u doing                     -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [17] hey bot                            -> [15] Hi there! What's on your mind?
+OTHER  [17] u ok                               -> [23] Sure thing. What next?
+MISS   [18] morning
+OTHER  [18] hey                                -> [15] Hello! How can I help you today?
+MISS   [18] morning chatbot
+OTHER  [18] whats up                           -> [17] Not much, just here on your calculator. What's up with you?
+MISS   [18] morning u
+MISS   [18] good mornin
+MISS   [19] goodnight
+MISS   [19] gn night
+MISS   [19] snt
+MISS   [19] goodnite
+MISS   [19] gud night
+MISS   [19] night night
+MISS   [19] say goodnight
+MISS   [19] gn!!
+MISS   [19] goodnigt
+MISS   [19] nite
+OTHER  [20] omg thx u                          -> [23] Got it! Anything else?
+MISS   [20] cheers
+OTHER  [20] k ty                               -> [23] Sure thing. What next?
+OTHER  [20] great ty                           -> [23] Got it! Anything else?
+OTHER  [20] much obliged lol                   -> [24] Glad that made you smile.
+OTHER  [20] ok ty bye                          -> [23] Sure thing. What next?
+OTHER  [21] ok see u later                     -> [23] Got it! Anything else?
+OTHER  [21] done thanks                        -> [20] You're welcome! Anything else?
+MISS   [21] quit
+MISS   [21] exit
+MISS   [21] thk u
+MISS   [21] finished
+OTHER  [21] k good                             -> [23] Sure thing. What next?
+OTHER  [21] thanks 4 help                      -> [20] Happy to help!
+MISS   [21] im done
+MISS   [22] oops wrong btn
+MISS   [22] my bad
+OTHER  [22] wat r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [22] u ok                               -> [23] Got it! Anything else?
+OTHER  [22] no offense                         -> [23] Sure thing. What next?
+OTHER  [22] sorry lol                          -> [24] Glad that made you smile.
+MISS   [22] accntly hit send
+OTHER  [22] no worries                         -> [31] Take a slow breath. Break the problem into small steps and s
+OTHER  [22] hey                                -> [15] Hi there! What's on your mind?
+OTHER  [23] thx                                -> [20] You're welcome! Anything else?
+MISS   [23] r u done
+MISS   [23] got it
+MISS   [23] fin
+MISS   [23] end
+MISS   [23] thats all
+MISS   [23] stop
+OTHER  [23] bye                                -> [21] Bye! Come back any time.
+OTHER  [24] haha ur funny                      -> [32] Parallel lines have so much in common. It's a shame they'll 
+MISS   [24] that made me grin
+OTHER  [24] thx for the laugh                  -> [20] Happy to help!
+OTHER  [24] u r funny                          -> [32] Why is 6 afraid of 7? Because 7 8 9.
+MISS   [24] made me smile
+OTHER  [24] nice one                           -> [23] Sure thing. What next?
+MISS   [24] got a chuckle out of u
+OTHER  [24] thats funny                        -> [32] I told my calculator a joke. It said it didn't get it, but i
+MISS   [24] u made me smile
+OTHER  [25] omg i give up                      -> [23] Got it! Anything else?
+MISS   [25] this is too hard
+MISS   [25] i cant do it
+MISS   [25] wat do i do
+MISS   [25] stuck
+OTHER  [25] pls help                           -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [25] i dont get it
+OTHER  [25] can u help                         -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [25] i need a hint
+MISS   [25] give up
+MISS   [25] try again
+OTHER  [26] thx for helping me                 -> [20] You're welcome! Anything else?
+OTHER  [26] ur so nice lol                     -> [24] Glad that made you smile.
+MISS   [26] wy r u so good
+OTHER  [26] k thnx 4 that                      -> [23] Sure thing. What next?
+OTHER  [26] y u help me                        -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [26] cool thx                           -> [23] Got it! Anything else?
+OTHER  [26] u r the best bot                   -> [0] Yes, I'm an AI assistant, a small one. I run on your calcula
+MISS   [26] glad u r here
+OTHER  [26] nice work                          -> [23] Sure thing. What next?
+OTHER  [26] ty 4 answering                     -> [20] Happy to help!
+OTHER  [26] that was easy thx                  -> [20] You're welcome! Anything else?
+MISS   [26] u r awesome
+MISS   [27] wat is the capital of mars
+MISS   [27] who won ww2
+MISS   [27] solve x^2+2x+1=0
+OTHER  [27] tell me a joke                     -> [32] What's a calculator's favorite snack? Chips.
+OTHER  [27] why is the sky blue                -> [86] Air scatters short blue wavelengths of sunlight more than re
+MISS   [27] what year did the moon land
+OTHER  [27] calculate pi to 100 digits         -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [27] who is barack obama
+OTHER  [27] is 7 a prime number                -> [58] A prime number has exactly two factors: 1 and itself. Exampl
+MISS   [27] how do i make coffee
+MATH   [27] whats 1/0
+MISS   [27] who wrote hamlet
+OTHER  [28] wat r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [28] any jokes
+OTHER  [28] give me a fact                     -> [33] Octopuses have three hearts.
+OTHER  [28] quiz me                            -> [34] Quick quiz: what is 7 x 8? Answer: 56.
+OTHER  [28] i dunno                            -> [25] That's okay! Want a hint, or shall we try something else?
+OTHER  [28] help                               -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [28] u fun
+MISS   [28] tell me smth
+MISS   [28] random
+MISS   [28] i need fun
+OTHER  [28] haha                               -> [24] Glad that made you smile.
+OTHER  [29] u sad today?                       -> [93] I can't see a clock. Check your phone or the calculator's cl
+MISS   [29] i feel rly bad rn
+OTHER  [29] feeling down help                  -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [29] r u there? im ok                   -> [23] Got it! Anything else?
+OTHER  [29] im crying pls help                 -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [29] not doing good
+MISS   [29] need to talk
+MISS   [29] feeling empty
+MISS   [29] wat should i do
+MISS   [30] wat do i do
+MISS   [30] feeling drained
+OTHER  [30] need help now                      -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [30] glass of water?
+MISS   [30] short break pls
+MISS   [30] im burnt out
+MISS   [30] can i rest
+OTHER  [30] help me                            -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [31] omg so many numbers                -> [23] Sure thing. What next?
+MISS   [31] wat do i do first
+OTHER  [31] too hard help                      -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [31] breathe then try                   -> [164] Breathing uses Boyle's law: the diaphragm moves down, lung v
+MISS   [31] stuck on big prob
+MISS   [31] just start with one?
+MISS   [31] panic mode on
+MISS   [31] break it down pls
+OTHER  [31] cant focus help                    -> [61] Try 25 minutes of focused work, then a 5 minute break. Keep 
+MISS   [31] overwhelmed
+OTHER  [31] start small yeah?                  -> [23] Got it! Anything else?
+OTHER  [31] one step at a time                 -> [93] I can't see a clock. Check your phone or the calculator's cl
+OTHER  [32] why is math book sad               -> [29] I'm sorry you feel that way. Talking to someone you trust ca
+OTHER  [32] why sad math book                  -> [29] I'm sorry you feel that way. Talking to someone you trust ca
+MISS   [32] why did the math book cry
+OTHER  [32] wat make math book sad             -> [29] I'm sorry you feel that way. Talking to someone you trust ca
+MISS   [32] r there any math jokes
+MISS   [32] why was math book feeling low
+OTHER  [32] sad math book riddle               -> [34] Quick quiz: what is sin(30 degrees)? Answer: 0.5.
+MISS   [33] is venus day longer than yr
+MISS   [33] wat is venus day vs year
+MISS   [33] why is venus day > year
+MISS   [33] venus day longer than orbit
+MISS   [33] do u know venus day length
+MISS   [33] venus rotates slower than orbit
+MISS   [33] why venus day is longer
+MISS   [33] is 1 venus day > 1 venus yr
+MISS   [33] venus day vs year length
+MISS   [33] what is venus day duration
+MISS   [33] venus day longer than yr?
+MISS   [33] is venus day 225 days
+MISS   [34] any math questions
+MISS   [34] wat is 7*8
+MISS   [34] i need a practice q
+MISS   [34] test my math
+MATH   [34] times 8 ?
+MATH   [34] solve 7 x 8
+MISS   [34] random math question
+OTHER  [34] help me study math                 -> [61] Try 25 minutes of focused work, then a 5 minute break. Keep 
+MATH   [34] x8 equals
+MISS   [35] coin toss
+MISS   [35] heads or tails
+MISS   [35] @coin
+MISS   [35] random coin
+MISS   [35] coin flipper
+MISS   [35] wat is @coin
+MISS   [35] coinflip
+MISS   [35] @coinflip
+MISS   [36] wat is @die
+MISS   [36] why u got @die
+MISS   [36] @die??
+MISS   [36] is it @die
+MISS   [36] r u sure its @die
+MISS   [36] @die means
+MISS   [36] got @die
+MISS   [36] @die
+MISS   [36] why @die
+MISS   [36] @die?
+MISS   [36] wat @die
+OTHER  [36] @die lol                           -> [24] Glad that made you smile.
+MISS   [37] what is the number
+MISS   [37] @num
+MISS   [37] num please
+MISS   [37] u r @num
+MISS   [37] wat is @num
+MISS   [37] @@num
+MISS   [37] num
+MISS   [37] the answer is @num
+MISS   [37] is it @num
+MISS   [37] @num?
+MISS   [37] give me @num
+MISS   [37] @num pls
+MISS   [38] wat is @num
+MISS   [38] how much is @num
+MISS   [38] calc @num
+MISS   [38] @num?
+MISS   [38] tell me @num
+MISS   [38] r @num
+MISS   [38] what is @num
+MISS   [38] @num
+MISS   [38] pls @num
+MISS   [38] @num equal
+MISS   [38] gimme @num
+MISS   [38] @num is
+OTHER  [39] wat is the glider story            -> [71] Gliders have no engine. They stay up by finding rising air, 
+MISS   [39] tell me abt the calc that flies
+MISS   [39] why did the calc climb
+OTHER  [39] calc flying joke                   -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] how does a calc fly without power  -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] thermal story for calculators      -> [63] A thermal is a column of rising warm air. Pilots circle in i
+OTHER  [39] the glider advice to calc          -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] calc wants to fly riddle           -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] what does a calc need to fly       -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] short story calc and glider        -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] calc in a thermal                  -> [63] A thermal is a column of rising warm air. Pilots circle in i
+OTHER  [39] flying calculator tale             -> [72] This is a TI-84 Plus CE: a 48 MHz eZ80 processor and a 320x2
+MISS   [40] wat is 42
+MISS   [40] why is 42 famous
+MISS   [40] meaning
+MISS   [40] hows 42 the answer
+MISS   [40] u r saying 42?
+OTHER  [40] lol what's 42                      -> [24] Glad that made you smile.
+MISS   [40] the book
+MISS   [40] is 42 real
+MISS   [40] tell me about 42
+MISS   [40] in h2g2
+MISS   [40] why 42 not 41
+MISS   [40] answer to life
+OTHER  [41] soh cos tah                        -> [44] SOH: sin = opp/hyp. CAH: cos = adj/hyp. TOA: tan = opp/adj.
+MATH   [41] sin 30
+MISS   [41] opposite hyp
+OTHER  [41] trig help                          -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [41] whats soh                          -> [44] SOH: sin = opp/hyp. CAH: cos = adj/hyp. TOA: tan = opp/adj.
+OTHER  [42] cos on unit circle                 -> [45] The unit circle has radius 1, centered at the origin. A poin
+MATH   [42] cos 60 = ?
+MISS   [43] to a means what
+MISS   [44] how to remember trig
+OTHER  [44] sin cos tan ratios                 -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+MISS   [44] trig shortcuts
+OTHER  [44] whats the formula for sin          -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+MISS   [44] i forgot the trig rules
+OTHER  [44] need help with sin cos tan         -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+MISS   [45] wat does point on circle mean
+MISS   [45] how do u get x y from angle
+MISS   [45] why radius is 1 always
+MISS   [45] give formula for point t
+OTHER  [45] what is cos t sin t                -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+MISS   [45] where is center of circle
+MISS   [45] get coordinates for angle t
+MISS   [45] what r x and y on circle
+MISS   [46] what is a^2+b^2=c^2
+MISS   [46] hypotenuse formula
+MISS   [46] r u sure c is hyp
+MISS   [46] wat does c stand for
+MISS   [46] explain pythag
+MISS   [46] why c squared
+MISS   [46] proof of a2+b2
+MISS   [46] tell me pyth thm
+MISS   [46] is c always hyp
+MISS   [46] a2 b2 c2 meaning
+MISS   [46] right tri rule
+MISS   [47] wat is the trig id
+MATH   [47] sin2 + cos2 =?
+OTHER  [47] hey bot show me tan formula        -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [47] can u do sin sq plus cos sq        -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [47] why is sin^2+cos^2=1               -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [47] tan equals what?                   -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [47] need help with pythagorean id      -> [46] In a right triangle, a^2 + b^2 = c^2, where c is the hypoten
+OTHER  [47] is tan sin over cos                -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+MISS   [47] prove sin2 x cos2 x
+OTHER  [47] what is tan in terms of sin cos    -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [47] sin^2 x plus cos^2 x               -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [48] how many deg in pi                 -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [48] deg = ? rad
+MISS   [48] diff betwe deg and rad
+OTHER  [48] pi rad in deg                      -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [48] arc length = radius angle
+MISS   [48] rad to deg
+MISS   [49] how to convert deg to rad
+OTHER  [49] u r wrong wat about pi/180         -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [49] convert 90 deg to rad
+MISS   [49] why does my calc show 1.57
+OTHER  [49] need help with trig units          -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [49] deg vs rad difference
+OTHER  [49] multiply by pi over 180?           -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [49] wat is pi/180 for
+OTHER  [49] can i switch to radians            -> [48] A radian is the angle where the arc length equals the radius
+OTHER  [49] help convert 45 deg                -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [49] is it x 180 / pi                   -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [50] how big is wave
+MISS   [50] diff between amp and midline
+OTHER  [50] a in a sin bx                      -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+MISS   [50] why abs of a
+OTHER  [50] amp of sine wave                   -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+MISS   [50] height of wave
+MISS   [50] amp = ?
+MISS   [51] how long is one cycle
+MISS   [52] wat is inverse trig
+MISS   [52] how do i find angle from ratio
+MATH   [52] arcsin 0.5
+MISS   [52] inverse trig meaning
+MISS   [52] r u sure about inverse trig
+OTHER  [52] inverse sin 0.5                    -> [53] Inverse trig finds the angle from a ratio. Try 'arcsin 0.5',
+MISS   [52] find angle from ratio
+MISS   [52] inverse trig example
+MISS   [52] how does inverse trig work
+OTHER  [53] how do i find angle from sin       -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [53] wat is arcsin                      -> [52] Inverse trig finds the angle from a ratio. Try 'arcsin 0.5',
+MISS   [53] r inverse trig needed
+MISS   [53] need angle not ratio
+MISS   [53] how 2 get degrees
+OTHER  [53] arcsin meaning                     -> [52] Inverse trig finds the angle from a ratio. Try 'arcsin 0.5',
+OTHER  [53] inverse trig help                  -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [53] find angle given ratio
+MISS   [53] inverse trigonometry
+MISS   [53] calc inverse trig
+MISS   [54] ratio of circle circ to dia
+MISS   [55] what is power rule
+MISS   [55] d/dx x^3
+MISS   [55] why der x^2 = 2x
+MISS   [55] power rule formula
+MISS   [55] explain derivatives
+MISS   [55] how 2x come from x^2
+MISS   [55] power rule for x^n
+MISS   [56] how to find area under curve
+MISS   [56] whats the point of integrals
+MISS   [56] why do we learn integrals
+MISS   [56] wat r integrals for
+MISS   [57] solve ax^2+bx+c=0
+MISS   [57] how do i solve quadratic eqn
+MISS   [57] gimme the formula for x
+MISS   [57] formula for a*x^2+b*x+c
+MISS   [57] what's the q formula
+MISS   [57] solve for x in ax^2+bx+c
+OTHER  [57] help me with quadratics            -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [57] is it -b plus or minus
+MISS   [58] list some primes
+MISS   [59] need area and circ formula
+MISS   [59] give me area and circ equations
+MISS   [60] how2 get m
+MISS   [60] why is it y2-y1 over x2-x1
+MISS   [60] m = ?
+MISS   [60] i forgot the formula for m
+OTHER  [61] best study break time              -> [93] I can't see a clock. Check your phone or the calculator's cl
+MISS   [61] wat is pomodoro
+MISS   [61] how to stay focused
+MISS   [61] cant stop checking phone
+MISS   [61] what to do first
+MISS   [61] i keep procrastinating
+OTHER  [61] how much break time                -> [93] I can't see a clock. Check your phone or the calculator's cl
+MISS   [61] give me a schedule
+OTHER  [62] what time should i go to bed       -> [93] I can't see a clock. Check your phone or the calculator's cl
+OTHER  [62] why am i so tired                  -> [30] Rest matters. Try a glass of water and a short break.
+MISS   [62] need rest advice
+OTHER  [62] dark room help?                    -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [62] no phone before bed?               -> [23] Sure thing. What next?
+MISS   [62] how to fix insomnia
+MISS   [62] r u awake at night
+MISS   [64] wing angle of attack too high
+OTHER  [64] why does wing lose lift            -> [65] Lift is the upward force from air flowing over a wing. It de
+OTHER  [64] loss of lift cause                 -> [65] Lift is the upward force from air flowing over a wing. It de
+OTHER  [65] why does plane go up               -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [66] :1 glider mean                     -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [66] how far glider go 1ft drop         -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [66] to 1 glider                        -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [66] glider efficiency                  -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [66] distance vs height glider          -> [71] Gliders have no engine. They stay up by finding rising air, 
+MISS   [66] r u sure 40:1 is 40ft
+MISS   [67] kt = ? mph
+OTHER  [68] what age can i fly glider          -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] glider solo age limit              -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] can i fly glider at 13             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] min age for glider cert            -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] how young for glider solo          -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] u can fly glider when              -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] glider pilot age req               -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] is 14 too young for glider         -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] glider license age                 -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] when r u old enough glider         -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] glider age limit us                -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] start glider at what age           -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] when can i solo glider             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] age to get glider cert             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] can 14yo fly glider solo           -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] wat age glider license             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] glider cert age us                 -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] can i fly glider at 14             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] minimum age glider solo            -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] how old for glider cert            -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] year old glider solo?              -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] glider solo age limit              -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] can u fly glider at 14             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] age for glider cert us             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [71] ridge lift explanation             -> [65] Lift is the upward force from air flowing over a wing. It de
+MISS   [71] trade alt for dist?
+MISS   [72] cpu speed of 84 plus ce
+MISS   [72] plus ce processor type
+OTHER  [73] does ti 84 plus ce have 3mb archive -> [72] This is a TI-84 Plus CE: a 48 MHz eZ80 processor and a 320x2
+OTHER  [73] mem on ti 84 ce?                   -> [72] This is a TI-84 Plus CE: a 48 MHz eZ80 processor and a 320x2
+MISS   [73] mb archive on ti84 ce??
+MISS   [73] wat r the specs for ti84 ce mem
+MISS   [74] is py used here
+MISS   [74] is this written in c
+MISS   [74] wat lang is this
+MISS   [74] is c the main lang
+MISS   [74] lang of this app?
+MISS   [75] what is c lang
+MISS   [75] why is this app c
+MISS   [75] c lang fast?
+MISS   [75] wat is c
+MISS   [75] c low level?
+OTHER  [75] why c not python                   -> [74] Python is a beginner-friendly programming language. This app
+MISS   [75] tell me c lang
+MISS   [75] c app built
+MISS   [75] is c fast
+MISS   [75] c coding
+MISS   [75] why c used
+MISS   [75] wat is this c
+OTHER  [76] wat is ai                          -> [77] AI is software that learns patterns from data to do tasks li
+MISS   [76] def of ai plz
+MISS   [76] explain ai simply
+MISS   [76] how does ai work
+MISS   [76] is ai just code
+MISS   [76] ai basics
+MISS   [76] tell me about ai
+OTHER  [76] what does ai do                    -> [77] AI is software that learns patterns from data to do tasks li
+OTHER  [76] whats ai mean                      -> [77] AI is software that learns patterns from data to do tasks li
+MISS   [76] ai in short
+MISS   [76] define ai
+MISS   [77] explain ai pls
+MISS   [77] ai definition
+MISS   [77] how does ai work
+MISS   [77] is ai just code
+MISS   [77] tell me about ai
+MISS   [77] diff between ai and program
+MISS   [77] ai in simple terms
+OTHER  [77] wat is artificial intelligence     -> [76] AI is software that learns patterns from data to do tasks li
+MISS   [78] who made chatgpt
+OTHER  [78] r u chatgpt                        -> [3] Not quite. I'm styled after ChatGPT, but I'm a tiny program 
+MISS   [78] explain chatgpt
+MISS   [78] chatgpt meaning
+MISS   [78] who is chatgpt
+MISS   [78] tell me about chatgpt
+MISS   [78] is chatgpt real
+MISS   [78] chatgpt by whom
+MISS   [78] describe chatgpt
+OTHER  [79] wat is gpt oss                     -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] gpt oss 20b 120b info              -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] can i download gpt oss             -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] whats gpt oss model                -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] gpt oss openai details             -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] is gpt oss free to use             -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] tell me about gpt oss              -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] gpt oss 20b 120b                   -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] what does gpt oss mean             -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] gpt oss open weights?              -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] gpt oss family info                -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [81] wat does a llm do                  -> [82] A large language model predicts the next word in a text. It'
+MISS   [81] how r llms trained
+OTHER  [81] explain llm in short               -> [82] A large language model predicts the next word in a text. It'
+OTHER  [81] is llm just next word pred         -> [82] A large language model predicts the next word in a text. It'
+MISS   [81] why do u need so much data
+OTHER  [81] does llm predict next token        -> [82] A large language model predicts the next word in a text. It'
+MISS   [81] how does ai write text
+OTHER  [81] need simple expl of llm            -> [82] A large language model predicts the next word in a text. It'
+MISS   [81] why does gpt use big data
+OTHER  [81] whats the basic idea of llm        -> [82] A large language model predicts the next word in a text. It'
+OTHER  [81] can u simplify llm for me          -> [82] A large language model predicts the next word in a text. It'
+MISS   [82] why do u say it predicts next word
+MISS   [82] how r they trained on writing
+OTHER  [82] wait what is a language model      -> [81] A large language model predicts the next word in a text. It'
+MISS   [82] does it read books or what
+MISS   [82] why can it predict next token
+MISS   [82] is it trained on internet
+MISS   [83] wat is neural net
+MISS   [83] how does nn train
+MISS   [83] explain nn in short
+MISS   [83] how do weights work in ai
+MISS   [83] nn training expl
+MISS   [83] simple expl of neural net
+MISS   [83] how does nn find patterns
+MISS   [83] diff between layer and weight
+MISS   [83] why adjust weights
+MISS   [83] nn = math units?
+MISS   [83] short expl neural net
+MISS   [84] how fast is light in km/s
+MISS   [84] c value in physics
+MISS   [84] fastest thing in universe
+MISS   [84] how fast does light travel
+MISS   [84] c equals what
+MISS   [84] light velocity km
+MISS   [84] fastest speed in cosmos
+MISS   [84] speed of c
+MISS   [85] wat is g on earth
+MISS   [85] how fast do u fall
+MISS   [85] g value
+MISS   [85] why do things fall down
+MISS   [85] calc g for earth
+MISS   [85] earth accel
+MISS   [85] is it 9.81
+MISS   [85] g in m/s2
+OTHER  [85] help with g                        -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [86] whats up with blue sky             -> [17] Not much, just here on your calculator. What's up with you?
+MISS   [86] rayleigh scattering simple
+MISS   [86] sunlight blue vs red
+MISS   [86] sky color physics
+MISS   [87] sun to neptune order
+MISS   [87] mercury to neptune list
+MISS   [87] planet order from sun
+MISS   [87] what comes after mars in planet order
+MISS   [87] sun outward planet names
+MISS   [88] boiling pt of water
+MISS   [88] water boils when?
+MISS   [88] c is sea level boil?
+MISS   [89] where is eiffel tower
+MISS   [89] what city is eiffel tower in
+MISS   [89] where was the treaty signed
+MISS   [89] where is louvre
+MISS   [89] city with eiffel tower
+MISS   [89] where is the tower
+MISS   [89] paris or london for eiffel
+MISS   [89] which city has eiffel
+MISS   [89] wheres the eiffel tower
+MISS   [90] where is the white house
+MISS   [90] capitol of us
+MISS   [90] whats the us capital
+MISS   [90] dc or washington
+MISS   [90] where does the president live
+MISS   [90] us capital city
+MISS   [90] washington dc
+MISS   [90] wheres the white house
+MISS   [90] whats dc stand for
+MISS   [90] where is the senate
+MISS   [90] us capital
+MISS   [91] wat is the total days in yr
+MISS   [91] or 366?
+MISS   [91] days in leap yr??
+MISS   [91] is it always 365 days
+MISS   [91] u r wrong its 366
+MISS   [91] how long is a yr
+MISS   [91] days correct?
+MISS   [91] r there 366 days in leap
+MISS   [91] day count for year
+MISS   [91] why 366 in leap yr
+OTHER  [92] wat is the weather today           -> [93] I can't see a clock. Check your phone or the calculator's cl
+OTHER  [92] check today temp                   -> [93] I can't see a clock. Check your phone or the calculator's cl
+MISS   [92] is it going to rain
+OTHER  [92] soaring forecast help              -> [71] Gliders have no engine. They stay up by finding rising air, 
+MISS   [92] typos: wthr check
+MISS   [93] do u have a clock
+MISS   [93] is there a clock here
+OTHER  [93] no clock on calc?                  -> [23] Got it! Anything else?
+MISS   [93] when is it now
+MISS   [93] u have clock rite
+OTHER  [94] wat r u say in english             -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [94] does this do translations
+OTHER  [94] say hi in spanish                  -> [15] Hello! How can I help you today?
+MISS   [94] convert words to french
+MISS   [94] is this a translator
+OTHER  [95] wat language r u built in          -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [95] is this app c or py
+MISS   [95] do u run on c++
+OTHER  [95] whats the code lang for u          -> [96] I can't write real programs here, but a tiny calculator app 
+MISS   [95] r u written in java
+MISS   [95] calc code lang?
+MISS   [95] how is this bot made
+MISS   [95] is ur source c
+MISS   [95] what lang is ur brain
+MISS   [95] built in what lang
+MISS   [95] c or c++ for u
+MISS   [95] show me ur code lang
+MISS   [96] is u written in c
+MISS   [96] wat lang is ur code
+MISS   [96] can u show me source
+MISS   [96] r u c program
+OTHER  [96] why not python                     -> [74] Python is a beginner-friendly programming language. This app
+MISS   [96] is this c based
+MISS   [96] lang used for u
+MISS   [96] show me the code
+MISS   [96] are u written in c
+MISS   [96] wat programming language
+MISS   [96] is u c or py
+OTHER  [97] boyle charles gay lussac           -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+OTHER  [97] combined gas law formula           -> [105] Combined gas law: P1V1/T1 = P2V2/T2
+Use it when P, V and T a
+OTHER  [97] ideal gas law pv=nrt?              -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [97] avogadro law                       -> [106] Avogadro's law: at the same T and P, equal volumes of gases 
+OTHER  [97] typos: bolye law                   -> [102] Boyle's law: at constant temperature and moles, pressure and
+MISS   [97] p1v1=p2v2?
+OTHER  [97] r u sure bout charles law          -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [98] wat gas law is this                -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [98] which law for this
+OTHER  [98] help me choose gas law             -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [98] p and v change what law
+MISS   [98] temp and vol change
+MISS   [98] n changes wat law
+MISS   [98] all vars change
+OTHER  [98] is it boyle or charles             -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [98] gas law decision tree              -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [98] how do i pick the law
+OTHER  [98] combined law when                  -> [105] Combined gas law: P1V1/T1 = P2V2/T2
+Use it when P, V and T a
+OTHER  [98] ideal gas law when                 -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [99] what gas laws are inverse          -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [99] charles vs boyle                   -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [99] gay lussac avogadro                -> [106] Avogadro's law: at the same T and P, equal volumes of gases 
+OTHER  [99] wat is boyle law                   -> [102] Boyle's law: at constant temperature and moles, pressure and
+MISS   [99] r the temp pressure direct
+MISS   [99] typos: what are direct laws
+OTHER  [99] list inverse gas laws              -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [99] how does boyle work                -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [99] charles and gay lussac             -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+OTHER  [99] avogadro direct?                   -> [106] Avogadro's law: at the same T and P, equal volumes of gases 
+MISS   [99] which one is inverse
+OTHER  [100] wat do i do for gas laws           -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [100] how r gas problems solved
+OTHER  [100] pls help gas law steps             -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [100] gas law how do i start             -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [100] which law do i use for gas         -> [98] Ask what stays constant:
+T constant -> Boyle (P and V)
+P con
+OTHER  [100] steps for gas law question         -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [100] how to pick gas law                -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [100] gas law cheat sheet                -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [100] solve gas law                      -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [100] hey how do gas law probs work      -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [100] gas law formula help               -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [100] i dont get gas laws help           -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [101] wat is wrong with my chem calc
+MISS   [101] why r my numbers off
+OTHER  [101] help units atm vs kpa              -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+OTHER  [101] forgot to use kelvin?              -> [136] Kelvin is the absolute temperature scale: K = C + 273 (or 27
+MISS   [101] l/mol not working
+OTHER  [101] wrong r constant?                  -> [109] R is the gas constant. Use 0.0821 L atm/(mol K) with atm, 8.
+MISS   [101] ml vs l mistake
+OTHER  [101] stp only right?                    -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [101] common errors gas law              -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [101] why is my ans wrong
+MISS   [101] check my steps pls
+MISS   [101] typos in formula
+MISS   [102] if vol half then p?
+MISS   [102] wat if u shrink container
+MISS   [102] pressure when vol goes down
+MISS   [102] is p and v inverse?
+MISS   [102] halve the volume what happens
+MISS   [102] p1v1=p2v2 explain
+MISS   [102] why does p go up if v down
+MISS   [102] constant temp p vs v
+MISS   [102] cut vol in half p doubles?
+OTHER  [103] gas law constant p                 -> [108] R = 0.0821 L atm/(mol K)
+R = 8.314 L kPa/(mol K)
+R = 62.4 L 
+MISS   [103] volume temp relation
+MISS   [103] v1/t1=v2/t2 name
+OTHER  [103] gas laws                           -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [103] const pressure vol temp
+OTHER  [103] gas law vol temp                   -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [104] p1/t1=p2/t2
+MISS   [104] pressure vs temp constant vol
+MISS   [104] why p goes up when t up
+MISS   [104] what is p1/t1
+OTHER  [104] constant volume pressure law       -> [118] Pressure and volume are inversely related at constant temper
+MISS   [104] how to find p2 from p1
+OTHER  [104] gas law p temp relation            -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [104] p1/t1 = p2/t2?
+OTHER  [105] which gas law uses p v and t       -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [105] wat is p1v1/t1=p2v2/t2
+OTHER  [105] merges boyle charles gay lussac    -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+MISS   [105] formula for when all change
+MISS   [105] p v t all change which law
+OTHER  [105] why must t be kelvin here          -> [137] The gas laws are direct proportions only on the Kelvin scale
+MISS   [105] p1v1/t1=p2v2/t2 meaning
+OTHER  [106] equal gas vol means equal moles?   -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+MISS   [106] v1/n1=v2/n2 law name
+OTHER  [106] if same T and P what happens to gas -> [127] A gas is a state of matter with no fixed shape or volume. It
+MISS   [106] why equal vol same molecules
+MISS   [106] can u explain v1/n1=v2/n2
+OTHER  [106] gas law equal vol equal n?         -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [106] v1/n1 ratio constant?
+MISS   [107] wat is p v n r t
+OTHER  [107] how to calc pressure with moles    -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+MISS   [107] typos: pv=nr?
+OTHER  [107] slang: wat is r for gas law        -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [108] wat is r in ideal gas law          -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [108] which r for atm pressure           -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+OTHER  [108] r value for mmhg                   -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+OTHER  [108] need r constant                    -> [109] R is the gas constant. Use 0.0821 L atm/(mol K) with atm, 8.
+OTHER  [108] r for kpa units                    -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [108] what r use with liters
+OTHER  [108] r gas constant values              -> [109] R is the gas constant. Use 0.0821 L atm/(mol K) with atm, 8.
+OTHER  [108] help r atm vs kpa                  -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+OTHER  [108] r equals what for mol k            -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [108] r in l atm per mol                 -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [108] r for torr pressure                -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+OTHER  [108] gas constant r values              -> [109] R is the gas constant. Use 0.0821 L atm/(mol K) with atm, 8.
+OTHER  [109] wat is r in gas law                -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [109] r for atm vs kpa                   -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [109] is r always 8.314
+OTHER  [109] r value for torr                   -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [109] confused on r units
+OTHER  [109] r in ideal gas eq                  -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [109] how to choose r
+OTHER  [110] how to rearrange pvnrt for v       -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [110] rearrange pv=nrt for p             -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [110] isolate t in the equation
+OTHER  [110] wat is n equal to in pvnrt         -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [110] gib me p from pvnrt                -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [110] solve for volume
+MISS   [110] typos: solve for t in p v n r t
+OTHER  [110] need v alone from pvnrt            -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [110] get p by itself
+OTHER  [110] how do i find t using pvnrt        -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [111] what is ptotal eq
+MISS   [111] gas mix pressure formula
+MISS   [111] ptotal = p1+p2
+OTHER  [111] sum of partial pressures           -> [112] A partial pressure is the pressure one gas in a mixture woul
+OTHER  [111] pi = xi ptotal                     -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [111] how to calc ptotal
+MISS   [111] partial press add up
+MISS   [112] how do u get total pressure
+OTHER  [112] explain dalton law pls             -> [111] Dalton's law of partial pressures: the total pressure of a g
+MISS   [112] p total = p1+p2?
+MISS   [112] why add gas pressures
+MISS   [112] calc total pressure from parts
+MISS   [112] p total formula
+MISS   [112] why sum up gas pressures
+MISS   [112] how r total pressures found
+OTHER  [113] wat is partial pressure formula    -> [112] A partial pressure is the pressure one gas in a mixture woul
+MISS   [113] x=moles/total?
+OTHER  [113] dall mole fractions add to 1?      -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [113] calc partial pressure help         -> [112] A partial pressure is the pressure one gas in a mixture woul
+MISS   [113] why do fractions sum to 1
+MISS   [113] p=x*p_total?
+MISS   [113] typos: how calc x and p
+MISS   [113] mixture gas math
+MISS   [113] frac x = ?
+OTHER  [113] plz explain dalton law             -> [111] Dalton's law of partial pressures: the total pressure of a g
+OTHER  [114] how do i find partial pressure of gas -> [112] A partial pressure is the pressure one gas in a mixture woul
+OTHER  [114] p gas = p atm - p water right      -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+OTHER  [114] calc gas pressure mixed with water vapor -> [139] Vapor pressure is the pressure of a vapor in equilibrium wit
+MISS   [114] need formula for gas over water
+OTHER  [114] is p gas p atm minus water vapor   -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [114] how to adjust for water vapor in gas
+MISS   [114] give me p gas formula
+OTHER  [114] why do we subtract water vapor pressure -> [139] Vapor pressure is the pressure of a vapor in equilibrium wit
+OTHER  [114] p gas equals what                  -> [127] A gas is a state of matter with no fixed shape or volume. It
+MISS   [114] find gas pressure at 25 c over water
+MISS   [114] corr for water vapor in gas collection
+MISS   [115] gahams law formula
+MISS   [115] rate1/rate2 =?
+OTHER  [115] gas diffusion speed                -> [117] Diffusion is gases spreading and mixing because of random mo
+MISS   [115] lighter gas faster?
+MISS   [115] sqrt m2/m1
+OTHER  [115] gas rate molar mass                -> [145] Molar mass of a gas sample: M = dRT/P, or M = mRT/(PV) where
+OTHER  [115] diffusion vs effusion              -> [117] Diffusion is gases spreading and mixing because of random mo
+MISS   [115] heavier gas slower?
+OTHER  [116] grahams law                        -> [115] Graham's law: lighter gases effuse and diffuse faster.
+rate1
+MISS   [116] gas thru small hole?
+OTHER  [116] effusion vs diffusion              -> [117] Diffusion is gases spreading and mixing because of random mo
+MISS   [116] r rate proportional to sqrt m?
+MISS   [116] how fast gas escapes
+MISS   [116] tiny hole vacuum gas
+OTHER  [116] graham law effusion                -> [115] Graham's law: lighter gases effuse and diffuse faster.
+rate1
+OTHER  [116] what is effusion gas               -> [127] A gas is a state of matter with no fixed shape or volume. It
+MISS   [117] how fast do gases diffuse
+MISS   [117] why lighter gas faster
+OTHER  [117] explain graham law                 -> [115] Graham's law: lighter gases effuse and diffuse faster.
+rate1
+OTHER  [117] what causes gas mixing             -> [127] A gas is a state of matter with no fixed shape or volume. It
+MISS   [117] gas spread random motion
+OTHER  [117] diffusion and graham               -> [115] Graham's law: lighter gases effuse and diffuse faster.
+rate1
+MISS   [117] why do gases mix
+MISS   [117] lighter diffuses faster?
+OTHER  [118] boyles law formula                 -> [102] Boyle's law: at constant temperature and moles, pressure and
+MISS   [118] what is p1v1
+OTHER  [118] typos for boyle                    -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [118] gas law inverse                    -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [118] wat is boyle law                   -> [102] Boyle's law: at constant temperature and moles, pressure and
+MISS   [118] p1v1=p2v2 meaning
+OTHER  [118] constant temp gas                  -> [108] R = 0.0821 L atm/(mol K)
+R = 8.314 L kPa/(mol K)
+R = 62.4 L 
+OTHER  [118] explain boyle simply               -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [118] u know boyles law                  -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [118] boyle law eq                       -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [119] wat is charles law                 -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [119] charles law formula                -> [103] Charles's law: at constant pressure and moles, volume is dir
+MISS   [119] v1/t1=v2/t2?
+OTHER  [119] gas law temp and vol               -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [119] constant pressure gas              -> [108] R = 0.0821 L atm/(mol K)
+R = 8.314 L kPa/(mol K)
+R = 62.4 L 
+MISS   [119] how does temp change vol
+OTHER  [119] charles law meaning                -> [103] Charles's law: at constant pressure and moles, volume is dir
+MISS   [119] v and t relation
+MISS   [119] gas expands when hot?
+OTHER  [119] charles law eqn                    -> [103] Charles's law: at constant pressure and moles, volume is dir
+MISS   [119] temp vs volume
+OTHER  [119] charles law                        -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [120] wat is gay lussac law              -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+OTHER  [120] how do p and k relate              -> [23] Sure thing. What next?
+MISS   [120] typos: whts p1/t1=p2/t2
+OTHER  [120] constant vol gas law               -> [108] R = 0.0821 L atm/(mol K)
+R = 8.314 L kPa/(mol K)
+R = 62.4 L 
+MISS   [120] pressure vs temp formula
+OTHER  [120] explain gay lussac                 -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+MISS   [120] p and t direct relation
+OTHER  [120] gas law p1 t1                      -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [120] whats the formula for p and k      -> [23] Got it! Anything else?
+MISS   [120] lul how does pressure change with temp
+OTHER  [120] gay lussac law expl                -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+MISS   [120] p1/t1 = p2/t2 what is this
+OTHER  [121] wat is avogadro law                -> [106] Avogadro's law: at the same T and P, equal volumes of gases 
+MISS   [121] v1/n1=v2/n2?
+OTHER  [121] how volume relates to moles        -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [121] does volume go up with moles       -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [121] explain avogadro                   -> [106] Avogadro's law: at the same T and P, equal volumes of gases 
+MISS   [121] v and n ratio const?
+MISS   [121] at const T P v/n
+MISS   [121] why v1/n1=v2/n2
+OTHER  [121] avogadro gas law eq                -> [106] Avogadro's law: at the same T and P, equal volumes of gases 
+MISS   [121] calc v/n ratio
+MISS   [121] is v directly prop to n
+OTHER  [121] short avogadro def                 -> [106] Avogadro's law: at the same T and P, equal volumes of gases 
+OTHER  [122] what makes gas pressure go up      -> [131] Pressure is force per unit area. Gas pressure comes from par
+MISS   [122] why does p increase
+OTHER  [122] wat causes high gas pressure       -> [131] Pressure is force per unit area. Gas pressure comes from par
+MISS   [122] gas pressure goes up when?
+MISS   [122] how to increase p in gas
+OTHER  [122] more volume less pressure?         -> [118] Pressure and volume are inversely related at constant temper
+OTHER  [122] is it temp or moles that raise p   -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+MISS   [122] factors affecting gas pressure
+MISS   [122] p up when?
+OTHER  [122] gas law pressure increase          -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [123] list assumptions of ideal gas      -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [123] explain ideal gas law basics       -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [123] ideal gas assumptions              -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [124] wat is ke and temp
+MISS   [124] how do particles move in hot gas
+OTHER  [124] explain ke formula and kelvin      -> [136] Kelvin is the absolute temperature scale: K = C + 273 (or 27
+MISS   [124] is ke same for all particles
+OTHER  [124] diff between kelvin and ke         -> [136] Kelvin is the absolute temperature scale: K = C + 273 (or 27
+MISS   [124] why r particles diff speeds
+MISS   [124] short expl on kinetic energy
+OTHER  [124] typos: whats kelvin to ke          -> [136] Kelvin is the absolute temperature scale: K = C + 273 (or 27
+MISS   [124] gas particles speed vs temp
+MISS   [124] ke formula 1/2 mv2
+MISS   [124] relate temp to particle speed
+MISS   [124] hot gas particles move how
+OTHER  [125] wat are gas properties             -> [127] A gas is a state of matter with no fixed shape or volume. It
+MISS   [125] how do u describe gas
+MISS   [125] why gas fill container
+MISS   [125] diff between solid liquid gas
+OTHER  [125] can u compress gas                 -> [126] Gases compress easily because their particles are far apart,
+MISS   [125] density of gases
+MISS   [125] how do gases mix
+MISS   [125] gas state main points
+MISS   [125] explain gas behavior
+MISS   [126] why r gases so easy to squeeze
+OTHER  [126] whats the deal with gas compression -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [126] why can u shrink gas so much
+OTHER  [126] gas particles far apart wat        -> [127] A gas is a state of matter with no fixed shape or volume. It
+MISS   [126] explain gas compressibility
+MISS   [126] why do gases have lots of space
+OTHER  [126] whats up with gas spacing          -> [127] A gas is a state of matter with no fixed shape or volume. It
+MISS   [126] gases r far apart rite
+MISS   [126] gas empty space between particles
+MISS   [127] def of gas state
+MISS   [127] how r gas particles
+MISS   [127] gas shape and volume
+MISS   [127] explain gas matter
+OTHER  [127] why gas no fixed shape             -> [23] Sure thing. What next?
+MISS   [127] gas particles far apart
+MISS   [127] short gas definition
+MISS   [127] gas vs solid
+OTHER  [127] is gas compressible                -> [126] Gases compress easily because their particles are far apart,
+MISS   [127] describe gas state
+OTHER  [128] wat is ideal gas law               -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [128] why real gas not ideal             -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [128] particles attract at low t?
+OTHER  [128] real gas ideal conditions          -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [128] when do gases act ideal
+OTHER  [128] slang: u know ideal gas            -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [128] low pressure high temp
+OTHER  [129] fix pv=nrt for real gas            -> [128] Real gases behave ideally at low pressure and high temperatu
+MISS   [129] corr for vol and attr
+OTHER  [129] how to adjust pv nrt               -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [129] real gas equation                  -> [128] Real gases behave ideally at low pressure and high temperatu
+OTHER  [129] pv nrt correction                  -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+MISS   [129] vdw equation details
+OTHER  [129] real gas law                       -> [128] Real gases behave ideally at low pressure and high temperatu
+OTHER  [129] why pv nrt not accurate            -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [129] real gas pressure temp             -> [128] Real gases behave ideally at low pressure and high temperatu
+OTHER  [130] wat is pressure                    -> [131] Pressure is force per unit area. Gas pressure comes from par
+MATH   [130] convert 760 mmhg to atm
+MISS   [130] typos: presure def
+MISS   [131] p=fa?
+OTHER  [131] why do tires pop                   -> [167] Ears pop when the air pressure on each side of the eardrum d
+MISS   [131] force per area?
+MISS   [131] gas p explanation
+MISS   [131] how does pressure work
+MISS   [131] gas pressure def
+MISS   [131] particles and walls
+MISS   [131] explain gas pressure
+OTHER  [131] wat causes gas p                   -> [127] A gas is a state of matter with no fixed shape or volume. It
+MISS   [131] pressure basics
+OTHER  [132] whats atm pressure                 -> [131] Pressure is force per unit area. Gas pressure comes from par
+MISS   [132] why does air have weight
+OTHER  [132] atm in kpa                         -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [132] how high before pressure drops
+MISS   [132] is 760mmhg sea level?
+OTHER  [132] wat is 101.3 kpa                   -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [132] does pressure change up mountain
+MISS   [132] why u feel lighter high up
+OTHER  [132] atm at sea lvl                     -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MATH   [132] convert 1 atm to mmhg
+MISS   [132] air pressure at 0m
+OTHER  [133] how does tire gauge work           -> [162] Tire pressure rises on a hot day because the temperature of 
+OTHER  [133] is tire gauge abs or gauge         -> [162] Tire pressure rises on a hot day because the temperature of 
+OTHER  [133] why tire gauge not abs             -> [162] Tire pressure rises on a hot day because the temperature of 
+MISS   [134] why does mercury stay up 760mm
+OTHER  [134] is 760mm 1 atm                     -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [134] how tall is mercury column
+OTHER  [134] what does atm stand for            -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [134] sea level pressure in mm
+MISS   [134] mercury rises how much
+OTHER  [134] wat is 1 atm in mm                 -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+OTHER  [134] why 760mm for 1 atm                -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [135] how measure gas pressure
+MISS   [135] how to read gas pressure
+OTHER  [136] how 2 convert c to k               -> [23] Got it! Anything else?
+OTHER  [136] why gas law use k not c            -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [136] k = ??                             -> [23] Sure thing. What next?
+OTHER  [136] k = c + 273.15?                    -> [23] Got it! Anything else?
+MATH   [136] convert 100c to k
+MISS   [136] abs zero in c
+MISS   [136] why 273.15
+OTHER  [137] why cant u use celsius for gas laws -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [137] is celsius bad for charles law     -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [137] kelvin vs celsius for boyles law   -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [137] does celsius break gas law math    -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [137] gas law proportion only works in kelvin? -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [137] cant i just convert c to k easily  -> [23] Sure thing. What next?
+OTHER  [137] is zero celsius same as zero kelvin -> [136] Kelvin is the absolute temperature scale: K = C + 273 (or 27
+OTHER  [137] why do gas laws need absolute zero -> [136] Kelvin is the absolute temperature scale: K = C + 273 (or 27
+MISS   [137] celsius gives negative values right
+OTHER  [137] why no negative temps in gas laws  -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [138] how to c to k                      -> [23] Got it! Anything else?
+MATH   [138] convert 25 c to k
+OTHER  [138] wat is c to k formula              -> [23] Sure thing. What next?
+MISS   [138] c to f formula pls
+OTHER  [138] typos cto k                        -> [23] Got it! Anything else?
+OTHER  [138] kelvin formula                     -> [136] Kelvin is the absolute temperature scale: K = C + 273 (or 27
+OTHER  [138] c to k and f                       -> [23] Sure thing. What next?
+MISS   [138] rule
+MISS   [138] c2k
+MISS   [138] f from c
+OTHER  [138] k from c                           -> [23] Got it! Anything else?
+OTHER  [138] how r u convert c to k             -> [16] I'm doing well, thanks for asking! How can I help?
+MISS   [139] why does liquid boil
+OTHER  [139] what is vap pressure               -> [131] Pressure is force per unit area. Gas pressure comes from par
+MISS   [139] when does a liquid boil
+MISS   [139] define vap pressure
+OTHER  [141] molar volume satp                  -> [142] At STP, 1 mole of any ideal gas takes up 22.4 L, so L = mol 
+MISS   [141] what is 298k 1bar
+OTHER  [142] how many liters per mole at stp?   -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [142] convert mol to L at stp            -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [142] stp gas volume 1 mol               -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+MISS   [142] why is it 22.4 L not 22.7
+OTHER  [142] u need stp for 22.4 L right        -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [142] calc L from mol using 22.4         -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [142] is pv=nrt needed for stp?          -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [142] difference between stp and rt      -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [142] moles to liters standard temp      -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+MISS   [142] can i use 22.4 for any gas
+OTHER  [142] stp ideal gas law simple           -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [143] whats avogadro number              -> [106] Avogadro's law: at the same T and P, equal volumes of gases 
+MISS   [143] what is molar mass
+MISS   [144] d=pm/rt?
+MISS   [144] gas dens
+MISS   [145] find molar mass from density
+MISS   [145] wat is molar mass eqn w density
+MISS   [145] how to get molar mass given d and p
+MISS   [145] calc molar mass using d r t p
+MISS   [145] molar mass = ? when i know density
+MISS   [145] how do i find molar mass w mass
+MISS   [145] convert density to molar mass
+MISS   [145] molar mass formula using mass
+MISS   [145] need molar mass from d r t p
+MISS   [145] how to calc molar mass w mass and vol
+MISS   [146] how do i convert gas vol to grams
+OTHER  [146] need help w gas mole ratio         -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+MISS   [146] gas reactants in liters?
+OTHER  [146] how 2 do gas stoich problems       -> [159] Stoichiometry example: what volume of H2 at STP forms from 0
+OTHER  [146] use 22.4 l or pv nrt               -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [146] gas at stp conversion              -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [146] liters to grams gas                -> [147] Grams to liters at STP: grams / molar mass = moles, then mol
+MISS   [147] how many liters is 22g co2
+OTHER  [147] conv 18g h2o to l at stp           -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+MISS   [147] wat is 10g o2 in liters
+OTHER  [147] g to l formula stp                 -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [147] help i have 44g co2 need l         -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [147] typos 50g so2 to litres
+OTHER  [147] calc grams to volume stp           -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+MISS   [147] r there a formula for g to l
+MISS   [147] g ch4 equals how many liters
+MISS   [147] convert 36g water to l
+MISS   [147] what is 1g he in liters
+OTHER  [148] gay lussac law                     -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+OTHER  [148] what is gas volume ratio           -> [127] A gas is a state of matter with no fixed shape or volume. It
+OTHER  [148] explain lussac combining vol       -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+MISS   [148] h2 o2 2h2o ratio
+MISS   [148] why gas react whole nums
+OTHER  [148] gay lussac vs avogadro             -> [106] Avogadro's law: at the same T and P, equal volumes of gases 
+OTHER  [148] gas vol law at const p             -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [148] wat is gas volume ratio            -> [127] A gas is a state of matter with no fixed shape or volume. It
+OTHER  [148] gases combine in what ratio        -> [105] Combined gas law: P1V1/T1 = P2V2/T2
+Use it when P, V and T a
+OTHER  [148] gay lussac example                 -> [155] Gay-Lussac example: a tank is 2.0 atm at 20 C (293 K). What 
+OTHER  [148] how gas volume relate mole         -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [148] luzac law gas                      -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+MISS   [149] wat is dry air made of
+MISS   [149] comp of dry air?
+MISS   [149] what % nitrogen in air
+MISS   [149] how much o2 in dry air
+MISS   [149] argon in air percentage
+MISS   [149] co2 level in dry air
+MISS   [149] what makes up air by volume
+MISS   [149] dry air gas mix
+MISS   [149] percent nitrogen?
+MISS   [149] breakdown of dry air
+MISS   [150] wat is 1 l in ml
+MISS   [150] liter to ml
+MATH   [150] convert 1l to ml
+MISS   [150] how many ml in 1 l
+MISS   [150] l = ? ml
+MISS   [150] cm3 to l
+MISS   [150] l in cm3
+MISS   [150] ml to l
+MISS   [150] diff btw ml and cm3
+MISS   [150] l in cc
+MISS   [150] is 1 l 1000 ml
+MISS   [150] try 500 ml to l
+OTHER  [151] boyle law 4l 2atm find v at 8atm   -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [151] if p doubles what happens to v in boyle -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [151] l at 2 atm go to 8 atm new v?      -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [151] wat is v2 when p1=2 v1=4 p2=8
+OTHER  [151] boyle example 2atm 4l to 8atm      -> [152] Boyle example: a gas is 4.0 L at 2.0 atm. What is V at 8.0 a
+OTHER  [151] gas 4l 2atm compressed to 8atm volume? -> [126] Gases compress easily because their particles are far apart,
+OTHER  [151] solve boyle p1 2 v1 4 p2 8         -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [151] u kno boyle law? 4l 2atm -> 8atm   -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [151] help calc v2 p1=2 v1=4 p2=8        -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [151] boyle law problem 2atm 4l 8atm     -> [152] Boyle example: a gas is 4.0 L at 2.0 atm. What is V at 8.0 a
+MISS   [151] r u sure v2 is 1l? check 2*4/8
+OTHER  [151] boyle 4L 2atm new P 8atm V?        -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [153] wat is new vol if 5L gas heats 25 to 75C -> [127] A gas is a state of matter with no fixed shape or volume. It
+OTHER  [153] charles law 5.0L 25C to 75C find V2 -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [153] calc charles 5L at 25C heated to 75C -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [153] charles ex 5L 25C 75C constant P   -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [153] help 5L gas 25C to 75C charles law -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [153] charles law prob 5L 25C heat to 75C -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [153] L gas 25C to 75C what is V2        -> [127] A gas is a state of matter with no fixed shape or volume. It
+OTHER  [153] solve charles 5L at 25C to 75C     -> [103] Charles's law: at constant pressure and moles, volume is dir
+MISS   [153] new vol for 5L gas 25 to 75C
+OTHER  [153] charles law 5.0L 25C to 75C        -> [103] Charles's law: at constant pressure and moles, volume is dir
+OTHER  [154] how many moles in 11.2 L at stp    -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [154] calc n for 11.2L gas at stp        -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [154] wat is moles of 11.2 l at stp      -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [154] solve n=PV/RT 11.2L stp            -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [154] u know moles 11.2l stp?            -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [154] give me moles for 11.2 l stp       -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [154] help find n 11.2L stp              -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [154] how much is 11.2l gas in mol       -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [154] ideal gas 11.2l stp moles?         -> [107] Ideal gas law: PV = nRT
+P = pressure, V = volume, n = moles,
+OTHER  [154] pls calc moles 11.2L stp           -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [154] n for 11.2 l at stp??              -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [154] r there 0.5 mol in 11.2L stp       -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [155] gay lussac 2 atm 20c to 100c       -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+MISS   [155] wat is p at 100c if 2atm at 20c
+MISS   [155] tank 2atm 20C heat to 100C find P
+OTHER  [155] gay lussac 2.0 atm 293K to 373K    -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+MISS   [155] calc P2 for 2atm 20C -> 100C
+MISS   [155] if tank 2atm 20C wat at 100C
+OTHER  [155] gay lussac 2atm 20 to 100 C        -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+OTHER  [155] atm 20C raise to 100C new P        -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+MISS   [155] gas 2atm 20C heat 100C P=?
+OTHER  [155] typos: gay lussac 2atm 20c 100c    -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+OTHER  [155] solve gay lussac 2.0 293 373       -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+MISS   [155] p at 100C given 2atm 20C
+MISS   [156] calc v2 p1=1 v1=3 t1=300 p2=2 t2=400
+MISS   [156] l 1atm 300k to 2atm 400k find v2
+MISS   [156] solve v2 p1 1 v1 3 t1 300 p2 2 t2 400
+OTHER  [156] gas law p1 1 v1 3 t1 300 p2 2 t2 400 -> [97] The gas laws relate pressure (P), volume (V), temperature (T
+OTHER  [156] l at 1 atm 300 k goes to 2 atm 400 k -> [130] Pressure is force per area. Units:
+1 atm = 101.325 kPa = 760
+OTHER  [156] combined gas law p1                -> [105] Combined gas law: P1V1/T1 = P2V2/T2
+Use it when P, V and T a
+OTHER  [157] wat is partial pressure            -> [112] A partial pressure is the pressure one gas in a mixture woul
+MISS   [157] calc ptotal for n2 o2 ar
+OTHER  [157] daltons law 0.5 0.3 0.2            -> [111] Dalton's law of partial pressures: the total pressure of a g
+OTHER  [157] how to add partial pressures       -> [112] A partial pressure is the pressure one gas in a mixture woul
+OTHER  [157] dalton eq 1.0 atm                  -> [111] Dalton's law of partial pressures: the total pressure of a g
+MISS   [157] n2 .5 o2 .3 ar .2
+MISS   [157] total pressure calc
+MISS   [157] find ptotal n2 o2 ar
+OTHER  [157] partial pressure add up            -> [112] A partial pressure is the pressure one gas in a mixture woul
+OTHER  [157] dalton 0.50 .30 .20                -> [111] Dalton's law of partial pressures: the total pressure of a g
+MISS   [158] how fast does h2 effuse vs o2
+OTHER  [158] graham law h2 o2                   -> [115] Graham's law: lighter gases effuse and diffuse faster.
+rate1
+MISS   [158] rate ratio h2 o2
+OTHER  [158] h2 effusion speed compare o2       -> [116] Effusion is gas escaping through a tiny hole into a vacuum. 
+OTHER  [158] sqrt 32/2 graham                   -> [115] Graham's law: lighter gases effuse and diffuse faster.
+rate1
+MISS   [158] how much faster h2 than o2
+OTHER  [158] graham ex h2 o2                    -> [115] Graham's law: lighter gases effuse and diffuse faster.
+rate1
+OTHER  [158] diffusion rate h2 vs o2            -> [117] Diffusion is gases spreading and mixing because of random mo
+MISS   [158] h2 o2 effuse ratio
+OTHER  [158] wat is graham for h2 o2            -> [115] Graham's law: lighter gases effuse and diffuse faster.
+rate1
+MISS   [158] h2 2g o2 32g speed
+MISS   [158] is h2 4x faster than o2
+OTHER  [159] wat vol h2 from 0.5 mol zn         -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+MISS   [159] how much gas from 0.5 zn
+OTHER  [159] mol zn + hcl volume?               -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [159] stoich help 0.5 zn                 -> [146] Gas stoichiometry: grams or liters -> moles -> use the mole 
+OTHER  [159] calc h2 vol 0.5 zn stp             -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+MISS   [159] zn makes wat
+OTHER  [159] volume h2 0.5 mol zn               -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [159] hcl + zn 0.5 mol gas               -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [159] zn stp volume                      -> [140] STP = standard temperature and pressure: 0 C (273 K) and 1 a
+OTHER  [159] help 0.5 zn to h2                  -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [159] zn hcl 0.5 mol answer              -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [159] mol zn h2 liters                   -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+MISS   [160] wat vol for 3mol if 2mol is 10l
+OTHER  [160] if 2 moles gas = 10l how much for 3 -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [160] hey bot 2mol 10l find vol of 3mol  -> [15] Hi there! What's on your mind?
+OTHER  [160] pls help 2.0 mol fills 10 l what abt 3 -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [160] calc this 2 mol 10 liters 3 mol ?  -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [160] u know avogadro 2mol 10l so 3mol?? -> [106] Avogadro's law: at the same T and P, equal volumes of gases 
+MISS   [160] need ans 2mols 10l 3mols volume
+OTHER  [160] typo 2 mol gas 10 L 3 mol vol      -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [160] quick 2 moles take 10 liters 3 take -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+MISS   [160] solve 2mol=10l 3mol=? same tp
+MISS   [160] r u sure 2mol 10l 3mol is 15
+OTHER  [160] help 2.0 mol 10L 3.0 mol vol       -> [143] A mole is 6.022 x 10^23 particles (Avogadro's number). Moles
+OTHER  [161] charles law balloon                -> [103] Charles's law: at constant pressure and moles, volume is dir
+MISS   [161] typos: why balon shnks in frost
+MISS   [161] diff between cold shrink and hot rise
+MISS   [161] gas volume drops in cold?
+MISS   [161] hot air less dense rite
+OTHER  [161] explain charles law with balloon   -> [103] Charles's law: at constant pressure and moles, volume is dir
+MISS   [161] cold makes gas smaller?
+MISS   [162] tyre pressure rise cause
+MISS   [162] why more air pressure in hot
+OTHER  [162] gay lussac tire pressure           -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+MISS   [163] what if i warm up hairspray
+OTHER  [163] guy lussac law on cans             -> [104] Gay-Lussac's law: at constant volume and moles, pressure is 
+MISS   [163] wat happen if u heat can
+MISS   [163] pressure in can when hot
+OTHER  [164] how does breathing work with boyles law -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [164] wat is boyle law in lungs          -> [102] Boyle's law: at constant temperature and moles, pressure and
+MISS   [164] explain inhalation pressure physics
+OTHER  [164] boyle law and breathing simple     -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [164] how u inhale using boyle law       -> [102] Boyle's law: at constant temperature and moles, pressure and
+MISS   [164] diaphragm move down pressure decrease
+OTHER  [164] boyle law inhale process           -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [164] short answer breathing boyle law   -> [102] Boyle's law: at constant temperature and moles, pressure and
+MISS   [165] why divers cant hold breath
+OTHER  [165] wat happens to air in lungs deep   -> [164] Breathing uses Boyle's law: the diaphragm moves down, lung v
+OTHER  [165] boyle law for scuba                -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [165] does pressure crush lungs          -> [164] Breathing uses Boyle's law: the diaphragm moves down, lung v
+OTHER  [165] m depth pressure increase          -> [122] Gas pressure rises when you decrease the volume, increase th
+OTHER  [165] why u cant breathe up              -> [164] Breathing uses Boyle's law: the diaphragm moves down, lung v
+OTHER  [165] gas compress when dive             -> [126] Gases compress easily because their particles are far apart,
+OTHER  [165] air in lungs vs depth              -> [164] Breathing uses Boyle's law: the diaphragm moves down, lung v
+MISS   [165] is it true air shrink deep
+OTHER  [165] help why no hold breath            -> [23] Sure thing. What next?
+MISS   [166] henrys law explain
+OTHER  [166] why bubbles in pop                 -> [167] Ears pop when the air pressure on each side of the eardrum d
+MISS   [166] gas pressure and liquid
+MISS   [166] pressure affects dissolving
+MISS   [166] whats henrys law
+MISS   [167] swallowing fixes ear pressure why
+MISS   [167] is it the tube opening when i swallow
+OTHER  [167] swallow to equalize ear pressure wat -> [131] Pressure is force per unit area. Gas pressure comes from par
+MISS   [167] why swallowing stops ear popping
+OTHER  [168] why do weather balloons pop at high alt -> [167] Ears pop when the air pressure on each side of the eardrum d
+OTHER  [168] is it boyles law for weather balloons -> [102] Boyle's law: at constant temperature and moles, pressure and
+OTHER  [168] why does a balloon expand as it rises -> [161] A balloon shrinks in the cold because the gas inside cools a
+OTHER  [168] why do balloons grow then pop      -> [167] Ears pop when the air pressure on each side of the eardrum d
+OTHER  [168] whys weather balloons explode up high -> [161] A balloon shrinks in the cold because the gas inside cools a
+OTHER  [168] balloon pops in sky why            -> [161] A balloon shrinks in the cold because the gas inside cools a
+
+1961 questions: 615 reached the intended answer, 575 went to a different answer, 771 had no answer

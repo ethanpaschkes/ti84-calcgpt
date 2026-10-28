@@ -1,0 +1,13 @@
+[Unit]
+Description=Calculator wireless bridge (calcnet)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=calc
+ExecStart=/usr/bin/python3 /home/calc/bridge_linux.py --mac Ethans-Mac-Mini.local --token-file /home/calc/.calcnet-token
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

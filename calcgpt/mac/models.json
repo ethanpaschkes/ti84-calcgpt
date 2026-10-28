@@ -1,0 +1,5 @@
+[
+  {"label": "GPT fast (cloud)", "provider": "openai", "model": "gpt-5-mini", "reasoning_effort": "low"},
+  {"label": "GPT web (cloud)", "provider": "openai", "model": "gpt-5-search-api"},
+  {"label": "GPT smart (cloud)", "provider": "openai", "model": "gpt-5.5", "reasoning_effort": "medium"}
+]

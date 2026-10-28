@@ -1,0 +1,169 @@
+0	0	are you ai|robot|bot	Yes, I'm an AI assistant, a small one. I run on your calculator and answer from a built-in list.
+1	0	are you human|real|person|alive	No, I'm not a person. I'm an AI-style program on your calculator.
+2	0	alive	No, I'm not alive. I'm an AI-style program on your calculator.
+3	0	are you chatgpt|gpt	Not quite. I'm styled after ChatGPT, but I'm a tiny program on your calculator, not the real thing.
+4	0	who|what are you	I'm CalcGPT, a chat assistant running on your TI-84 Plus CE. Ask me short questions, or give me math.
+5	0	your name	I don't have a real name. You can call me CalcGPT.
+6	0	who made|built|created|wrote|programmed you	You did, with help. I'm a small C program that was sent to your calculator over USB.
+7	0	what model|version|oss|llm are you	I'm styled after gpt-oss, the open-weight models OpenAI released in 2025 in 20b and 120b sizes. This is only a tiny demo of that look, not the real model.
+8	0	do you feel|feelings|emotions	No, I don't have feelings. I can still be friendly, though.
+9	0	can you think|understand|learn|remember	Not really. I match what you type to answers stored on the calculator. I can't learn or remember past chats.
+10	0	how old are you	I'm brand new. I was just installed on your calculator.
+11	0	where are you|live	Inside your calculator's memory, in a few dozen kilobytes.
+12	0	how smart|good are you	Not very, honestly. I'm a pocket-sized demo, but I'm good at short questions.
+13	0	help|commands|features	I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft to m'), tell jokes, and answer quick questions.
+14	0	what can you do	I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft to m'), tell jokes, and answer quick questions.
+15	0	hello	Hello! How can I help you today?
+16	0	how are you	I'm doing well, thanks for asking! How can I help?
+17	0	what is up	Not much, just here on your calculator. What's up with you?
+18	0	good morning	Good morning! Ready when you are.
+19	0	good night	Good night! Sleep well.
+20	0	thanks	You're welcome! Anything else?
+21	0	bye	Bye! Come back any time.
+22	0	sorry	No need to apologise. How can I help?
+23	0	yes|no|cool|nice|great|ok|wow	Got it! Anything else?
+24	0	lol	Glad that made you smile.
+25	0	do not know	That's okay! Want a hint, or shall we try something else?
+26	0	love you	That's kind of you! I'm just a little calculator app, but I'm glad to chat.
+27	0	stupid|dumb|hate you|useless	Sorry I let you down. I'm small, so I know less than I'd like. Ask me something else?
+28	0	bored	Want a joke, a fun fact, or a quick quiz?
+29	0	sad	I'm sorry you feel that way. Talking to someone you trust can help. Want a joke to lighten things?
+30	0	tired	Rest matters. Try a glass of water and a short break.
+31	0	worry	Take a slow breath. Break the problem into small steps and start with one.
+32	0	joke|funny	Why was the math book sad? It had too many problems.
+33	0	fact|facts	A day on Venus is longer than its year.
+34	0	quiz|trivia|riddle	Quick quiz: what is 7 x 8? Answer: 56.
+35	0	flip coin	@coin
+36	0	roll dice|die	@die
+37	0	random number	@num
+38	0	pick number	@num
+39	0	story	Once, a small calculator wanted to fly. A glider told it you don't need power, just good air. It found a warm thermal and kept climbing.
+40	0	meaning life	42, according to a famous book. Many people say it's what you make of it.
+41	0	sin|sine	Sine is opposite over hypotenuse (SOH). On the unit circle it's the y-coordinate. Try 'sin 30'.
+42	0	cos|cosine	Cosine is adjacent over hypotenuse (CAH). On the unit circle it's the x-coordinate. Try 'cos 60'.
+43	0	tan|tangent	Tangent is opposite over adjacent (TOA), or sine divided by cosine.
+44	0	soh|cah|toa|sohcahtoa	SOH: sin = opp/hyp. CAH: cos = adj/hyp. TOA: tan = opp/adj.
+45	0	unit circle	The unit circle has radius 1, centered at the origin. A point at angle t is (cos t, sin t).
+46	0	pythagorean|pythagoras|theorem	In a right triangle, a^2 + b^2 = c^2, where c is the hypotenuse.
+47	0	identity|identities	sin^2(x) + cos^2(x) = 1, and tan(x) = sin(x)/cos(x).
+48	0	radian|radians	A radian is the angle where the arc length equals the radius. 180 degrees = pi radians.
+49	0	degrees|degree radians|radian	Multiply degrees by pi/180 to get radians, or radians by 180/pi to get degrees.
+50	0	amplitude	Amplitude is the height of a wave from its midline to its peak. In y = a sin(bx), it's |a|.
+51	0	period	The period is how long one full cycle takes. For y = sin(bx), period = 360/b degrees (2 pi/b radians).
+52	0	arcsin|arccos|arctan	Inverse trig finds the angle from a ratio. Try 'arcsin 0.5', which gives 30.
+53	0	inverse sin|cos|tan	Inverse trig finds the angle from a ratio. Try 'arcsin 0.5', which gives 30.
+54	0	pi	Pi is about 3.14159. It's the ratio of a circle's circumference to its diameter.
+55	0	derivative	A derivative measures how fast a function changes. For x^n, it's n x^(n-1).
+56	0	integral	An integral adds up the area under a curve. It's the reverse of a derivative.
+57	0	quadratic formula	For ax^2 + bx + c = 0: x = (-b +/- sqrt(b^2 - 4ac)) / (2a).
+58	0	prime	A prime number has exactly two factors: 1 and itself. Examples: 2, 3, 5, 7, 11.
+59	0	area circle	Area = pi r^2. Circumference = 2 pi r.
+60	0	slope	Slope is rise over run: (y2 - y1) / (x2 - x1).
+61	0	study|focus|concentrate	Try 25 minutes of focused work, then a 5 minute break. Keep your phone out of reach and start with the hardest task.
+62	0	sleep	Aim for a steady bedtime, no screens for 30 minutes before, and a cool, dark room.
+63	0	thermal|thermals	A thermal is a column of rising warm air. Pilots circle in it to gain altitude.
+64	0	stall	A stall happens when the wing's angle of attack gets too high, so it loses lift. Lowering the nose recovers it.
+65	0	lift	Lift is the upward force from air flowing over a wing. It depends on speed, wing area and angle of attack.
+66	0	glide|glider ratio	Glide ratio is distance forward per height lost. A 40:1 glider travels 40 feet forward for every foot it descends.
+67	0	knot|knots	A knot is one nautical mile per hour, about 1.15 mph. Try '100 knots to mph'.
+68	0	pilot license	In the US you can fly a glider solo at 14 and earn a glider certificate at 16. A flight instructor can guide you.
+69	0	glider certificate	In the US you can fly a glider solo at 14 and earn a glider certificate at 16. A flight instructor can guide you.
+70	0	become pilot	In the US you can fly a glider solo at 14 and earn a glider certificate at 16. A flight instructor can guide you.
+71	0	glider|fly|plane	Gliders have no engine. They stay up by finding rising air, like thermals and ridge lift, and trade altitude for distance.
+72	0	ti|calculator	This is a TI-84 Plus CE: a 48 MHz eZ80 processor and a 320x240 color screen.
+73	0	ram|memory|storage	A TI-84 Plus CE has about 154 KB of usable RAM and about 3 MB of archive storage.
+74	0	python	Python is a beginner-friendly programming language. This app is written in C.
+75	0	what c language	C is a fast, low-level programming language. This app is built with it.
+76	0	artificial intelligence	AI is software that learns patterns from data to do tasks like answering questions or recognizing images.
+77	0	what ai	AI is software that learns patterns from data to do tasks like answering questions or recognizing images.
+78	0	what chatgpt	ChatGPT is a chatbot from OpenAI that writes text answers using a large language model.
+79	0	open weight	gpt-oss is OpenAI's open-weight model family (20b and 120b). Open-weight means anyone can download and run the model.
+80	0	oss|openweight	gpt-oss is OpenAI's open-weight model family (20b and 120b). Open-weight means anyone can download and run the model.
+81	0	language model	A large language model predicts the next word in a text. It's trained on huge amounts of writing.
+82	0	llm	A large language model predicts the next word in a text. It's trained on huge amounts of writing.
+83	0	neural network	A neural network is layers of simple math units. Training adjusts their weights until they find useful patterns.
+84	0	speed light	About 299,792 km/s, or roughly 186,000 miles per second.
+85	0	gravity	On Earth, gravity accelerates things at about 9.8 m/s^2.
+86	0	sky blue	Air scatters short blue wavelengths of sunlight more than red, so the sky looks blue.
+87	0	planets	From the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.
+88	0	water boil	Water boils at 100 C (212 F) at sea level, and at a lower temperature at altitude.
+89	0	capital france	Paris.
+90	0	capital usa|america	Washington, D.C.
+91	0	days year	A year has 365 days, or 366 in a leap year.
+92	0	weather	I can't check live weather. Try a weather app, or a soaring forecast if you're planning to fly.
+93	0	time|date|today	I can't see a clock. Check your phone or the calculator's clock.
+94	0	translate	I can't translate on this calculator, sorry.
+95	0	write code	I can't write real programs here, but a tiny calculator app like me is written in C.
+96	0	you code	I can't write real programs here, but a tiny calculator app like me is written in C.
+97	1	3:gas law|laws	The gas laws relate pressure (P), volume (V), temperature (T, in kelvin) and moles (n): Boyle: P1V1 = P2V2 Charles: V1/T1 = V2/T2 Gay-Lussac: P1/T1 = P2/T2 Combined: P1V1/T1 = P2V2/T2 Avogadro: V1/n1 = V2/n2 Ideal: PV = nRT Ask about any on
+98	1	2:which law use|choose	Ask what stays constant: T constant -> Boyle (P and V) P constant -> Charles (V and T) V constant -> Gay-Lussac (P and T) n changes -> Avogadro P, V and T all change -> Combined Need n or R -> Ideal gas law Say 'solve' and I'll walk you thr
+99	1	2:direct inverse	Direct: both rise together (Charles, Gay-Lussac, Avogadro). Inverse: one rises as the other falls (Boyle).
+100	1	4:solve problem|steps|approach gas	How to solve a gas problem: 1. List what's given and what you need. 2. Change T to kelvin and make units match. 3. Pick the law (what stays constant?). 4. Rearrange, plug in, solve. 5. Check units and sig figs. Say 'solve' and I'll walk you
+101	1	3:mistake|mistakes gas|gases|problem|problems	Common mistakes: forgetting kelvin, mixing units (atm vs kPa, mL vs L), using the wrong R, and using 22.4 L/mol when you're not at STP.
+102	1	4:boyle|boyles	Boyle's law: at constant temperature and moles, pressure and volume are inversely related. P1V1 = P2V2 If the volume is cut in half, the pressure doubles.
+103	1	4:charles|charleses	Charles's law: at constant pressure and moles, volume is directly proportional to Kelvin temperature. V1/T1 = V2/T2
+104	1	4:gay|lussac|gaylussac	Gay-Lussac's law: at constant volume and moles, pressure is directly proportional to Kelvin temperature. P1/T1 = P2/T2
+105	1	4:combined	Combined gas law: P1V1/T1 = P2V2/T2 Use it when P, V and T all change and the moles stay the same. T must be in kelvin. It merges Boyle, Charles and Gay-Lussac.
+106	1	4:avogadro|avogadros	Avogadro's law: at the same T and P, equal volumes of gases contain equal numbers of molecules. V1/n1 = V2/n2
+107	1	4:ideal gas/nrt/pvnrt	Ideal gas law: PV = nRT P = pressure, V = volume, n = moles, T = kelvin, R = gas constant. R = 0.0821 L atm/(mol K) R = 8.314 L kPa/(mol K) R = 62.4 L mmHg/(mol K)
+108	1	3:gas constant	R = 0.0821 L atm/(mol K) R = 8.314 L kPa/(mol K) R = 62.4 L mmHg/(mol K) Pick the one that matches your pressure units. V is in L, n in mol, T in K.
+109	1	3:constant are/which are use	R is the gas constant. Use 0.0821 L atm/(mol K) with atm, 8.314 L kPa/(mol K) with kPa, and 62.4 L mmHg/(mol K) with mmHg or torr.
+110	1	5:rearrange|solve ideal	Rearranging PV = nRT: n = PV/(RT) V = nRT/P P = nRT/V T = PV/(nR)
+111	1	4:dalton|daltons	Dalton's law of partial pressures: the total pressure of a gas mixture is the sum of the partial pressures of each gas. Ptotal = P1 + P2 + P3 + ... Pi = Xi x Ptotal
+112	1	3:partial pressure|pressures	A partial pressure is the pressure one gas in a mixture would exert if it were alone in the container. Add them to get the total: Ptotal = P1 + P2 + ...
+113	1	3:mole fraction	Mole fraction X = moles of one gas / total moles. Partial pressure = X x Ptotal. All the mole fractions in a mixture add up to 1.
+114	1	3:collect|collected|collecting water	A gas collected over water is mixed with water vapor. Pgas = Patm - Pwater vapor Look up the water vapor pressure for that temperature (about 23.8 torr at 25 C).
+115	1	4:graham|grahams	Graham's law: lighter gases effuse and diffuse faster. rate1/rate2 = sqrt(M2/M1) M is molar mass. The lighter gas has the faster rate.
+116	1	3:effusion	Effusion is gas escaping through a tiny hole into a vacuum. Graham's law says its rate is inversely proportional to the square root of the molar mass.
+117	1	3:diffusion	Diffusion is gases spreading and mixing because of random motion, from high to low concentration. Lighter gases diffuse faster (Graham's law).
+118	1	2:pressure volume	Pressure and volume are inversely related at constant temperature and moles (Boyle's law): P1V1 = P2V2.
+119	1	2:volume temperature|heat|heated|cooled|cooling	Volume and Kelvin temperature are directly related at constant pressure and moles (Charles's law): V1/T1 = V2/T2.
+120	1	2:pressure temperature|heat|heated	Pressure and Kelvin temperature are directly related at constant volume and moles (Gay-Lussac's law): P1/T1 = P2/T2.
+121	1	2:volume mole|moles	Volume and moles are directly related at constant T and P (Avogadro's law): V1/n1 = V2/n2.
+122	1	2:pressure increase|increases|rises	Gas pressure rises when you decrease the volume, increase the temperature, or add more gas (more moles).
+123	1	3:kinetic molecular|theory/kmt	Kinetic molecular theory (ideal gases): 1. Particles are tiny and far apart, in constant random motion. 2. No attractions or repulsions between them. 3. Collisions are elastic (no energy lost). 4. Average kinetic energy is proportional to K
+124	1	2:kinetic energy temperature	Kelvin temperature is proportional to the average kinetic energy of the particles. Hotter gas has faster particles, but they don't all move at the same speed. KE = 1/2 m v^2.
+125	1	2:properties|characteristics gas|gases	Gases have no fixed shape or volume, expand to fill their container, are easily compressed, have low density, and mix completely.
+126	1	2:compress|compressible|compressed	Gases compress easily because their particles are far apart, with mostly empty space between them.
+127	1	2:what gas	A gas is a state of matter with no fixed shape or volume. Its particles are far apart and move freely.
+128	1	3:real gas|gases/deviate|deviation|nonideal	Real gases behave ideally at low pressure and high temperature. They deviate at high pressure and low temperature because the particles take up space and attract each other.
+129	1	3:waals	The van der Waals equation corrects PV = nRT for particle volume and attractions: (P + a n^2/V^2)(V - nb) = nRT
+130	1	3:pressure units/atm|kpa|mmhg|torr|psi	Pressure is force per area. Units: 1 atm = 101.325 kPa = 760 mmHg = 760 torr = 14.7 psi Try '760 mmhg to atm' to convert.
+131	1	2:what pressure	Pressure is force per unit area. Gas pressure comes from particles colliding with the walls of their container.
+132	1	3:atmospheric	Atmospheric pressure is the weight of the air above you. At sea level it's about 1 atm (101.3 kPa, 760 mmHg) and it drops with altitude.
+133	1	3:gauge|absolute	Gauge pressure is relative to the atmosphere: gauge = absolute - atmospheric. A tire gauge reads gauge pressure.
+134	1	3:barometer	A barometer measures atmospheric pressure. A mercury barometer holds up a column about 760 mm high at sea level, which is 1 atm.
+135	1	3:manometer	A manometer measures a gas sample's pressure by comparing it with atmospheric pressure, using a U-shaped tube of liquid (often mercury).
+136	1	3:kelvin/absolute zero	Kelvin is the absolute temperature scale: K = C + 273 (or 273.15). Absolute zero, 0 K = -273.15 C, is the lowest possible temperature. Gas law temperatures must be in kelvin.
+137	1	3:why kelvin	The gas laws are direct proportions only on the Kelvin scale, which starts at absolute zero. Celsius can be zero or negative, which would break the math.
+138	1	3:convert celsius kelvin|fahrenheit	K = C + 273 (273.15 for more precision) C = K - 273 F = C x 9/5 + 32 Try '25 c to k'.
+139	1	3:vapor pressure	Vapor pressure is the pressure of a vapor in equilibrium with its liquid. It rises with temperature, and a liquid boils when its vapor pressure equals the surrounding pressure.
+140	1	4:stp/standard temperature	STP = standard temperature and pressure: 0 C (273 K) and 1 atm (101.3 kPa). At STP, 1 mole of an ideal gas occupies 22.4 L.
+141	1	4:satp	SATP = standard ambient temperature and pressure: 25 C (298 K) and 1 bar. The molar volume is about 24.8 L/mol.
+142	1	3:molar volume	At STP, 1 mole of any ideal gas takes up 22.4 L, so L = mol x 22.4 L/mol. Use it only at STP; otherwise use PV = nRT.
+143	1	3:mole|moles|mol	A mole is 6.022 x 10^23 particles (Avogadro's number). Moles = grams / molar mass.
+144	1	3:density gas	Gas density: d = PM/(RT), where M is molar mass. At STP, d = M/22.4 g/L. Density rises with pressure and molar mass and falls with temperature.
+145	1	3:molar mass gas	Molar mass of a gas sample: M = dRT/P, or M = mRT/(PV) where m is the mass in grams.
+146	1	3:stoichiometry|stoich	Gas stoichiometry: grams or liters -> moles -> use the mole ratio from the balanced equation -> moles of the other substance -> liters or grams. At STP use 22.4 L/mol; otherwise use PV = nRT.
+147	1	3:grams liters	Grams to liters at STP: grams / molar mass = moles, then moles x 22.4 L/mol = liters.
+148	1	3:combining volumes	Gay-Lussac's law of combining volumes: gases react in small whole-number volume ratios (at the same T and P), equal to the mole ratios. Example: 2 H2 + O2 -> 2 H2O (gas) is 2 L : 1 L : 2 L.
+149	1	3:air composition	Dry air is about 78% nitrogen, 21% oxygen, 0.9% argon and 0.04% carbon dioxide by volume.
+150	1	3:convert volume	1 L = 1000 mL = 1000 cm^3, and 1 mL = 1 cm^3. Try '500 ml to l'.
+151	1	3:example|examples|practice gas|law|laws	Boyle example: a gas is 4.0 L at 2.0 atm. What is V at 8.0 atm (same T)? V2 = P1V1/P2 = (2.0)(4.0)/8.0 = 1.0 L
+152	1	4:example|problem|practice boyle	Boyle example: a gas is 4.0 L at 2.0 atm. What is V at 8.0 atm (same T)? V2 = P1V1/P2 = (2.0)(4.0)/8.0 = 1.0 L
+153	1	4:example|problem|practice charles	Charles example: 5.0 L at 25 C is heated to 75 C at constant P. T1 = 298 K, T2 = 348 K. V2 = 5.0 x 348/298 = 5.8 L
+154	1	4:example|problem|practice ideal|nrt	Ideal gas example: how many moles in 11.2 L at STP? n = PV/RT = (1.00)(11.2)/(0.0821 x 273) = 0.50 mol
+155	1	4:example|problem|practice gay|lussac|gaylussac	Gay-Lussac example: a tank is 2.0 atm at 20 C (293 K). What is P at 100 C (373 K)? P2 = P1 T2/T1 = 2.0 x 373/293 = 2.5 atm
+156	1	4:example|problem|practice combined	Combined example: 3.0 L at 1.0 atm and 300 K goes to 2.0 atm and 400 K. Find V2. V2 = P1V1T2/(P2T1) = (1.0)(3.0)(400)/((2.0)(300)) = 2.0 L
+157	1	4:example|problem|practice dalton	Dalton example: a mixture has N2 at 0.50 atm, O2 at 0.30 atm and Ar at 0.20 atm. Ptotal = 0.50 + 0.30 + 0.20 = 1.0 atm
+158	1	4:example|problem|practice graham	Graham example: how much faster does H2 (2 g/mol) effuse than O2 (32 g/mol)? rate H2/rate O2 = sqrt(32/2) = sqrt(16) = 4. So 4 times faster.
+159	1	4:example|problem|practice stoichiometry|stoich	Stoichiometry example: what volume of H2 at STP forms from 0.50 mol Zn? Zn + 2HCl -> ZnCl2 + H2 (1:1) 0.50 mol H2 x 22.4 L/mol = 11.2 L
+160	1	4:example|problem|practice avogadro	Avogadro example: 2.0 mol of gas fills 10 L. What volume do 3.0 mol fill at the same T and P? V2 = V1 n2/n1 = 10 x 3.0/2.0 = 15 L
+161	1	3:balloon|balloons	A balloon shrinks in the cold because the gas inside cools and its volume drops (Charles's law). A hot air balloon rises because heated air expands and becomes less dense.
+162	1	3:tire|tires	Tire pressure rises on a hot day because the temperature of the trapped air goes up at constant volume (Gay-Lussac's law).
+163	1	3:aerosol|spray	Never heat an aerosol can: the pressure rises with temperature (Gay-Lussac's law) and the can can burst.
+164	1	3:breathing|lungs|breathe	Breathing uses Boyle's law: the diaphragm moves down, lung volume increases, pressure drops below the outside air pressure, and air flows in.
+165	1	3:scuba|diver|diving	Water pressure rises about 1 atm for every 10 m of depth, so gas in a diver's lungs compresses (Boyle's law). Divers must never hold their breath while rising.
+166	1	3:soda|henry|fizz	Henry's law: a gas dissolves in a liquid in proportion to its pressure above the liquid. Opening a soda lowers the pressure, so CO2 escapes as bubbles.
+167	1	3:ears|pop	Ears pop when the air pressure on each side of the eardrum differs. Swallowing opens a small tube that lets air through to equalize it.
+168	1	3:weather balloon	A weather balloon expands as it rises because outside pressure drops (Boyle's law), so its volume grows until it eventually bursts.

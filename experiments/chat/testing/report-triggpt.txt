@@ -1,0 +1,1975 @@
+MISS   [0] ur u ai
+OTHER  [0] who r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [0] wat is ur name                     -> [5] I don't have a real name. You can call me CalcGPT.
+OTHER  [0] hi are u human                     -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+OTHER  [0] how big r u                        -> [16] I'm doing well, thanks for asking! How can I help?
+MISS   [0] can u tell me abt u
+MISS   [0] r u smart
+MISS   [0] why u so small
+OTHER  [0] what kind of ai r u                -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [0] do u have a name
+OTHER  [0] im testing u, who r u              -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [1] who r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [1] wat kind of program are u          -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [1] are u a bot                        -> [0] Yes, I'm an AI assistant, a small one. I run on your calcula
+MISS   [1] is this a human talking
+MISS   [1] ur a robot rite
+MISS   [1] am i talking to a person
+MISS   [1] is anyone real on this
+OTHER  [1] wat are u                          -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [2] are u alive                        -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+MISS   [2] is this bot sentient
+OTHER  [2] r u a real person                  -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+MISS   [2] do u have consciousness
+OTHER  [2] wat r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [2] are u human                        -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+OTHER  [2] i think u are alive                -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+OTHER  [2] are you a robot                    -> [0] Yes, I'm an AI assistant, a small one. I run on your calcula
+MISS   [2] does this calc think
+MISS   [2] are u conscious
+OTHER  [2] r u alive                          -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+MISS   [3] r u openai
+OTHER  [3] wat ai r u                         -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [3] is this chatgpt
+OTHER  [3] are u the real deal                -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+MISS   [3] not chatgpt rite
+OTHER  [3] who made u                         -> [6] You did, with help. I'm a small C program that was sent to y
+MISS   [3] this is chatgpt?
+MISS   [3] r u the actual thing
+MISS   [3] fake chatgpt?
+MISS   [3] u not gpt
+MISS   [4] wat is this
+OTHER  [4] hello calcgpt                      -> [15] Hello! How can I help you today?
+OTHER  [4] what can u do                      -> [14] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [4] tell me about urself
+OTHER  [4] who made u                         -> [6] You did, with help. I'm a small C program that was sent to y
+MISS   [4] is this ti84
+OTHER  [4] hey calcgpt                        -> [15] Hi there! What's on your mind?
+MISS   [4] what do u do
+OTHER  [4] im lost help                       -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [4] calcgpt status
+OTHER  [5] who r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [5] what are you called                -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [5] u got a name?
+MISS   [5] does u have a name
+MISS   [5] can i call u something
+MISS   [5] what should i call u
+MISS   [6] wat is this
+MISS   [6] who coded this
+MISS   [6] is this a c program
+MISS   [6] how did u get on my calc
+MISS   [6] did u come thru usb
+MISS   [6] who built this chatbot
+MISS   [6] r u a c program
+OTHER  [6] who sent u to my ti                -> [72] This is a TI-84 Plus CE: a 48 MHz eZ80 processor and a 320x2
+MISS   [6] is this c code
+MISS   [6] did someone install u
+OTHER  [6] how r u on my calc                 -> [16] I'm doing well, thanks for asking! How can I help?
+OTHER  [7] who made u                         -> [6] You did, with help. I'm a small C program that was sent to y
+MISS   [7] ur based on which ai
+OTHER  [7] is u gpt-oss?                      -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+MISS   [7] u look like openai 2025
+MISS   [7] are u the 120b one
+MISS   [7] tell me about ur style
+MISS   [7] why do u look like gpt
+MISS   [7] is this the real 20b model
+MISS   [7] whats ur architecture
+MISS   [7] u seem like open weights
+MISS   [8] r u sentient
+OTHER  [8] are u alive                        -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+OTHER  [8] do u get sad                       -> [29] I'm sorry you feel that way. Talking to someone you trust ca
+MISS   [8] u have emotions rite
+MISS   [8] wat about feelings
+OTHER  [8] can u feel love                    -> [26] That's kind of you! I'm just a little calculator app, but I'
+OTHER  [8] are u a real person                -> [1] No, I'm not a person. I'm an AI-style program on your calcul
+MISS   [8] do u have a heart
+OTHER  [8] r u just code                      -> [96] I can't write real programs here, but a tiny calculator app 
+OTHER  [8] do u get lonely                    -> [29] I'm sorry you feel that way. Talking to someone you trust ca
+OTHER  [9] wat r u exactly                    -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [9] do u remmber me
+OTHER  [9] is u ai or just code               -> [96] I can't write real programs here, but a tiny calculator app 
+OTHER  [9] do u have memory                   -> [73] A TI-84 Plus CE has about 154 KB of usable RAM and about 3 M
+MISS   [9] r u smart or just matching
+MISS   [9] why do u answer this way
+MISS   [9] how do u work
+MISS   [9] can u rember past chats
+MISS   [9] wat is ur logic
+MISS   [9] do u store my info
+MISS   [9] u just a lookup right
+OTHER  [10] hey ur new?                        -> [15] Hello! How can I help you today?
+OTHER  [10] wat year r u                       -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [10] are u installed yet
+MISS   [10] just got u
+MISS   [10] is this a fresh calc
+MISS   [10] ur born when
+MISS   [10] new here?
+MISS   [10] did u just load
+MISS   [10] when did u start
+MISS   [10] first boot?
+MISS   [10] r u brand new
+MISS   [10] fresh install?
+MISS   [11] where is the calc data stored
+OTHER  [11] how much ram does my calc use      -> [73] A TI-84 Plus CE has about 154 KB of usable RAM and about 3 M
+OTHER  [11] is my program saved in memory      -> [73] A TI-84 Plus CE has about 154 KB of usable RAM and about 3 M
+MISS   [11] where do programs live on ti84
+OTHER  [11] how big is the calculator memory   -> [73] A TI-84 Plus CE has about 154 KB of usable RAM and about 3 M
+MISS   [11] wat takes up space in my calc
+MISS   [11] do files use lots of kb
+MISS   [11] where are the apps stored
+OTHER  [11] how much storage does calc have    -> [73] A TI-84 Plus CE has about 154 KB of usable RAM and about 3 M
+MISS   [11] is my code in the flash mem
+MISS   [11] why is my calc running low on mem
+MISS   [11] how many kb for one program
+MISS   [12] u big deal?
+MISS   [12] are u smart
+MISS   [12] is u smart
+MISS   [12] wat is ur iq
+OTHER  [12] are u dumb                         -> [27] Sorry I let you down. I'm small, so I know less than I'd lik
+MISS   [12] r u just a demo
+MISS   [12] how much can u do
+MISS   [12] u good at math?
+MISS   [12] are u limited
+MISS   [12] how big is u
+MISS   [12] is u a demo
+OTHER  [13] what can u do                      -> [14] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [13] can u do math and chat
+MISS   [13] wat is ur purpose
+MISS   [13] can i ask jokes too
+MISS   [13] capabilities?
+MISS   [13] do u convert units
+MISS   [13] show me ur functions
+OTHER  [13] tell me what u can do              -> [14] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [14] hey what r u                       -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [14] can u do math?
+OTHER  [14] tell me a joke                     -> [32] Why was the math book sad? It had too many problems.
+MATH   [14] convert 5 ft to m
+OTHER  [14] whats ur name                      -> [5] I don't have a real name. You can call me CalcGPT.
+MISS   [14] do u know jokes
+OTHER  [14] help                               -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [14] how do i use u
+MATH   [14] whats 2+2
+OTHER  [14] any fun facts                      -> [33] A day on Venus is longer than its year.
+MISS   [15] wat
+MISS   [15] hlo
+MISS   [15] hola
+MISS   [16] u good?
+MISS   [16] yo chatbot how's it going
+MISS   [16] how do u do
+OTHER  [16] whats up                           -> [17] Not much, just here on your calculator. What's up with you?
+OTHER  [16] hey are u ok                       -> [23] Got it! Anything else?
+OTHER  [16] what's up with u                   -> [17] Not much, just here on your calculator. What's up with you?
+MISS   [16] how's life
+OTHER  [17] wat r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [17] hru
+OTHER  [17] who r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [17] hey                                -> [15] Hello! How can I help you today?
+MISS   [17] whats the deal
+OTHER  [17] helo                               -> [15] Hi there! What's on your mind?
+OTHER  [17] sup                                -> [15] Hello! How can I help you today?
+OTHER  [17] what r u doing                     -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [17] hey bot                            -> [15] Hi there! What's on your mind?
+OTHER  [17] u ok                               -> [23] Sure thing. What next?
+MISS   [18] morning
+OTHER  [18] hey                                -> [15] Hello! How can I help you today?
+MISS   [18] morning chatbot
+OTHER  [18] whats up                           -> [17] Not much, just here on your calculator. What's up with you?
+MISS   [18] morning u
+MISS   [18] good mornin
+MISS   [19] goodnight
+MISS   [19] gn night
+MISS   [19] snt
+MISS   [19] goodnite
+MISS   [19] gud night
+MISS   [19] night night
+MISS   [19] say goodnight
+MISS   [19] gn!!
+MISS   [19] goodnigt
+MISS   [19] nite
+OTHER  [20] omg thx u                          -> [23] Got it! Anything else?
+MISS   [20] cheers
+OTHER  [20] k ty                               -> [23] Sure thing. What next?
+OTHER  [20] great ty                           -> [23] Got it! Anything else?
+OTHER  [20] much obliged lol                   -> [24] Glad that made you smile.
+OTHER  [20] ok ty bye                          -> [23] Sure thing. What next?
+OTHER  [21] ok see u later                     -> [23] Got it! Anything else?
+OTHER  [21] done thanks                        -> [20] You're welcome! Anything else?
+MISS   [21] quit
+MISS   [21] exit
+MISS   [21] thk u
+MISS   [21] finished
+OTHER  [21] k good                             -> [23] Sure thing. What next?
+OTHER  [21] thanks 4 help                      -> [20] Happy to help!
+MISS   [21] im done
+MISS   [22] oops wrong btn
+MISS   [22] my bad
+OTHER  [22] wat r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+OTHER  [22] u ok                               -> [23] Got it! Anything else?
+OTHER  [22] no offense                         -> [23] Sure thing. What next?
+OTHER  [22] sorry lol                          -> [24] Glad that made you smile.
+MISS   [22] accntly hit send
+OTHER  [22] no worries                         -> [31] Take a slow breath. Break the problem into small steps and s
+OTHER  [22] hey                                -> [15] Hi there! What's on your mind?
+OTHER  [23] thx                                -> [20] You're welcome! Anything else?
+MISS   [23] r u done
+MISS   [23] got it
+MISS   [23] fin
+MISS   [23] end
+MISS   [23] thats all
+MISS   [23] stop
+OTHER  [23] bye                                -> [21] Bye! Come back any time.
+OTHER  [24] haha ur funny                      -> [32] Parallel lines have so much in common. It's a shame they'll 
+MISS   [24] that made me grin
+OTHER  [24] thx for the laugh                  -> [20] Happy to help!
+OTHER  [24] u r funny                          -> [32] Why is 6 afraid of 7? Because 7 8 9.
+MISS   [24] made me smile
+OTHER  [24] nice one                           -> [23] Sure thing. What next?
+MISS   [24] got a chuckle out of u
+OTHER  [24] thats funny                        -> [32] I told my calculator a joke. It said it didn't get it, but i
+MISS   [24] u made me smile
+OTHER  [25] omg i give up                      -> [23] Got it! Anything else?
+MISS   [25] this is too hard
+MISS   [25] i cant do it
+MISS   [25] wat do i do
+OTHER  [25] stuck                              -> [112] Tips: convert to sin and cos; look for sin^2 + cos^2 = 1 hid
+OTHER  [25] pls help                           -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [25] i dont get it
+OTHER  [25] can u help                         -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [25] i need a hint
+MISS   [25] give up
+MISS   [25] try again
+OTHER  [26] thx for helping me                 -> [20] You're welcome! Anything else?
+OTHER  [26] ur so nice lol                     -> [24] Glad that made you smile.
+MISS   [26] wy r u so good
+OTHER  [26] k thnx 4 that                      -> [23] Sure thing. What next?
+OTHER  [26] y u help me                        -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [26] cool thx                           -> [23] Got it! Anything else?
+OTHER  [26] u r the best bot                   -> [0] Yes, I'm an AI assistant, a small one. I run on your calcula
+MISS   [26] glad u r here
+OTHER  [26] nice work                          -> [23] Sure thing. What next?
+OTHER  [26] ty 4 answering                     -> [20] Happy to help!
+OTHER  [26] that was easy thx                  -> [20] You're welcome! Anything else?
+MISS   [26] u r awesome
+MISS   [27] wat is the capital of mars
+MISS   [27] who won ww2
+MISS   [27] solve x^2+2x+1=0
+OTHER  [27] tell me a joke                     -> [32] What's a calculator's favorite snack? Chips.
+OTHER  [27] why is the sky blue                -> [86] Air scatters short blue wavelengths of sunlight more than re
+MISS   [27] what year did the moon land
+OTHER  [27] calculate pi to 100 digits         -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [27] who is barack obama
+OTHER  [27] is 7 a prime number                -> [121] Proof 7: tan^2 x - sin^2 x = sin^2 x tan^2 x
+Left: sin^2/cos
+MISS   [27] how do i make coffee
+MATH   [27] whats 1/0
+MISS   [27] who wrote hamlet
+OTHER  [28] wat r u                            -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [28] any jokes
+OTHER  [28] give me a fact                     -> [33] Octopuses have three hearts.
+OTHER  [28] quiz me                            -> [34] Quick quiz: what is 7 x 8? Answer: 56.
+OTHER  [28] i dunno                            -> [25] That's okay! Want a hint, or shall we try something else?
+OTHER  [28] help                               -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [28] u fun
+MISS   [28] tell me smth
+MISS   [28] random
+MISS   [28] i need fun
+OTHER  [28] haha                               -> [24] Glad that made you smile.
+OTHER  [29] u sad today?                       -> [93] I can't see a clock. Check your phone or the calculator's cl
+MISS   [29] i feel rly bad rn
+OTHER  [29] feeling down help                  -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [29] r u there? im ok                   -> [23] Got it! Anything else?
+OTHER  [29] im crying pls help                 -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [29] not doing good
+MISS   [29] need to talk
+MISS   [29] feeling empty
+MISS   [29] wat should i do
+MISS   [30] wat do i do
+MISS   [30] feeling drained
+OTHER  [30] need help now                      -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [30] glass of water?
+MISS   [30] short break pls
+MISS   [30] im burnt out
+MISS   [30] can i rest
+OTHER  [30] help me                            -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [31] omg so many numbers                -> [23] Sure thing. What next?
+MISS   [31] wat do i do first
+OTHER  [31] too hard help                      -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [31] breathe then try
+OTHER  [31] stuck on big prob                  -> [112] Tips: convert to sin and cos; look for sin^2 + cos^2 = 1 hid
+MISS   [31] just start with one?
+MISS   [31] panic mode on
+MISS   [31] break it down pls
+OTHER  [31] cant focus help                    -> [61] Try 25 minutes of focused work, then a 5 minute break. Keep 
+MISS   [31] overwhelmed
+OTHER  [31] start small yeah?                  -> [23] Got it! Anything else?
+OTHER  [31] one step at a time                 -> [93] I can't see a clock. Check your phone or the calculator's cl
+OTHER  [32] why is math book sad               -> [29] I'm sorry you feel that way. Talking to someone you trust ca
+OTHER  [32] why sad math book                  -> [29] I'm sorry you feel that way. Talking to someone you trust ca
+MISS   [32] why did the math book cry
+OTHER  [32] wat make math book sad             -> [29] I'm sorry you feel that way. Talking to someone you trust ca
+MISS   [32] r there any math jokes
+MISS   [32] why was math book feeling low
+OTHER  [32] sad math book riddle               -> [34] Quick quiz: what is sin(30 degrees)? Answer: 0.5.
+MISS   [33] is venus day longer than yr
+MISS   [33] wat is venus day vs year
+MISS   [33] why is venus day > year
+MISS   [33] venus day longer than orbit
+MISS   [33] do u know venus day length
+MISS   [33] venus rotates slower than orbit
+MISS   [33] why venus day is longer
+MISS   [33] is 1 venus day > 1 venus yr
+MISS   [33] venus day vs year length
+MISS   [33] what is venus day duration
+MISS   [33] venus day longer than yr?
+MISS   [33] is venus day 225 days
+MISS   [34] any math questions
+MISS   [34] wat is 7*8
+MISS   [34] i need a practice q
+MISS   [34] test my math
+MATH   [34] times 8 ?
+MATH   [34] solve 7 x 8
+MISS   [34] random math question
+OTHER  [34] help me study math                 -> [61] Try 25 minutes of focused work, then a 5 minute break. Keep 
+MATH   [34] x8 equals
+MISS   [35] coin toss
+MISS   [35] heads or tails
+MISS   [35] @coin
+MISS   [35] random coin
+MISS   [35] coin flipper
+MISS   [35] wat is @coin
+MISS   [35] coinflip
+MISS   [35] @coinflip
+MISS   [36] wat is @die
+MISS   [36] why u got @die
+MISS   [36] @die??
+MISS   [36] is it @die
+MISS   [36] r u sure its @die
+MISS   [36] @die means
+MISS   [36] got @die
+MISS   [36] @die
+MISS   [36] why @die
+MISS   [36] @die?
+MISS   [36] wat @die
+OTHER  [36] @die lol                           -> [24] Glad that made you smile.
+MISS   [37] what is the number
+MISS   [37] @num
+MISS   [37] num please
+MISS   [37] u r @num
+MISS   [37] wat is @num
+MISS   [37] @@num
+MISS   [37] num
+MISS   [37] the answer is @num
+MISS   [37] is it @num
+MISS   [37] @num?
+MISS   [37] give me @num
+MISS   [37] @num pls
+MISS   [38] wat is @num
+MISS   [38] how much is @num
+MISS   [38] calc @num
+MISS   [38] @num?
+MISS   [38] tell me @num
+MISS   [38] r @num
+MISS   [38] what is @num
+MISS   [38] @num
+MISS   [38] pls @num
+MISS   [38] @num equal
+MISS   [38] gimme @num
+MISS   [38] @num is
+OTHER  [39] wat is the glider story            -> [71] Gliders have no engine. They stay up by finding rising air, 
+MISS   [39] tell me abt the calc that flies
+MISS   [39] why did the calc climb
+OTHER  [39] calc flying joke                   -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] how does a calc fly without power  -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] thermal story for calculators      -> [63] A thermal is a column of rising warm air. Pilots circle in i
+OTHER  [39] the glider advice to calc          -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] calc wants to fly riddle           -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] what does a calc need to fly       -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] short story calc and glider        -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [39] calc in a thermal                  -> [63] A thermal is a column of rising warm air. Pilots circle in i
+OTHER  [39] flying calculator tale             -> [72] This is a TI-84 Plus CE: a 48 MHz eZ80 processor and a 320x2
+MISS   [40] wat is 42
+MISS   [40] why is 42 famous
+MISS   [40] meaning
+MISS   [40] hows 42 the answer
+MISS   [40] u r saying 42?
+OTHER  [40] lol what's 42                      -> [24] Glad that made you smile.
+MISS   [40] the book
+MISS   [40] is 42 real
+MISS   [40] tell me about 42
+MISS   [40] in h2g2
+MISS   [40] why 42 not 41
+MISS   [40] answer to life
+OTHER  [41] soh cos tah                        -> [135] SOH: sin = opposite/hypotenuse
+CAH: cos = adjacent/hypotenus
+MATH   [41] sin 30
+MISS   [41] opposite hyp
+OTHER  [41] trig help                          -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [41] whats soh                          -> [135] SOH: sin = opposite/hypotenuse
+CAH: cos = adjacent/hypotenus
+OTHER  [42] cos on unit circle                 -> [45] The unit circle has radius 1, centered at the origin. A poin
+MATH   [42] cos 60 = ?
+MISS   [43] to a means what
+OTHER  [44] wat is sohcahtoa                   -> [135] SOH: sin = opposite/hypotenuse
+CAH: cos = adjacent/hypotenus
+MISS   [44] how to remember trig
+OTHER  [44] sin cos tan ratios                 -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [44] what does soh cah toa mean         -> [135] SOH: sin = opposite/hypotenuse
+CAH: cos = adjacent/hypotenus
+MISS   [44] trig shortcuts
+OTHER  [44] explain sohcahtoa                  -> [135] SOH: sin = opposite/hypotenuse
+CAH: cos = adjacent/hypotenus
+OTHER  [44] whats the formula for sin          -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [44] typos in sohcahtoa                 -> [135] SOH: sin = opposite/hypotenuse
+CAH: cos = adjacent/hypotenus
+OTHER  [44] can u explain soh cah toa          -> [135] SOH: sin = opposite/hypotenuse
+CAH: cos = adjacent/hypotenus
+MISS   [44] i forgot the trig rules
+OTHER  [44] define sohcahtoa                   -> [135] SOH: sin = opposite/hypotenuse
+CAH: cos = adjacent/hypotenus
+OTHER  [44] need help with sin cos tan         -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+MISS   [45] wat does point on circle mean
+MISS   [45] how do u get x y from angle
+MISS   [45] why radius is 1 always
+MISS   [45] give formula for point t
+OTHER  [45] what is cos t sin t                -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+MISS   [45] where is center of circle
+MISS   [45] get coordinates for angle t
+MISS   [45] what r x and y on circle
+OTHER  [46] pythagorean theorem                -> [98] Pythagorean identities:
+sin^2 x + cos^2 x = 1
+1 + tan^2 x = 
+MISS   [46] what is a^2+b^2=c^2
+MISS   [46] hypotenuse formula
+MISS   [46] r u sure c is hyp
+MISS   [46] wat does c stand for
+MISS   [46] explain pythag
+MISS   [46] why c squared
+OTHER  [46] proof of a2+b2                     -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+MISS   [46] tell me pyth thm
+MISS   [46] is c always hyp
+MISS   [46] a2 b2 c2 meaning
+MISS   [46] right tri rule
+MISS   [47] wat is the trig id
+MATH   [47] sin2 + cos2 =?
+OTHER  [47] hey bot show me tan formula        -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [47] can u do sin sq plus cos sq        -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [47] why is sin^2+cos^2=1               -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [47] tan equals what?                   -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [47] need help with pythagorean id      -> [98] Pythagorean identities:
+sin^2 x + cos^2 x = 1
+1 + tan^2 x = 
+OTHER  [47] is tan sin over cos                -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [47] prove sin2 x cos2 x                -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [47] what is tan in terms of sin cos    -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [47] show trig identities               -> [97] Main identity families (ask about any one):
+reciprocal, quot
+OTHER  [47] sin^2 x plus cos^2 x               -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [48] how many deg in pi                 -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [48] deg = ? rad
+MISS   [48] diff betwe deg and rad
+OTHER  [48] pi rad in deg                      -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [48] arc length = radius angle
+MISS   [48] rad to deg
+MISS   [49] how to convert deg to rad
+OTHER  [49] u r wrong wat about pi/180         -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [49] convert 90 deg to rad
+MISS   [49] why does my calc show 1.57
+OTHER  [49] need help with trig units          -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [49] deg vs rad difference
+OTHER  [49] multiply by pi over 180?           -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [49] wat is pi/180 for
+OTHER  [49] can i switch to radians            -> [48] A radian is the angle where the arc length equals the radius
+OTHER  [49] help convert 45 deg                -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [49] is it x 180 / pi                   -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [50] how big is wave
+MISS   [50] diff between amp and midline
+OTHER  [50] a in a sin bx                      -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+MISS   [50] why abs of a
+OTHER  [50] amp of sine wave                   -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+MISS   [50] height of wave
+MISS   [50] amp = ?
+MISS   [51] how long is one cycle
+MISS   [52] wat is inverse trig
+MISS   [52] how do i find angle from ratio
+MATH   [52] arcsin 0.5
+MISS   [52] inverse trig meaning
+MISS   [52] r u sure about inverse trig
+OTHER  [52] inverse sin 0.5                    -> [53] Inverse trig finds the angle from a ratio. Try 'arcsin 0.5',
+MISS   [52] find angle from ratio
+MISS   [52] inverse trig example
+MISS   [52] how does inverse trig work
+OTHER  [53] how do i find angle from sin       -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [53] wat is arcsin                      -> [52] Inverse trig finds the angle from a ratio. Try 'arcsin 0.5',
+MISS   [53] r inverse trig needed
+MISS   [53] need angle not ratio
+MISS   [53] how 2 get degrees
+OTHER  [53] arcsin meaning                     -> [52] Inverse trig finds the angle from a ratio. Try 'arcsin 0.5',
+OTHER  [53] inverse trig help                  -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [53] find angle given ratio
+MISS   [53] inverse trigonometry
+MISS   [53] calc inverse trig
+MISS   [54] ratio of circle circ to dia
+MISS   [55] what is power rule
+MISS   [55] d/dx x^3
+MISS   [55] why der x^2 = 2x
+MISS   [55] power rule formula
+MISS   [55] explain derivatives
+MISS   [55] how 2x come from x^2
+MISS   [55] power rule for x^n
+MISS   [56] how to find area under curve
+MISS   [56] whats the point of integrals
+MISS   [56] why do we learn integrals
+MISS   [56] wat r integrals for
+MISS   [57] solve ax^2+bx+c=0
+MISS   [57] how do i solve quadratic eqn
+MISS   [57] gimme the formula for x
+MISS   [57] formula for a*x^2+b*x+c
+MISS   [57] what's the q formula
+MISS   [57] solve for x in ax^2+bx+c
+OTHER  [57] help me with quadratics            -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [57] is it -b plus or minus
+MISS   [58] list some primes
+MISS   [59] need area and circ formula
+MISS   [59] give me area and circ equations
+MISS   [60] how2 get m
+MISS   [60] why is it y2-y1 over x2-x1
+MISS   [60] m = ?
+MISS   [60] i forgot the formula for m
+OTHER  [61] best study break time              -> [93] I can't see a clock. Check your phone or the calculator's cl
+MISS   [61] wat is pomodoro
+MISS   [61] how to stay focused
+MISS   [61] cant stop checking phone
+MISS   [61] what to do first
+MISS   [61] i keep procrastinating
+OTHER  [61] how much break time                -> [93] I can't see a clock. Check your phone or the calculator's cl
+MISS   [61] give me a schedule
+OTHER  [62] what time should i go to bed       -> [93] I can't see a clock. Check your phone or the calculator's cl
+OTHER  [62] why am i so tired                  -> [30] Rest matters. Try a glass of water and a short break.
+MISS   [62] need rest advice
+OTHER  [62] dark room help?                    -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [62] no phone before bed?               -> [23] Sure thing. What next?
+MISS   [62] how to fix insomnia
+MISS   [62] r u awake at night
+MISS   [64] wing angle of attack too high
+OTHER  [64] why does wing lose lift            -> [65] Lift is the upward force from air flowing over a wing. It de
+OTHER  [64] loss of lift cause                 -> [65] Lift is the upward force from air flowing over a wing. It de
+OTHER  [65] why does plane go up               -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [65] is lift just air force             -> [132] Two forces F1 and F2 with angle t between them: the resultan
+OTHER  [66] :1 glider mean                     -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [66] how far glider go 1ft drop         -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [66] to 1 glider                        -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [66] glider efficiency                  -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [66] distance vs height glider          -> [71] Gliders have no engine. They stay up by finding rising air, 
+MISS   [66] r u sure 40:1 is 40ft
+MISS   [67] kt = ? mph
+OTHER  [68] what age can i fly glider          -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] glider solo age limit              -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] can i fly glider at 13             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] min age for glider cert            -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] how young for glider solo          -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] u can fly glider when              -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] glider pilot age req               -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] is 14 too young for glider         -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] glider license age                 -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] when r u old enough glider         -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] glider age limit us                -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [68] start glider at what age           -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] when can i solo glider             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] age to get glider cert             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] can 14yo fly glider solo           -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] wat age glider license             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] glider cert age us                 -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] can i fly glider at 14             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] minimum age glider solo            -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] how old for glider cert            -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] year old glider solo?              -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] glider solo age limit              -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] can u fly glider at 14             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [70] age for glider cert us             -> [71] Gliders have no engine. They stay up by finding rising air, 
+OTHER  [71] ridge lift explanation             -> [65] Lift is the upward force from air flowing over a wing. It de
+MISS   [71] trade alt for dist?
+MISS   [72] cpu speed of 84 plus ce
+MISS   [72] plus ce processor type
+OTHER  [73] does ti 84 plus ce have 3mb archive -> [72] This is a TI-84 Plus CE: a 48 MHz eZ80 processor and a 320x2
+OTHER  [73] mem on ti 84 ce?                   -> [72] This is a TI-84 Plus CE: a 48 MHz eZ80 processor and a 320x2
+MISS   [73] mb archive on ti84 ce??
+MISS   [73] wat r the specs for ti84 ce mem
+MISS   [74] is py used here
+MISS   [74] is this written in c
+MISS   [74] wat lang is this
+MISS   [74] is c the main lang
+MISS   [74] lang of this app?
+MISS   [75] what is c lang
+MISS   [75] why is this app c
+MISS   [75] c lang fast?
+MISS   [75] wat is c
+MISS   [75] c low level?
+OTHER  [75] why c not python                   -> [74] Python is a beginner-friendly programming language. This app
+MISS   [75] tell me c lang
+MISS   [75] c app built
+MISS   [75] is c fast
+MISS   [75] c coding
+MISS   [75] why c used
+MISS   [75] wat is this c
+OTHER  [76] wat is ai                          -> [77] AI is software that learns patterns from data to do tasks li
+MISS   [76] def of ai plz
+MISS   [76] explain ai simply
+MISS   [76] how does ai work
+MISS   [76] is ai just code
+MISS   [76] ai basics
+MISS   [76] tell me about ai
+OTHER  [76] what does ai do                    -> [77] AI is software that learns patterns from data to do tasks li
+OTHER  [76] whats ai mean                      -> [77] AI is software that learns patterns from data to do tasks li
+MISS   [76] ai in short
+MISS   [76] define ai
+MISS   [77] explain ai pls
+MISS   [77] ai definition
+MISS   [77] how does ai work
+MISS   [77] is ai just code
+MISS   [77] tell me about ai
+MISS   [77] diff between ai and program
+MISS   [77] ai in simple terms
+OTHER  [77] wat is artificial intelligence     -> [76] AI is software that learns patterns from data to do tasks li
+MISS   [78] who made chatgpt
+OTHER  [78] r u chatgpt                        -> [3] Not quite. I'm styled after ChatGPT, but I'm a tiny program 
+MISS   [78] explain chatgpt
+MISS   [78] chatgpt meaning
+MISS   [78] who is chatgpt
+MISS   [78] tell me about chatgpt
+MISS   [78] is chatgpt real
+MISS   [78] chatgpt by whom
+MISS   [78] describe chatgpt
+OTHER  [79] wat is gpt oss                     -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] gpt oss 20b 120b info              -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] can i download gpt oss             -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] whats gpt oss model                -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] gpt oss openai details             -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] is gpt oss free to use             -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] tell me about gpt oss              -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] gpt oss 20b 120b                   -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] what does gpt oss mean             -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] gpt oss open weights?              -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [79] gpt oss family info                -> [80] gpt-oss is OpenAI's open-weight model family (20b and 120b).
+OTHER  [81] wat does a llm do                  -> [82] A large language model predicts the next word in a text. It'
+MISS   [81] how r llms trained
+OTHER  [81] explain llm in short               -> [82] A large language model predicts the next word in a text. It'
+OTHER  [81] is llm just next word pred         -> [82] A large language model predicts the next word in a text. It'
+MISS   [81] why do u need so much data
+OTHER  [81] does llm predict next token        -> [82] A large language model predicts the next word in a text. It'
+MISS   [81] how does ai write text
+OTHER  [81] need simple expl of llm            -> [82] A large language model predicts the next word in a text. It'
+MISS   [81] why does gpt use big data
+OTHER  [81] whats the basic idea of llm        -> [82] A large language model predicts the next word in a text. It'
+OTHER  [81] can u simplify llm for me          -> [82] A large language model predicts the next word in a text. It'
+MISS   [82] why do u say it predicts next word
+MISS   [82] how r they trained on writing
+OTHER  [82] wait what is a language model      -> [81] A large language model predicts the next word in a text. It'
+MISS   [82] does it read books or what
+MISS   [82] why can it predict next token
+MISS   [82] is it trained on internet
+MISS   [83] wat is neural net
+MISS   [83] how does nn train
+MISS   [83] explain nn in short
+MISS   [83] how do weights work in ai
+MISS   [83] nn training expl
+MISS   [83] simple expl of neural net
+MISS   [83] how does nn find patterns
+MISS   [83] diff between layer and weight
+MISS   [83] why adjust weights
+MISS   [83] nn = math units?
+MISS   [83] short expl neural net
+MISS   [84] how fast is light in km/s
+MISS   [84] c value in physics
+MISS   [84] fastest thing in universe
+OTHER  [84] speed of light per sec             -> [108] sec x (secant) = 1/cos x. It's undefined where cos x = 0 (90
+MISS   [84] how fast does light travel
+MISS   [84] c equals what
+MISS   [84] light velocity km
+MISS   [84] fastest speed in cosmos
+MISS   [84] speed of c
+MISS   [85] wat is g on earth
+MISS   [85] how fast do u fall
+MISS   [85] g value
+MISS   [85] why do things fall down
+MISS   [85] calc g for earth
+MISS   [85] earth accel
+MISS   [85] is it 9.81
+MISS   [85] g in m/s2
+OTHER  [85] help with g                        -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [86] whats up with blue sky             -> [17] Not much, just here on your calculator. What's up with you?
+MISS   [86] rayleigh scattering simple
+MISS   [86] sunlight blue vs red
+MISS   [86] sky color physics
+MISS   [87] sun to neptune order
+MISS   [87] mercury to neptune list
+MISS   [87] planet order from sun
+MISS   [87] what comes after mars in planet order
+MISS   [87] sun outward planet names
+MISS   [88] boiling pt of water
+MISS   [88] water boils when?
+OTHER  [88] does elevation affect water boil   -> [131] Angle of elevation: looking up from the horizontal. Angle of
+MISS   [88] c is sea level boil?
+MISS   [89] where is eiffel tower
+MISS   [89] what city is eiffel tower in
+MISS   [89] where was the treaty signed
+MISS   [89] where is louvre
+MISS   [89] city with eiffel tower
+MISS   [89] where is the tower
+MISS   [89] paris or london for eiffel
+MISS   [89] which city has eiffel
+MISS   [89] wheres the eiffel tower
+MISS   [90] where is the white house
+MISS   [90] capitol of us
+MISS   [90] whats the us capital
+MISS   [90] dc or washington
+MISS   [90] where does the president live
+MISS   [90] us capital city
+MISS   [90] washington dc
+MISS   [90] wheres the white house
+MISS   [90] whats dc stand for
+MISS   [90] where is the senate
+MISS   [90] us capital
+MISS   [91] wat is the total days in yr
+MISS   [91] or 366?
+MISS   [91] days in leap yr??
+MISS   [91] is it always 365 days
+MISS   [91] u r wrong its 366
+MISS   [91] how long is a yr
+MISS   [91] days correct?
+MISS   [91] r there 366 days in leap
+MISS   [91] day count for year
+MISS   [91] why 366 in leap yr
+OTHER  [92] wat is the weather today           -> [93] I can't see a clock. Check your phone or the calculator's cl
+OTHER  [92] check today temp                   -> [93] I can't see a clock. Check your phone or the calculator's cl
+MISS   [92] is it going to rain
+OTHER  [92] soaring forecast help              -> [71] Gliders have no engine. They stay up by finding rising air, 
+MISS   [92] typos: wthr check
+MISS   [93] do u have a clock
+MISS   [93] is there a clock here
+OTHER  [93] no clock on calc?                  -> [23] Got it! Anything else?
+MISS   [93] when is it now
+MISS   [93] u have clock rite
+OTHER  [94] wat r u say in english             -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [94] does this do translations
+OTHER  [94] say hi in spanish                  -> [15] Hello! How can I help you today?
+MISS   [94] convert words to french
+MISS   [94] is this a translator
+OTHER  [95] wat language r u built in          -> [4] I'm CalcGPT, a chat assistant running on your TI-84 Plus CE.
+MISS   [95] is this app c or py
+MISS   [95] do u run on c++
+OTHER  [95] whats the code lang for u          -> [96] I can't write real programs here, but a tiny calculator app 
+MISS   [95] r u written in java
+MISS   [95] calc code lang?
+MISS   [95] how is this bot made
+MISS   [95] is ur source c
+MISS   [95] what lang is ur brain
+MISS   [95] built in what lang
+MISS   [95] c or c++ for u
+MISS   [95] show me ur code lang
+MISS   [96] is u written in c
+MISS   [96] wat lang is ur code
+MISS   [96] can u show me source
+MISS   [96] r u c program
+OTHER  [96] why not python                     -> [74] Python is a beginner-friendly programming language. This app
+MISS   [96] is this c based
+MISS   [96] lang used for u
+MISS   [96] show me the code
+MISS   [96] are u written in c
+MISS   [96] wat programming language
+MISS   [96] is u c or py
+MISS   [97] wat r the gas laws
+MISS   [97] boyle charles gay lussac
+MISS   [97] combined gas law formula
+MISS   [97] ideal gas law pv=nrt?
+MISS   [97] avogadro law
+MISS   [97] typos: bolye law
+MISS   [97] u know gas laws?
+MISS   [97] list all gas laws
+MISS   [97] p1v1=p2v2?
+MISS   [97] gas laws quick
+MISS   [97] r u sure bout charles law
+MISS   [97] short gas laws pls
+MISS   [98] wat gas law is this
+MISS   [98] which law for this
+OTHER  [98] help me choose gas law             -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [98] p and v change what law
+MISS   [98] temp and vol change
+MISS   [98] n changes wat law
+MISS   [98] all vars change
+MISS   [98] is it boyle or charles
+MISS   [98] gas law decision tree
+MISS   [98] how do i pick the law
+MISS   [98] combined law when
+MISS   [98] ideal gas law when
+MISS   [99] what gas laws are inverse
+MISS   [99] charles vs boyle
+MISS   [99] explain direct vs inverse
+MISS   [99] gay lussac avogadro
+MISS   [99] wat is boyle law
+MISS   [99] r the temp pressure direct
+MISS   [99] typos: what are direct laws
+MISS   [99] list inverse gas laws
+MISS   [99] how does boyle work
+MISS   [99] charles and gay lussac
+MISS   [99] avogadro direct?
+MISS   [99] which one is inverse
+MISS   [100] wat do i do for gas laws
+MISS   [100] how r gas problems solved
+OTHER  [100] pls help gas law steps             -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [100] gas law how do i start
+OTHER  [100] which law do i use for gas         -> [125] Given AAS or ASA or SSA -> Law of Sines.
+Given SAS or SSS ->
+MISS   [100] steps for gas law question
+MISS   [100] how to pick gas law
+MISS   [100] gas law cheat sheet
+MISS   [100] solve gas law
+OTHER  [100] hey how do gas law probs work      -> [15] Hi there! What's on your mind?
+OTHER  [100] gas law formula help               -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [100] i dont get gas laws help           -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [101] wat is wrong with my chem calc
+MISS   [101] why r my numbers off
+OTHER  [101] help units atm vs kpa              -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [101] forgot to use kelvin?
+MISS   [101] l/mol not working
+MISS   [101] wrong r constant?
+MISS   [101] ml vs l mistake
+MISS   [101] stp only right?
+MISS   [101] common errors gas law
+MISS   [101] why is my ans wrong
+MISS   [101] check my steps pls
+MISS   [101] typos in formula
+OTHER  [102] if vol half then p?                -> [105] Half angle identities:
+sin(x/2) = +/- sqrt((1 - cos x)/2)
+co
+MISS   [102] boyles law p1v1=p2v2
+MISS   [102] wat if u shrink container
+MISS   [102] pressure when vol goes down
+MISS   [102] is p and v inverse?
+MISS   [102] halve the volume what happens
+OTHER  [102] boyle law calc help                -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [102] p1v1=p2v2 explain
+MISS   [102] why does p go up if v down
+MISS   [102] constant temp p vs v
+MISS   [102] boyles law formula
+OTHER  [102] cut vol in half p doubles?         -> [105] Half angle identities:
+sin(x/2) = +/- sqrt((1 - cos x)/2)
+co
+MISS   [103] charles law
+MISS   [103] what is charles law
+MISS   [103] gas law constant p
+MISS   [103] volume temp relation
+MISS   [103] charls law
+MISS   [103] v1/t1=v2/t2 name
+MISS   [103] gas laws
+MISS   [103] const pressure vol temp
+MISS   [103] charles law formula
+MISS   [103] whats charles law
+MISS   [103] gas law vol temp
+MISS   [103] charles
+MISS   [104] wat is gay lussac law
+MISS   [104] p1/t1=p2/t2
+MISS   [104] pressure vs temp constant vol
+MISS   [104] gay lussac formula
+MISS   [104] why p goes up when t up
+MISS   [104] what is p1/t1
+MISS   [104] constant volume pressure law
+MISS   [104] lussac law p and t
+MISS   [104] how to find p2 from p1
+MISS   [104] gas law p temp relation
+MISS   [104] gay lussac for dummies
+MISS   [104] p1/t1 = p2/t2?
+MISS   [105] which gas law uses p v and t
+MISS   [105] combined gas law formula
+MISS   [105] wat is p1v1/t1=p2v2/t2
+MISS   [105] when to use combined gas law
+MISS   [105] does combined gas law need kelvin
+MISS   [105] merges boyle charles gay lussac
+MISS   [105] formula for when all change
+MISS   [105] p v t all change which law
+MISS   [105] is it combined gas law for this
+MISS   [105] why must t be kelvin here
+MISS   [105] combined gas law r u sure
+MISS   [105] p1v1/t1=p2v2/t2 meaning
+MISS   [106] wat is avogadro law
+MISS   [106] equal gas vol means equal moles?
+MISS   [106] v1/n1=v2/n2 law name
+MISS   [106] avogadro formula pls
+MISS   [106] if same T and P what happens to gas
+MISS   [106] typos: avogdros law
+MISS   [106] why equal vol same molecules
+MISS   [106] can u explain v1/n1=v2/n2
+MISS   [106] avogadro law short
+MISS   [106] gas law equal vol equal n?
+MISS   [106] tell me avogadro eq
+MISS   [106] v1/n1 ratio constant?
+MISS   [107] what is ideal gas law
+MISS   [107] pv=nrt wat is r
+MISS   [107] ideal gas formula and constants
+MISS   [107] give me r for ideal gas law
+MISS   [107] wat is p v n r t
+MISS   [107] ideal gas law explane
+MISS   [107] how to calc pressure with moles
+MISS   [107] r value in ideal gas law
+MISS   [107] what does n mean in pv=nrt
+MISS   [107] ideal gas constant r values
+MISS   [107] typos: pv=nr?
+MISS   [107] slang: wat is r for gas law
+MISS   [108] wat is r in ideal gas law
+MISS   [108] which r for atm pressure
+MISS   [108] r value for mmhg
+MISS   [108] need r constant
+MISS   [108] r for kpa units
+MISS   [108] what r use with liters
+MISS   [108] r gas constant values
+OTHER  [108] help r atm vs kpa                  -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [108] r equals what for mol k            -> [23] Sure thing. What next?
+MISS   [108] r in l atm per mol
+MISS   [108] r for torr pressure
+MISS   [108] gas constant r values
+MISS   [109] wat is r in gas law
+MISS   [109] which r value to use
+MISS   [109] r gas constant 8.314 or 0.0821
+MISS   [109] r for atm vs kpa
+OTHER  [109] help pick r constant               -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [109] is r always 8.314
+MISS   [109] r value for torr
+MISS   [109] confused on r units
+MISS   [109] r in ideal gas eq
+MISS   [109] how to choose r
+MISS   [109] r constant values
+MISS   [110] solve for n in ideal gas law
+MISS   [110] how to rearrange pvnrt for v
+MISS   [110] rearrange pv=nrt for p
+MISS   [110] isolate t in the equation
+MISS   [110] wat is n equal to in pvnrt
+MISS   [110] gib me p from pvnrt
+MISS   [110] solve for volume
+MISS   [110] typos: solve for t in p v n r t
+MISS   [110] rearrange ideal gas eq for moles
+MISS   [110] need v alone from pvnrt
+MISS   [110] get p by itself
+MISS   [110] how do i find t using pvnrt
+MISS   [111] daltons law
+MISS   [111] what is ptotal eq
+MISS   [111] dalton partial pres
+MISS   [111] gas mix pressure formula
+MISS   [111] wat is daltons law
+MISS   [111] ptotal = p1+p2
+MISS   [111] sum of partial pressures
+MISS   [111] dalton law of gases
+OTHER  [111] pi = xi ptotal                     -> [54] Pi is about 3.14159. It's the ratio of a circle's circumfere
+MISS   [111] how to calc ptotal
+MISS   [111] daltons law def
+MISS   [111] partial press add up
+MISS   [112] wat is partial pressure
+MISS   [112] how do u get total pressure
+MISS   [112] explain dalton law pls
+MISS   [112] p total = p1+p2?
+MISS   [112] why add gas pressures
+MISS   [112] define partial pressure
+MISS   [112] is partial pressure just one gas alone
+MISS   [112] calc total pressure from parts
+MISS   [112] p total formula
+MISS   [112] why sum up gas pressures
+MISS   [112] partial pressure meaning
+MISS   [112] how r total pressures found
+MISS   [113] how do u find mole fraction
+MISS   [113] wat is partial pressure formula
+MISS   [113] x=moles/total?
+MISS   [113] dall mole fractions add to 1?
+OTHER  [113] calc partial pressure help         -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [113] mole fraction def
+MISS   [113] why do fractions sum to 1
+MISS   [113] p=x*p_total?
+MISS   [113] typos: how calc x and p
+MISS   [113] mixture gas math
+MISS   [113] frac x = ?
+MISS   [113] plz explain dalton law
+MISS   [114] wat is p gas when collected over water
+MISS   [114] how do i find partial pressure of gas
+MISS   [114] p gas = p atm - p water right
+MISS   [114] calc gas pressure mixed with water vapor
+MISS   [114] need formula for gas over water
+MISS   [114] is p gas p atm minus water vapor
+MISS   [114] how to adjust for water vapor in gas
+MISS   [114] give me p gas formula
+MISS   [114] why do we subtract water vapor pressure
+MISS   [114] p gas equals what
+MISS   [114] find gas pressure at 25 c over water
+MISS   [114] corr for water vapor in gas collection
+MISS   [115] whats graham law
+MISS   [115] gahams law formula
+MISS   [115] rate1/rate2 =?
+MISS   [115] gas diffusion speed
+MISS   [115] lighter gas faster?
+MISS   [115] graham law effusion
+MISS   [115] sqrt m2/m1
+MISS   [115] wat is graham law
+MISS   [115] gas rate molar mass
+MISS   [115] diffusion vs effusion
+MISS   [115] heavier gas slower?
+MISS   [115] graham law calc
+MISS   [116] wat is effusion
+MISS   [116] grahams law
+MISS   [116] gas thru small hole?
+MISS   [116] effusion vs diffusion
+MISS   [116] r rate proportional to sqrt m?
+MISS   [116] explain effusion pls
+MISS   [116] how fast gas escapes
+MISS   [116] tiny hole vacuum gas
+MISS   [116] graham law effusion
+MISS   [116] mass vs rate of effusion
+MISS   [116] what is effusion gas
+MISS   [116] calc effusion rate
+MISS   [117] wat is diffusion
+MISS   [117] diffusion meaning pls
+MISS   [117] how fast do gases diffuse
+MISS   [117] why lighter gas faster
+MISS   [117] explain graham law
+MISS   [117] diffusion high to low conc
+MISS   [117] what causes gas mixing
+MISS   [117] diffusion def short
+MISS   [117] gas spread random motion
+MISS   [117] diffusion and graham
+MISS   [117] why do gases mix
+MISS   [117] lighter diffuses faster?
+MISS   [118] boyles law formula
+MISS   [118] what is p1v1
+MISS   [118] typos for boyle
+MISS   [118] gas law inverse
+MISS   [118] how does pressure change with volume
+MISS   [118] wat is boyle law
+MISS   [118] p1v1=p2v2 meaning
+MISS   [118] constant temp gas
+MISS   [118] explain boyle simply
+MISS   [118] u know boyles law
+MISS   [118] gas pressure volume
+MISS   [118] boyle law eq
+MISS   [119] wat is charles law
+MISS   [119] charles law formula
+MISS   [119] v1/t1=v2/t2?
+MISS   [119] gas law temp and vol
+MISS   [119] constant pressure gas
+MISS   [119] how does temp change vol
+MISS   [119] charles law meaning
+MISS   [119] v and t relation
+MISS   [119] gas expands when hot?
+MISS   [119] charles law eqn
+MISS   [119] temp vs volume
+MISS   [119] charles law
+MISS   [120] wat is gay lussac law
+OTHER  [120] how do p and k relate              -> [23] Got it! Anything else?
+MISS   [120] typos: whts p1/t1=p2/t2
+MISS   [120] constant vol gas law
+MISS   [120] pressure vs temp formula
+MISS   [120] explain gay lussac
+MISS   [120] p and t direct relation
+MISS   [120] gas law p1 t1
+OTHER  [120] whats the formula for p and k      -> [23] Sure thing. What next?
+MISS   [120] lul how does pressure change with temp
+MISS   [120] gay lussac law expl
+MISS   [120] p1/t1 = p2/t2 what is this
+MISS   [121] wat is avogadro law
+MISS   [121] v1/n1=v2/n2?
+MISS   [121] how volume relates to moles
+MISS   [121] does volume go up with moles
+MISS   [121] explain avogadro
+MISS   [121] v and n ratio const?
+MISS   [121] at const T P v/n
+MISS   [121] why v1/n1=v2/n2
+MISS   [121] avogadro gas law eq
+MISS   [121] calc v/n ratio
+MISS   [121] is v directly prop to n
+MISS   [121] short avogadro def
+MISS   [122] what makes gas pressure go up
+MISS   [122] why does p increase
+MISS   [122] wat causes high gas pressure
+MISS   [122] gas pressure goes up when?
+MISS   [122] how to increase p in gas
+MISS   [122] more volume less pressure?
+MISS   [122] is it temp or moles that raise p
+MISS   [122] why pressure rises in gas
+MISS   [122] factors affecting gas pressure
+MISS   [122] p up when?
+MISS   [122] gas law pressure increase
+MISS   [123] wat are the 5 postulates of kmt
+MISS   [123] list assumptions of ideal gas
+MISS   [123] what is kinetic molecular theory
+MISS   [123] how many points in kmt
+MISS   [123] explain ideal gas law basics
+MISS   [123] kmt summary pls
+MISS   [123] what does kmt say about particles
+MISS   [123] brief on kinetic molecular theory
+MISS   [123] ideal gas assumptions
+MISS   [123] kmt key points
+MISS   [123] summary of kmt
+MISS   [123] what are kmt rules
+MISS   [124] wat is ke and temp
+MISS   [124] how do particles move in hot gas
+MISS   [124] explain ke formula and kelvin
+MISS   [124] is ke same for all particles
+MISS   [124] diff between kelvin and ke
+MISS   [124] why r particles diff speeds
+MISS   [124] short expl on kinetic energy
+MISS   [124] typos: whats kelvin to ke
+MISS   [124] gas particles speed vs temp
+MISS   [124] ke formula 1/2 mv2
+MISS   [124] relate temp to particle speed
+MISS   [124] hot gas particles move how
+MISS   [125] wat are gas properties
+MISS   [125] how do u describe gas
+MISS   [125] gas characteristics
+MISS   [125] why gas fill container
+MISS   [125] diff between solid liquid gas
+MISS   [125] properties of gas state
+MISS   [125] can u compress gas
+MISS   [125] density of gases
+MISS   [125] how do gases mix
+MISS   [125] gas state main points
+MISS   [125] short on gas properties
+MISS   [125] explain gas behavior
+MISS   [126] why r gases so easy to squeeze
+MISS   [126] whats the deal with gas compression
+MISS   [126] gases compress why
+MISS   [126] why can u shrink gas so much
+MISS   [126] gas particles far apart wat
+MISS   [126] explain gas compressibility
+MISS   [126] why do gases have lots of space
+MISS   [126] gas easy to compress why
+OTHER  [126] whats up with gas spacing          -> [17] Not much, just here on your calculator. What's up with you?
+MISS   [126] gases r far apart rite
+MISS   [126] why compress gas easily
+MISS   [126] gas empty space between particles
+MISS   [127] wat is a gas
+MISS   [127] def of gas state
+MISS   [127] how r gas particles
+MISS   [127] gas shape and volume
+MISS   [127] explain gas matter
+OTHER  [127] why gas no fixed shape             -> [23] Got it! Anything else?
+MISS   [127] gas particles far apart
+MISS   [127] short gas definition
+MISS   [127] what makes gas diff
+MISS   [127] gas vs solid
+MISS   [127] is gas compressible
+MISS   [127] describe gas state
+MISS   [128] wat is ideal gas law
+MISS   [128] low p high t for real gas
+MISS   [128] why real gas not ideal
+MISS   [128] high p low t deviation
+MISS   [128] particles attract at low t?
+MISS   [128] real gas ideal conditions
+MISS   [128] when do gases act ideal
+MISS   [128] typos: real gase ideal
+MISS   [128] slang: u know ideal gas
+MISS   [128] low pressure high temp
+MISS   [128] deviation high p low t
+MISS   [128] real gas behavior
+MISS   [129] what is van der waals eq
+MISS   [129] fix pv=nrt for real gas
+MISS   [129] corr for vol and attr
+MISS   [129] how to adjust pv nrt
+MISS   [129] van der waals formula
+MISS   [129] real gas equation
+MISS   [129] pv nrt correction
+MISS   [129] vdw equation details
+MISS   [129] real gas law
+MISS   [129] van der waals vs ideal
+MISS   [129] why pv nrt not accurate
+MISS   [129] real gas pressure temp
+MISS   [130] wat is pressure
+MISS   [130] atm in kpa?
+MATH   [130] convert 760 mmhg to atm
+MISS   [130] pressure units?
+MISS   [130] how many psi in 1 atm
+MISS   [130] typos: presure def
+MISS   [130] diff btwn torr and mmhg
+MISS   [130] kpa to atm
+MISS   [130] why is 1 atm 760 torr
+MISS   [130] units of pressure
+MISS   [130] calc 14.7 psi in kpa
+MISS   [130] is 1 atm equal to 101.3 kpa
+MISS   [131] what is pressure
+MISS   [131] wat is gas pressure
+MISS   [131] p=fa?
+OTHER  [131] why do tires pop                   -> [30] Rest matters. Try a glass of water and a short break.
+OTHER  [131] force per area?                    -> [132] Two forces F1 and F2 with angle t between them: the resultan
+MISS   [131] gas p explanation
+MISS   [131] how does pressure work
+MISS   [131] gas pressure def
+MISS   [131] particles and walls
+MISS   [131] explain gas pressure
+MISS   [131] wat causes gas p
+MISS   [131] pressure basics
+MISS   [132] whats atm pressure
+MISS   [132] why does air have weight
+MISS   [132] atm in kpa
+MISS   [132] how high before pressure drops
+MISS   [132] is 760mmhg sea level?
+MISS   [132] wat is 101.3 kpa
+MISS   [132] does pressure change up mountain
+MISS   [132] explain atmospheric pressure
+MISS   [132] why u feel lighter high up
+MISS   [132] atm at sea lvl
+MATH   [132] convert 1 atm to mmhg
+MISS   [132] air pressure at 0m
+MISS   [133] wat is gauge pressure
+MISS   [133] diff b/w gauge and abs pressure?
+OTHER  [133] how does tire gauge work           -> [30] Rest matters. Try a glass of water and a short break.
+MISS   [133] gauge p = abs - atm?
+OTHER  [133] is tire gauge abs or gauge         -> [30] Rest matters. Try a glass of water and a short break.
+MISS   [133] explain gauge vs absolute
+OTHER  [133] why tire gauge not abs             -> [30] Rest matters. Try a glass of water and a short break.
+MISS   [133] gauge pressure formula
+MISS   [133] calc gauge from absolute
+MISS   [133] tyre gauge reads what?
+MISS   [133] gauge vs absolute pressure
+MISS   [133] sub atm from abs for gauge
+MISS   [134] what is a barometer
+MISS   [134] why does mercury stay up 760mm
+MISS   [134] wat does barometer measure
+MISS   [134] mercury barometer height
+MISS   [134] is 760mm 1 atm
+MISS   [134] how tall is mercury column
+MISS   [134] barometer uses mercury?
+MISS   [134] what does atm stand for
+MISS   [134] sea level pressure in mm
+MISS   [134] mercury rises how much
+MISS   [134] wat is 1 atm in mm
+MISS   [134] why 760mm for 1 atm
+MISS   [135] how does a manometer work
+MISS   [135] wat is manometer used for
+MISS   [135] explain u tube manometer
+MISS   [135] how measure gas pressure
+MISS   [135] typos: manometer explination
+MISS   [135] diff between manometer and barometer
+MISS   [135] what liquid in manometer
+MISS   [135] manometer vs atm pressure
+MISS   [135] short expl of manometer
+MISS   [135] why use mercury in manometer
+MISS   [135] how to read gas pressure
+MISS   [135] manometer principle
+MISS   [136] wat is kelvin
+OTHER  [136] how 2 convert c to k               -> [23] Sure thing. What next?
+MISS   [136] kelvin formula
+OTHER  [136] why gas law use k not c            -> [23] Got it! Anything else?
+OTHER  [136] k = ??                             -> [23] Sure thing. What next?
+MISS   [136] diff b/w celsius kelvin
+OTHER  [136] k = c + 273.15?                    -> [23] Got it! Anything else?
+MISS   [136] lowest temp in kelvin
+MATH   [136] convert 100c to k
+MISS   [136] abs zero in c
+MISS   [136] r kelvin and c same?
+MISS   [136] why 273.15
+MISS   [137] why cant u use celsius for gas laws
+MISS   [137] is celsius bad for charles law
+MISS   [137] kelvin vs celsius for boyles law
+MISS   [137] does celsius break gas law math
+MISS   [137] why must u use kelvin not celsius
+MISS   [137] gas law proportion only works in kelvin?
+OTHER  [137] cant i just convert c to k easily  -> [23] Sure thing. What next?
+MISS   [137] is zero celsius same as zero kelvin
+MISS   [137] why do gas laws need absolute zero
+MISS   [137] celsius gives negative values right
+OTHER  [137] why no negative temps in gas laws  -> [23] Got it! Anything else?
+OTHER  [138] how to c to k                      -> [23] Sure thing. What next?
+MATH   [138] convert 25 c to k
+OTHER  [138] wat is c to k formula              -> [23] Got it! Anything else?
+MISS   [138] c to f formula pls
+OTHER  [138] typos cto k                        -> [23] Sure thing. What next?
+MISS   [138] kelvin formula
+OTHER  [138] c to k and f                       -> [23] Got it! Anything else?
+MISS   [138] rule
+MISS   [138] c2k
+MISS   [138] f from c
+OTHER  [138] k from c                           -> [23] Sure thing. What next?
+OTHER  [138] how r u convert c to k             -> [16] I'm doing well, thanks for asking! How can I help?
+MISS   [139] wat is vapor pressure
+MISS   [139] why does liquid boil
+MISS   [139] vapor pressure def
+MISS   [139] how do i find vapor pressure
+MISS   [139] does temp affect vapor pressure
+MISS   [139] boiling point vs vapor pressure
+MISS   [139] explain vapor pressure plz
+MISS   [139] what is vap pressure
+MISS   [139] when does a liquid boil
+MISS   [139] vapor pressure rises with temp
+MISS   [139] is vapor pressure same as atm
+MISS   [139] define vap pressure
+MISS   [140] wat is stp
+MISS   [140] stp def
+MISS   [140] what does stp mean
+MISS   [140] stp gas volume
+MISS   [140] mol gas at stp
+MISS   [140] stp 22.4l?
+MISS   [140] is stp 0 c
+MISS   [140] stp pressure
+OTHER  [140] wat is stp in k                    -> [23] Got it! Anything else?
+MISS   [140] stp temp and press
+MISS   [140] stp = 22.4 L
+MISS   [140] explain stp
+MISS   [141] wat is satp
+MISS   [141] diff btwn satp and stp
+MISS   [141] satp temp and pressure
+MISS   [141] how much is molar vol at satp
+MISS   [141] is satp 1 atm or 1 bar
+MISS   [141] satp def plz
+MISS   [141] c 1bar = satp?
+MISS   [141] molar volume satp
+MISS   [141] r satp and stp same
+MISS   [141] why use satp in chem
+MISS   [141] satp conditions
+MISS   [141] what is 298k 1bar
+MISS   [142] wat is molar volume at stp
+MISS   [142] how many liters per mole at stp?
+MISS   [142] convert mol to L at stp
+MISS   [142] stp gas volume 1 mol
+MISS   [142] why is it 22.4 L not 22.7
+MISS   [142] u need stp for 22.4 L right
+MISS   [142] calc L from mol using 22.4
+MISS   [142] is pv=nrt needed for stp?
+MISS   [142] difference between stp and rt
+MISS   [142] moles to liters standard temp
+MISS   [142] can i use 22.4 for any gas
+MISS   [142] stp ideal gas law simple
+MISS   [143] what is a mole
+MISS   [143] how many particles in 1 mole
+MISS   [143] define mole
+MISS   [143] whats avogadro number
+MISS   [143] moles formula
+MISS   [143] calc moles from grams
+MISS   [143] how to find moles
+MISS   [143] mole = ?
+MISS   [143] convert grams to moles
+MISS   [143] what is molar mass
+MISS   [143] how many atoms in mole
+MISS   [143] mole def
+MISS   [144] what is gas density formula
+MISS   [144] how to calc gas density
+MISS   [144] gas density equation
+MISS   [144] d=pm/rt?
+MISS   [144] gas density at stp
+MISS   [144] what affects gas density
+MISS   [144] density of gas
+MISS   [144] gas density and pressure
+MISS   [144] stomp gas density
+MISS   [144] wat is gas density
+MISS   [144] gas density temp effect
+MISS   [144] gas dens
+MISS   [145] find molar mass from density
+MISS   [145] wat is molar mass eqn w density
+MISS   [145] how to get molar mass given d and p
+MISS   [145] calc molar mass using d r t p
+MISS   [145] formula for molar mass of gas
+MISS   [145] molar mass = ? when i know density
+MISS   [145] how do i find molar mass w mass
+MISS   [145] convert density to molar mass
+MISS   [145] molar mass formula using mass
+MISS   [145] need molar mass from d r t p
+MISS   [145] how to calc molar mass w mass and vol
+MISS   [146] how do i convert gas vol to grams
+MISS   [146] wat is the gas stoich steps
+OTHER  [146] need help w gas mole ratio         -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [146] pls explain gas stoich
+MISS   [146] gas reactants in liters?
+OTHER  [146] how 2 do gas stoich problems       -> [116] Proof 2: 1 - cos^2 t/(1 + sin t) = sin t
+cos^2 t = 1 - sin^2
+MISS   [146] use 22.4 l or pv nrt
+MISS   [146] confused on gas stoich
+MISS   [146] gas at stp conversion
+MISS   [146] liters to grams gas
+MISS   [146] how do gas stoich work
+OTHER  [146] typos: gas stoich help             -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [147] how many liters is 22g co2
+MISS   [147] conv 18g h2o to l at stp
+MISS   [147] wat is 10g o2 in liters
+MISS   [147] g to l formula stp
+OTHER  [147] help i have 44g co2 need l         -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [147] typos 50g so2 to litres
+MISS   [147] calc grams to volume stp
+MISS   [147] r there a formula for g to l
+MISS   [147] g ch4 equals how many liters
+MISS   [147] convert 36g water to l
+MISS   [147] need liters from grams at stp
+MISS   [147] what is 1g he in liters
+MISS   [148] gay lussac law
+MISS   [148] what is gas volume ratio
+MISS   [148] explain lussac combining vol
+MISS   [148] h2 o2 2h2o ratio
+MISS   [148] why gas react whole nums
+MISS   [148] gay lussac vs avogadro
+MISS   [148] gas vol law at const p
+MISS   [148] wat is gas volume ratio
+MISS   [148] gases combine in what ratio
+MISS   [148] gay lussac example
+MISS   [148] how gas volume relate mole
+MISS   [148] luzac law gas
+MISS   [149] wat is dry air made of
+MISS   [149] comp of dry air?
+MISS   [149] what % nitrogen in air
+MISS   [149] dry air composition pls
+MISS   [149] how much o2 in dry air
+MISS   [149] argon in air percentage
+MISS   [149] co2 level in dry air
+MISS   [149] what makes up air by volume
+MISS   [149] dry air gas mix
+MISS   [149] percent nitrogen?
+OTHER  [149] air composition no water           -> [23] Sure thing. What next?
+MISS   [149] breakdown of dry air
+MISS   [150] wat is 1 l in ml
+MISS   [150] liter to ml
+MATH   [150] convert 1l to ml
+MISS   [150] how many ml in 1 l
+MISS   [150] l = ? ml
+MISS   [150] cm3 to l
+MISS   [150] l in cm3
+MISS   [150] ml to l
+MISS   [150] diff btw ml and cm3
+MISS   [150] l in cc
+MISS   [150] is 1 l 1000 ml
+MISS   [150] try 500 ml to l
+MISS   [151] boyle law 4l 2atm find v at 8atm
+MISS   [151] if p doubles what happens to v in boyle
+MISS   [151] l at 2 atm go to 8 atm new v?
+MISS   [151] wat is v2 when p1=2 v1=4 p2=8
+MISS   [151] boyle example 2atm 4l to 8atm
+MISS   [151] gas 4l 2atm compressed to 8atm volume?
+MISS   [151] solve boyle p1 2 v1 4 p2 8
+MISS   [151] u kno boyle law? 4l 2atm -> 8atm
+OTHER  [151] help calc v2 p1=2 v1=4 p2=8        -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [151] boyle law problem 2atm 4l 8atm
+MISS   [151] r u sure v2 is 1l? check 2*4/8
+MISS   [151] boyle 4L 2atm new P 8atm V?
+MISS   [153] wat is new vol if 5L gas heats 25 to 75C
+MISS   [153] charles law 5.0L 25C to 75C find V2
+MISS   [153] calc charles 5L at 25C heated to 75C
+MISS   [153] charles ex 5L 25C 75C constant P
+OTHER  [153] help 5L gas 25C to 75C charles law -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [153] charles law prob 5L 25C heat to 75C
+MISS   [153] L gas 25C to 75C what is V2
+MISS   [153] charles example 5L 25C 75C
+MISS   [153] solve charles 5L at 25C to 75C
+MISS   [153] new vol for 5L gas 25 to 75C
+MISS   [153] charles law 5.0L 25C to 75C
+MISS   [154] how many moles in 11.2 L at stp
+MISS   [154] calc n for 11.2L gas at stp
+MISS   [154] wat is moles of 11.2 l at stp
+MISS   [154] solve n=PV/RT 11.2L stp
+MISS   [154] u know moles 11.2l stp?
+MISS   [154] give me moles for 11.2 l stp
+OTHER  [154] help find n 11.2L stp              -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [154] how much is 11.2l gas in mol
+MISS   [154] ideal gas 11.2l stp moles?
+MISS   [154] pls calc moles 11.2L stp
+MISS   [154] n for 11.2 l at stp??
+MISS   [154] r there 0.5 mol in 11.2L stp
+MISS   [155] gay lussac 2 atm 20c to 100c
+MISS   [155] wat is p at 100c if 2atm at 20c
+MISS   [155] tank 2atm 20C heat to 100C find P
+MISS   [155] gay lussac 2.0 atm 293K to 373K
+MISS   [155] calc P2 for 2atm 20C -> 100C
+MISS   [155] if tank 2atm 20C wat at 100C
+MISS   [155] gay lussac 2atm 20 to 100 C
+MISS   [155] atm 20C raise to 100C new P
+MISS   [155] gas 2atm 20C heat 100C P=?
+MISS   [155] typos: gay lussac 2atm 20c 100c
+MISS   [155] solve gay lussac 2.0 293 373
+MISS   [155] p at 100C given 2atm 20C
+MISS   [156] calc v2 p1=1 v1=3 t1=300 p2=2 t2=400
+MISS   [156] l 1atm 300k to 2atm 400k find v2
+MISS   [156] solve v2 p1 1 v1 3 t1 300 p2 2 t2 400
+MISS   [156] gas law p1 1 v1 3 t1 300 p2 2 t2 400
+OTHER  [156] l at 1 atm 300 k goes to 2 atm 400 k -> [23] Got it! Anything else?
+MISS   [156] combined gas law p1
+MISS   [157] dalton law example
+MISS   [157] wat is partial pressure
+MISS   [157] calc ptotal for n2 o2 ar
+MISS   [157] daltons law 0.5 0.3 0.2
+MISS   [157] how to add partial pressures
+MISS   [157] dalton eq 1.0 atm
+MISS   [157] n2 .5 o2 .3 ar .2
+MISS   [157] total pressure calc
+MISS   [157] dalton law practice
+MISS   [157] find ptotal n2 o2 ar
+MISS   [157] partial pressure add up
+MISS   [157] dalton 0.50 .30 .20
+MISS   [158] how fast does h2 effuse vs o2
+MISS   [158] graham law h2 o2
+MISS   [158] rate ratio h2 o2
+MISS   [158] h2 effusion speed compare o2
+MISS   [158] sqrt 32/2 graham
+MISS   [158] how much faster h2 than o2
+MISS   [158] graham ex h2 o2
+MISS   [158] diffusion rate h2 vs o2
+MISS   [158] h2 o2 effuse ratio
+MISS   [158] wat is graham for h2 o2
+MISS   [158] h2 2g o2 32g speed
+MISS   [158] is h2 4x faster than o2
+MISS   [159] wat vol h2 from 0.5 mol zn
+MISS   [159] how much gas from 0.5 zn
+MISS   [159] mol zn + hcl volume?
+OTHER  [159] stoich help 0.5 zn                 -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [159] calc h2 vol 0.5 zn stp
+MISS   [159] zn makes wat
+MISS   [159] volume h2 0.5 mol zn
+MISS   [159] hcl + zn 0.5 mol gas
+MISS   [159] zn stp volume
+OTHER  [159] help 0.5 zn to h2                  -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [159] zn hcl 0.5 mol answer              -> [119] Proof 5: ((sec t - tan t)^2 + 1)/(csc t (sec t - tan t)) = 2
+MISS   [159] mol zn h2 liters
+MISS   [160] wat vol for 3mol if 2mol is 10l
+MISS   [160] if 2 moles gas = 10l how much for 3
+OTHER  [160] hey bot 2mol 10l find vol of 3mol  -> [15] Hello! How can I help you today?
+OTHER  [160] pls help 2.0 mol fills 10 l what abt 3 -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [160] calc this 2 mol 10 liters 3 mol ?
+MISS   [160] u know avogadro 2mol 10l so 3mol??
+MISS   [160] need ans 2mols 10l 3mols volume
+MISS   [160] typo 2 mol gas 10 L 3 mol vol
+MISS   [160] quick 2 moles take 10 liters 3 take
+MISS   [160] solve 2mol=10l 3mol=? same tp
+MISS   [160] r u sure 2mol 10l 3mol is 15
+OTHER  [160] help 2.0 mol 10L 3.0 mol vol       -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [161] why does balloon shrink in cold
+MISS   [161] charles law balloon
+MISS   [161] hot air balloon rises why
+MISS   [161] wat happens to gas in cold balloon
+MISS   [161] typos: why balon shnks in frost
+MISS   [161] diff between cold shrink and hot rise
+MISS   [161] gas volume drops in cold?
+MISS   [161] hot air less dense rite
+MISS   [161] explain charles law with balloon
+MISS   [161] why hot balloon go up
+MISS   [161] cold makes gas smaller?
+MISS   [161] balloon physics quick
+OTHER  [162] why tire pressure go up when hot   -> [30] Rest matters. Try a glass of water and a short break.
+OTHER  [162] wat happen to air in tire when heat -> [30] Rest matters. Try a glass of water and a short break.
+OTHER  [162] tire psi high on hot day why       -> [30] Rest matters. Try a glass of water and a short break.
+OTHER  [162] does tire pressure change with temp -> [30] Rest matters. Try a glass of water and a short break.
+OTHER  [162] explain tire pressure and heat     -> [30] Rest matters. Try a glass of water and a short break.
+MISS   [162] tyre pressure rise cause
+OTHER  [162] hot weather tire air expand?       -> [92] I can't check live weather. Try a weather app, or a soaring 
+MISS   [162] why more air pressure in hot
+OTHER  [162] gay lussac tire pressure           -> [30] Rest matters. Try a glass of water and a short break.
+OTHER  [162] hot day tire get hard why          -> [30] Rest matters. Try a glass of water and a short break.
+OTHER  [162] air in tire heat up volume same    -> [30] Rest matters. Try a glass of water and a short break.
+OTHER  [162] tire pressure temp relation        -> [30] Rest matters. Try a glass of water and a short break.
+MISS   [163] why u cant heat spray can
+MISS   [163] what if i warm up hairspray
+MISS   [163] is it safe to heat aerosol
+MISS   [163] can i heat paint spray can
+MISS   [163] guy lussac law on cans
+MISS   [163] why aerosol explode if hot
+MISS   [163] heating spray can danger
+MISS   [163] wat happen if u heat can
+MISS   [163] dont heat aerosol why
+MISS   [163] pressure in can when hot
+MISS   [163] can aerosol burst if hot
+OTHER  [163] why no heat on spray cans          -> [23] Sure thing. What next?
+MISS   [164] how does breathing work with boyles law
+MISS   [164] wat is boyle law in lungs
+MISS   [164] explain inhalation pressure physics
+MISS   [164] why air flow in when lungs expand
+MISS   [164] boyle law and breathing simple
+MISS   [164] r lungs pressure lower than outside air
+MISS   [164] how u inhale using boyle law
+MISS   [164] diaphragm move down pressure decrease
+MISS   [164] explain air flow in lungs physics
+MISS   [164] boyle law inhale process
+MISS   [164] short answer breathing boyle law
+MISS   [165] why divers cant hold breath
+MISS   [165] wat happens to air in lungs deep
+MISS   [165] boyle law for scuba
+MISS   [165] does pressure crush lungs
+MISS   [165] m depth pressure increase
+OTHER  [165] diving rule no breath hold         -> [23] Got it! Anything else?
+MISS   [165] why u cant breathe up
+MISS   [165] gas compress when dive
+MISS   [165] air in lungs vs depth
+MISS   [165] diving physics question
+MISS   [165] is it true air shrink deep
+OTHER  [165] help why no hold breath            -> [23] Sure thing. What next?
+MISS   [166] why soda fizzes
+MISS   [166] henrys law explain
+MISS   [166] wat is henry law
+MISS   [166] why bubbles in pop
+MISS   [166] gas pressure and liquid
+MISS   [166] soda bubbles why
+MISS   [166] henry law formula
+MISS   [166] why co2 leaves soda
+MISS   [166] pressure affects dissolving
+MISS   [166] henrys law and soda
+MISS   [166] whats henrys law
+MISS   [166] open soda bubbles
+MISS   [167] why do my ears pop when i swallow
+MISS   [167] wat happens when u swallow and ears pop
+MISS   [167] why ears pop on pressure change
+MISS   [167] swallowing fixes ear pressure why
+MISS   [167] why does ear pop after swallowing
+MISS   [167] explaining ear pop and swallowing
+MISS   [167] why do i hear pop when i swallow
+MISS   [167] is it the tube opening when i swallow
+MISS   [167] why do ears pop due to air pressure
+MISS   [167] swallow to equalize ear pressure wat
+MISS   [167] why swallowing stops ear popping
+OTHER  [168] why does a weather balloon explode -> [92] I can't check live weather. Try a weather app, or a soaring 
+OTHER  [168] why do weather balloons pop at high alt -> [92] I can't check live weather. Try a weather app, or a soaring 
+OTHER  [168] is it boyles law for weather balloons -> [92] I can't check live weather. Try a weather app, or a soaring 
+MISS   [168] why does a balloon expand as it rises
+MISS   [168] why do balloons grow then pop
+OTHER  [168] whys weather balloons explode up high -> [92] I can't check live weather. Try a weather app, or a soaring 
+OTHER  [168] explain weather balloon popping plz -> [92] I can't check live weather. Try a weather app, or a soaring 
+MISS   [168] balloon pops in sky why
+OTHER  [168] wat causes weather balloon to burst -> [92] I can't check live weather. Try a weather app, or a soaring 
+MISS   [97] list main trig id families
+OTHER  [97] reciprocal quotient pythagorean?   -> [100] Quotient identities:
+tan x = sin x/cos x
+cot x = cos x/sin x
+MISS   [97] how many id families r there
+OTHER  [97] ask proof 1                        -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+OTHER  [97] what is cofunction id              -> [102] Cofunction identities (degrees):
+sin(90 - x) = cos x
+cos(90 
+OTHER  [97] sum diff double angle              -> [103] Double angle identities:
+sin 2x = 2 sin x cos x
+cos 2x = cos
+OTHER  [97] even odd trig ids                  -> [101] Even/odd identities:
+sin(-x) = -sin x
+cos(-x) = cos x
+tan(-x
+OTHER  [97] power reducing formula             -> [106] Power reducing identities:
+sin^2 x = (1 - cos 2x)/2
+cos^2 x 
+MISS   [97] which ids do u have
+MISS   [97] list all 8 families
+OTHER  [97] proof 3                            -> [117] Proof 3: sin x/(1 + cos x) = csc x - cot x
+Multiply the left
+OTHER  [98] sin^2+cos^2=1?                     -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [98] list pythag identities             -> [97] Main identity families (ask about any one):
+reciprocal, quot
+OTHER  [98] +tan^2 x                           -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+MISS   [98] pyth idents for trig
+OTHER  [98] r u sure sin^2+cos^2 is 1          -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [98] sec^2 = 1+tan^2?                   -> [108] sec x (secant) = 1/cos x. It's undefined where cos x = 0 (90
+OTHER  [98] wat is 1+cot^2                     -> [109] cot x (cotangent) = 1/tan x = cos x/sin x. It's undefined wh
+MISS   [98] typos: pythagnorans
+MISS   [98] trig idents pls
+OTHER  [98] csc^2 x equals wat                 -> [107] csc x (cosecant) = 1/sin x. It's undefined where sin x = 0 (
+OTHER  [99] csc sec cot formulas               -> [109] cot x (cotangent) = 1/tan x = cos x/sin x. It's undefined wh
+OTHER  [99] how do u get csc from sin          -> [107] csc x (cosecant) = 1/sin x. It's undefined where sin x = 0 (
+MISS   [99] wat is 1/sin x called
+OTHER  [99] sec x equals wat                   -> [108] sec x (secant) = 1/cos x. It's undefined where cos x = 0 (90
+OTHER  [99] csc x = ?                          -> [107] csc x (cosecant) = 1/sin x. It's undefined where sin x = 0 (
+OTHER  [99] what is csc x equal to             -> [107] csc x (cosecant) = 1/sin x. It's undefined where sin x = 0 (
+OTHER  [99] sec x = 1/cos x ?                  -> [108] sec x (secant) = 1/cos x. It's undefined where cos x = 0 (90
+OTHER  [99] cot x formula                      -> [109] cot x (cotangent) = 1/tan x = cos x/sin x. It's undefined wh
+OTHER  [100] wat is tan x formula               -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [100] how do u find tan x                -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [100] tan x equals what                  -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [100] cot x formula pls                  -> [109] cot x (cotangent) = 1/tan x = cos x/sin x. It's undefined wh
+OTHER  [100] r there any tan cot rules          -> [109] cot x (cotangent) = 1/tan x = cos x/sin x. It's undefined wh
+OTHER  [100] tan x = sin/cos?                   -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [100] why is tan x sin/cos               -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [100] give me tan and cot id             -> [109] cot x (cotangent) = 1/tan x = cos x/sin x. It's undefined wh
+OTHER  [100] tan x and cot x defs               -> [109] cot x (cotangent) = 1/tan x = cos x/sin x. It's undefined wh
+OTHER  [101] cos is even rite                   -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [101] wat is tan(-x)                     -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [101] why sin -x negative                -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [101] cos(-a)=?                          -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [101] sine parity                        -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [101] why does tan flip sign             -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [102] wat is sin 90-x                    -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [102] how r sin and cos related          -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [102] sin(90-a) = ?                      -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [102] why sin 90-x is cos x              -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [102] radians version of cofunctions     -> [48] A radian is the angle where the arc length equals the radius
+MISS   [102] typos: cofnctn idnties
+OTHER  [102] sin 90 minus x equals              -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [102] tan 90-x formula                   -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+MISS   [102] pi/2 vs 90 cofunctions
+MISS   [103] wat is sin2x
+MISS   [103] cos2x formula
+OTHER  [103] x trig identities                  -> [97] Main identity families (ask about any one):
+reciprocal, quot
+MISS   [103] doubel angle id
+OTHER  [103] how to write sin 2theta            -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+MISS   [103] sin2x cos2x tan2x
+MISS   [103] r u sure about sin2x
+OTHER  [104] wat are the sin sum diff formulas  -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [104] give me trig addition sub identities -> [97] Main identity families (ask about any one):
+reciprocal, quot
+OTHER  [104] how do i find sin(a-b)             -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+MISS   [104] list all sum and diff id
+OTHER  [104] tan(a+b) formula pls               -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [104] cos sum and diff eqns              -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [104] need sin cos tan add sub rules     -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+MISS   [104] type out the angle sum formulas
+OTHER  [104] what is formula for sin a+b        -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [104] trig identities for sum diff       -> [97] Main identity families (ask about any one):
+reciprocal, quot
+OTHER  [104] show me tan a b formula            -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [104] all the add sub trig identities    -> [97] Main identity families (ask about any one):
+reciprocal, quot
+OTHER  [105] how do i find sin x/2              -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [105] tan x over 2 formula               -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [105] sqrt 1-cos x stuff                 -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+MISS   [105] how to choose plus or minus
+OTHER  [106] wat is sin squared formula         -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [106] how to reduce sin^2 x              -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+MISS   [106] sin2 x = ?
+OTHER  [106] half angle for sin squared         -> [105] Half angle identities:
+sin(x/2) = +/- sqrt((1 - cos x)/2)
+co
+OTHER  [106] u know sin^2 x half angle?         -> [105] Half angle identities:
+sin(x/2) = +/- sqrt((1 - cos x)/2)
+co
+OTHER  [106] cos^2 x half angle pls             -> [105] Half angle identities:
+sin(x/2) = +/- sqrt((1 - cos x)/2)
+co
+OTHER  [106] explain sin squared power red      -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [106] why sin^2 = 1-cos2x/2              -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [106] get formula for sin^2 x            -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [106] power red sin and cos              -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [110] list sin cos tan for 30 45 60 90   -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+MISS   [110] r u sure 30 deg is 1/2
+MISS   [110] need exact trig table
+OTHER  [110] show me exact sin cos tan          -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [110] why is tan 90 undefined            -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+MISS   [110] exact trig
+OTHER  [110] help me get exact trig vals        -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [110] typo check sin 45 exact            -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [111] whats the way to show sin cos eq   -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [111] prove 1+1=2 type stuff             -> [116] Proof 2: 1 - cos^2 t/(1 + sin t) = sin t
+cos^2 t = 1 - sin^2
+MISS   [111] start with which side messier
+OTHER  [111] rewrite in sin and cos why         -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [111] use pythagorean id how             -> [98] Pythagorean identities:
+sin^2 x + cos^2 x = 1
+1 + tan^2 x = 
+MISS   [111] conjugate for 1 plus x
+OTHER  [112] how to simplify 1-cos^2            -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [112] can u help w trig ident            -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [112] wat do i do w 1/(1-cos x)          -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [112] simplify sin^2+cos^2               -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [112] use conjugate for 1/1-cos?         -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [112] how r u supposed to factor this    -> [16] I'm doing well, thanks for asking! How can I help?
+MISS   [112] trig simplification tips
+OTHER  [112] cos^2 x wat next                   -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [112] help w 1/(1+cos)                   -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [112] convert to sin cos plz             -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+MISS   [112] why cant i solve this trig
+OTHER  [114] can u show proof 1                 -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+OTHER  [114] wat r the available proofs         -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [114] show me proof 7                    -> [121] Proof 7: tan^2 x - sin^2 x = sin^2 x tan^2 x
+Left: sin^2/cos
+OTHER  [114] i need proof 3                     -> [117] Proof 3: sin x/(1 + cos x) = csc x - cot x
+Multiply the left
+OTHER  [114] type proof 5                       -> [119] Proof 5: ((sec t - tan t)^2 + 1)/(csc t (sec t - tan t)) = 2
+OTHER  [114] which proofs do u have             -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [114] walk me thru proof 2               -> [116] Proof 2: 1 - cos^2 t/(1 + sin t) = sin t
+cos^2 t = 1 - sin^2
+OTHER  [114] is there a proof for sin cos       -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [114] list all proof options             -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [114] give me proof 6                    -> [120] Proof 6: (1 - cos x)/(1 + cos x) = (csc x - cot x)^2
+Work on
+OTHER  [114] show proof 4                       -> [118] Proof 4: (1 + tan x)/sin x = csc x + sec x
+Split it: 1/sin x
+OTHER  [115] prove sin^4x - cos^4x = sin^2x - cos^2x -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [115] wat's the proof sin^4x - cos^      -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [116] prove 1-cos^2t/(1+sint)=sint       -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+OTHER  [116] help with trig id 1 - cos2/1+sin   -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [116] wat is 1 - cos^2 t/(1 + sin t)     -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [116] plz solve 1 - cos^2 t / (1 + sin t) -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [116] is 1 - cos^2 t/(1 + sin t) = sin t -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [116] need help proving 1-cos^2/1+sin=sin -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [116] typos: 1 - cos^2 t/(1 + sin t) = ? -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [116] why is 1 - cos^2 t/(1 + sin t) = sin t -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [116] trig help: 1 - cos^2 t/(1 + sin t) -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [117] prove sinx/1+cosx=cscx-cotx        -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [117] show sin x over 1+cos x is csc minus cot -> [109] cot x (cotangent) = 1/tan x = cos x/sin x. It's undefined wh
+OTHER  [117] verify identity sinx/(1+cosx)=cscx-cotx -> [113] To test an identity, try a value for x on both sides with yo
+OTHER  [117] wat is proof of sinx/(1+cosx)=cscx-cotx -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+OTHER  [117] u r smart prove sinx/(1+cosx)      -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+OTHER  [117] need help with trig id sinx/(1+cosx) -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [117] maths proof sinx/1+cosx equals cscx-cotx -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+MISS   [117] i think sinx/(1+cosx) is cscx-cotx why
+MISS   [117] demonstrate sinx/(1+cosx)=cscx-cotx
+MISS   [117] is sinx/(1+cosx) same as cscx-cotx?
+OTHER  [118] prove (1+tanx)/sinx = cscx+secx    -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+OTHER  [118] show 1+ tan x / sin x is csc + sec -> [108] sec x (secant) = 1/cos x. It's undefined where cos x = 0 (90
+OTHER  [118] trig proof (1+tanx)/sinx           -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+MISS   [118] demonstrate (1+tanx)/sinx eq cscx+secx
+OTHER  [118] plz prove (1+tanx)/sinx=cscx+secx  -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+OTHER  [118] wat is proof for (1+tanx)/sinx     -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+MISS   [118] verify (1+tanx)/sinx = cscx + secx
+OTHER  [118] help show (1+tanx)/sinx = csc+sec  -> [108] sec x (secant) = 1/cos x. It's undefined where cos x = 0 (90
+OTHER  [118] can u prove (1+tanx)/sinx          -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+OTHER  [118] (1+tanx)/sinx = cscx+secx proof    -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+OTHER  [118] prove trig id (1+tanx)/sinx        -> [115] Proof 1: sin^4 x - cos^4 x = sin^2 x - cos^2 x
+Left side = (
+OTHER  [119] proof5                             -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [119] th proof                           -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+MISS   [120] show 6
+OTHER  [120] help with q6                       -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [120] th proof                           -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+MISS   [120] trig 6
+MISS   [120] verify 6
+MISS   [120] solve trig 6
+OTHER  [120] proof six                          -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+MISS   [120] do 6
+OTHER  [121] help with trig id 7                -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+OTHER  [121] verify tan^2x - sin^2x = sin^2x tan^2x -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+OTHER  [122] prve sin^3+cos^3 / sin+cos = 1-sin cos -> [117] Proof 3: sin x/(1 + cos x) = csc x - cot x
+Multiply the left
+OTHER  [122] how do u prove sin cubed over sin+cos -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+OTHER  [122] prove (sin^3+cos^3)/(sin+cos)=1-sincos -> [117] Proof 3: sin x/(1 + cos x) = csc x - cot x
+Multiply the left
+MISS   [122] show sum of cubes for trig
+OTHER  [122] sin^3x+cos^3x divided by sinx+cosx -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [122] sinxcosx proof                     -> [111] Proving an identity:
+1. Work on ONE side only, usually the m
+MISS   [122] typos: pruvf 8 sin3/cos3
+MISS   [122] trig id 8
+MISS   [123] what does a/sin a = b/sin b mean
+MISS   [124] how to find angle with sas
+OTHER  [124] c^2 = a^2 + b^2 - 2ab cos c        -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+MISS   [124] how to solve for angle c
+MISS   [124] need formula for side c
+OTHER  [124] cos c = (a^2+b^2-c^2)/2ab          -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [125] which law for aas asa ssa          -> [126] SSA (the ambiguous case): given sides a, b and angle A, let 
+MISS   [125] if i hav sas use wat
+MISS   [125] wat if i know 2 angles
+OTHER  [125] law of sines or cosines            -> [124] Law of Cosines: c^2 = a^2 + b^2 - 2ab cos C
+(The same patter
+MISS   [125] aas means wat law
+MISS   [125] sas sss use which one
+MISS   [125] find 3rd angle how
+MISS   [125] a+b+c=180?
+MISS   [125] wat to do w 2 angles
+OTHER  [125] aas or ssa use wat                 -> [126] SSA (the ambiguous case): given sides a, b and angle A, let 
+OTHER  [125] when to use cosines                -> [42] Cosine is adjacent over hypotenuse (CAH). On the unit circle
+OTHER  [125] typos in law of sines              -> [123] Law of Sines: a/sin A = b/sin B = c/sin C
+Sides are lowercas
+MISS   [126] how to tell if 2 triangles
+MISS   [126] a b angle A rules
+MISS   [126] when do we get 0 or 2 tri
+MISS   [126] if a less than h wat
+OTHER  [126] h = b sin A rule                   -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+MISS   [126] a < h means wat
+OTHER  [127] how does ssa work                  -> [126] SSA (the ambiguous case): given sides a, b and angle A, let 
+OTHER  [127] whats the rule for ssa             -> [126] SSA (the ambiguous case): given sides a, b and angle A, let 
+OTHER  [127] explain ssa triangle cases         -> [126] SSA (the ambiguous case): given sides a, b and angle A, let 
+OTHER  [127] what if sin is greater than 1      -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [127] ssa no solution                    -> [126] SSA (the ambiguous case): given sides a, b and angle A, let 
+OTHER  [127] diff between ssa and sas           -> [126] SSA (the ambiguous case): given sides a, b and angle A, let 
+OTHER  [127] why 2 triangles in ssa             -> [126] SSA (the ambiguous case): given sides a, b and angle A, let 
+OTHER  [127] calc ssa cases                     -> [126] SSA (the ambiguous case): given sides a, b and angle A, let 
+MISS   [127] wat if a is less than h
+OTHER  [127] is sin > 1 possible                -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [128] wat is herons formula              -> [129] Heron's formula: s = (a + b + c)/2, then Area = sqrt(s(s - a
+MISS   [128] area formula 2 sides angle
+MISS   [128] typos: how 2 get area
+OTHER  [128] heron formula                      -> [129] Heron's formula: s = (a + b + c)/2, then Area = sqrt(s(s - a
+MISS   [128] area = ?
+MISS   [128] sides and angle area
+MISS   [128] wat do i type for area
+OTHER  [128] herons formula help                -> [129] Heron's formula: s = (a + b + c)/2, then Area = sqrt(s(s - a
+MISS   [128] area with 3 sides
+MISS   [128] tri area calc
+MISS   [129] how do u find area with 3 sides
+OTHER  [129] area of triangle given all 3 sides -> [128] Area = (1/2) a b sin C (two sides and the included angle).
+H
+MISS   [129] s = a+b+c /2 then?
+MISS   [129] area from 3 sides pls
+OTHER  [129] how r u calc area 3 sides          -> [16] I'm doing well, thanks for asking! How can I help?
+OTHER  [129] triangle area 3 sides formula      -> [128] Area = (1/2) a b sin C (two sides and the included angle).
+H
+MISS   [130] why do 3 angles equal 180
+MISS   [130] do all triangles add to 180
+MISS   [130] a+b+c=180?
+MISS   [130] why is it 180 for triangle
+MISS   [130] sum of interior angles
+MISS   [130] is 180 always true for triangles
+MISS   [130] why 180 deg in triangle
+OTHER  [130] angle sum theorem                  -> [46] In a right triangle, a^2 + b^2 = c^2, where c is the hypoten
+MISS   [130] angles = 180?
+MISS   [130] wat makes 180
+MISS   [131] do they have same value for 2 pts
+MISS   [131] can u explain elev vs depress
+MISS   [131] are they alternate interior angles
+MISS   [131] is looking up same as looking down
+OTHER  [132] law of cosines for forces f1 f2 angle t -> [124] Law of Cosines: c^2 = a^2 + b^2 - 2ab cos C
+(The same patter
+MISS   [132] why is it +2f1f2cost not minus
+MISS   [132] derive r^2 = f1^2 + f2^2 + 2f1f2cost
+OTHER  [132] force triangle law of cosines help -> [124] Law of Cosines: c^2 = a^2 + b^2 - 2ab cos C
+(The same patter
+OTHER  [132] is the angle inside triangle 180 - t? -> [130] The angles of a triangle add up to 180 degrees: A + B + C = 
+MISS   [132] how r relates to f1 f2 and angle t
+MISS   [133] wat can i do
+MATH   [133] sa 6 sb 8 sc 11
+MISS   [133] type 3 values
+MISS   [133] is there a shortcut
+MATH   [133] aa 53 ac 13 sb 12
+MISS   [133] u know triangles?
+OTHER  [133] help me with sides                 -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MISS   [133] can u do sa sb sc
+MISS   [133] r u able to solve
+MISS   [133] values at once
+MISS   [134] wat do i type to find c
+MISS   [134] how do i put values for c
+OTHER  [134] need help entering the sides       -> [13] I can chat, do math ('12*3', 'sin 30'), convert units ('5 ft
+MATH   [134] is it aa 53 ac 13 sb 12.8
+MISS   [134] r u sure its opposite A
+OTHER  [134] typos in solver format?            -> [133] I can solve triangles two ways.
+1. Say 'solve triangle' and 
+MISS   [134] can u show me the input
+MISS   [134] what is the format for c
+MISS   [134] i have 53 13 12.8 how do i use
+OTHER  [134] stuck on input syntax              -> [112] Tips: convert to sin and cos; look for sin^2 + cos^2 = 1 hid
+MISS   [134] how to solve for c here
+MATH   [134] aa 53 ac 13 sb 12.8 correct?
+OTHER  [135] what r sin cos tan                 -> [43] Tangent is opposite over adjacent (TOA), or sine divided by 
+MISS   [135] trig ratios
+OTHER  [135] how do i find sin                  -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [135] law of sines or cosines?           -> [124] Law of Cosines: c^2 = a^2 + b^2 - 2ab cos C
+(The same patter
+MISS   [135] right triangle trig
+OTHER  [136] wat is sin 30                      -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [136] why my sin 30 wrong                -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [136] calc say sin 30 = -0.98            -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [136] how 2 set radians                  -> [48] A radian is the angle where the arc length equals the radius
+MISS   [136] is calc in deg mode
+MISS   [136] check angle mode pls
+OTHER  [136] sin pi/2 not 1                     -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+OTHER  [136] radians or degrees                 -> [49] Multiply degrees by pi/180 to get radians, or radians by 180
+OTHER  [136] u r in radians?                    -> [48] A radian is the angle where the arc length equals the radius
+OTHER  [136] fix sin 30 answer                  -> [41] Sine is opposite over hypotenuse (SOH). On the unit circle i
+MISS   [136] calc mode error
+OTHER  [136] change 2 radians                   -> [48] A radian is the angle where the arc length equals the radius
+
+2404 questions: 521 reached the intended answer, 531 went to a different answer, 1352 had no answer

@@ -1,0 +1,35 @@
+# private: never published
+HANDOFF.md
+NOTES.md
+.claude/
+backup/
+send/
+send-old/
+publish/
+wireless/driver-download/
+clibs.8xg
+**/.env
+**/secrets.h
+
+# build output (ready-made .8xp files are attached to the GitHub release instead)
+**/bin/
+**/obj/
+**/build/
+**/managed_components/
+**/dependencies.lock
+**/sdkconfig
+**/sdkconfig.old
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+
+# personal video clips (links to files outside the project)
+reels/clips/
+
+# compiled test programs (the tests rebuild them)
+experiments/chat/testing/check_calcgpt
+experiments/chat/testing/check_triggpt
+experiments/chat/testing/nn_train_calcgpt
+solver/tests/t_*
+!solver/tests/t_*.c
