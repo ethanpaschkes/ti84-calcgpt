@@ -37,5 +37,7 @@ bool dusb_os_version(dusb_t *d, uint8_t version[3]);
 bool dusb_list(dusb_t *d, dusb_var_cb cb, void *arg);
 /* puts one variable on the calculator (replacing one of the same name) */
 bool dusb_send_var(dusb_t *d, const char *name, uint8_t type, uint8_t version, bool archived, const uint8_t *data, uint32_t size);
+/* asks the calculator to run a program (asm_program: an asm/C program), as TILP's execute does (DUSB packet 0x0011) */
+bool dusb_execute(dusb_t *d, const char *name, bool asm_program);
 /* puts a flash app on the calculator (the signed data after a .8ek file's 0x4E-byte header); the calculator checks the signature */
 bool dusb_send_app(dusb_t *d, const char *name, const uint8_t *data, uint32_t size);

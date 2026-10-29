@@ -12,6 +12,7 @@ void app_main(void)
         err = nvs_flash_init();
     }
     ESP_ERROR_CHECK(err);
+    calclink_use(&link_jtag);
     calclink_start();
     bridge_start();
 }

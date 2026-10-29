@@ -6,23 +6,25 @@
 #include "driver/usb_serial_jtag.h"
 #include "esp_err.h"
 
-void calclink_start(void)
+static void jtag_start(void)
 {
     usb_serial_jtag_driver_config_t cfg = {.tx_buffer_size = 4096, .rx_buffer_size = 4096};
     ESP_ERROR_CHECK(usb_serial_jtag_driver_install(&cfg));
 }
 
-int calclink_read(uint8_t *buf, size_t n, TickType_t wait)
+static int jtag_read(uint8_t *buf, size_t n, TickType_t wait)
 {
     return usb_serial_jtag_read_bytes(buf, n, wait);
 }
 
-int calclink_write(const uint8_t *buf, size_t n, TickType_t wait)
+static int jtag_write(const uint8_t *buf, size_t n, TickType_t wait)
 {
     return usb_serial_jtag_write_bytes(buf, n, wait);
 }
 
-bool calclink_connected(void)
+static bool jtag_connected(void)
 {
     return usb_serial_jtag_is_connected();
 }
+
+const struct calclink_ops link_jtag = {jtag_start, jtag_read, jtag_write, jtag_connected};

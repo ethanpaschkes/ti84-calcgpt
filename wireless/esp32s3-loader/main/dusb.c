@@ -28,6 +28,7 @@ static const char *TAG = "dusb";
 #define VPKT_VAR_HDR 0x000A
 #define VPKT_RTS 0x000B
 #define VPKT_VAR_CNTS 0x000D
+#define VPKT_EXECUTE 0x0011
 #define VPKT_MODE_SET 0x0012      /* the answer to a ping */
 #define VPKT_DATA_ACK 0xAA00
 #define VPKT_DELAY_ACK 0xBB00
@@ -410,4 +411,18 @@ bool dusb_send_var(dusb_t *d, const char *name, uint8_t type, uint8_t version, b
 bool dusb_send_app(dusb_t *d, const char *name, const uint8_t *data, uint32_t size)
 {
     return send_rts(d, name, 0x24, false, 0, true, size) && send_contents(d, data, size);
+}
+
+bool dusb_execute(dusb_t *d, const char *name, bool asm_program)
+{
+    uint8_t msg[16];
+    size_t n = strlen(name), j = 0;
+    if (n > 8) return false;
+    /* folder length (0) | name length | name + 0 | action: 0 = TI-BASIC program, 1 = asm program, 2 = app (libticalcs DUSB_EID_*) */
+    msg[j++] = 0;
+    msg[j++] = (uint8_t)n;
+    memcpy(msg + j, name, n + 1);
+    j += n + 1;
+    msg[j++] = asm_program ? 1 : 0;
+    return vpkt_send(d, VPKT_EXECUTE, msg, j) && vpkt_expect(d, VPKT_DATA_ACK);
 }

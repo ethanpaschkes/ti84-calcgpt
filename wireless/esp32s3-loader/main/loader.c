@@ -8,6 +8,8 @@
  *                      installs the AsmHook2 app and restarts. Launching AsmHook2 once (and after every RAM reset) makes C
  *                      programs run from the prgm menu. Nothing is repeated when AsmHook2 is already there.
  *
+ * Then, where C programs can run, it starts CALC on the calculator itself (the DUSB execute command TILP uses).
+ *
  * The files are built into the firmware (main/payload, filled by fill_payload.sh, see CMakeLists.txt). A variable or app the
  * calculator already has is left alone. */
 #include <string.h>
@@ -19,6 +21,7 @@
 #include "dusb.h"
 #include "loader.h"
 #include "payload.h"
+#include "role.h"
 
 static const char *TAG = "loader";
 
@@ -166,13 +169,19 @@ static void load(usb_device_handle_t dev)
     plan = run_plan(os);
     if (plan == RUN_ARTIFICE2) {
         if (send_file(&d, &artifice2, &have, false)) ESP_LOGI(TAG, "%s", run_plan_text(plan));
-    } else if (plan == RUN_ARTIFICE3) {
-        if (has(&have, HOOK_APP)) ESP_LOGI(TAG, "C programs already run (AsmHook2 is installed): press prgm, run CALC");
-        else artifice3(&d, &have);
+    } else if (plan == RUN_ARTIFICE3 && !has(&have, HOOK_APP)) {
+        artifice3(&d, &have);
     } else {
         ESP_LOGI(TAG, "%s", run_plan_text(plan));
     }
+    /* where C programs run as they are (or the hook is in place), start CALC for the user: the calculator leaves its home
+     * screen, CALC turns USB on and this board becomes its serial link (link_cdc.c) */
+    if (plan == RUN_NATIVE || (plan == RUN_ARTIFICE3 && has(&have, HOOK_APP))) {
+        if (dusb_execute(&d, "CALC", true)) ESP_LOGI(TAG, "CALC started on the calculator");
+        else ESP_LOGW(TAG, "could not start CALC from here: press prgm, run CALC");
+    }
     dusb_close(&d);
+    role_hand_over();   /* the LiPo box: the calculator becomes the host now; the DevKitC-1 stays the host */
 }
 
 /* ---------------------------------------------------------------- USB */

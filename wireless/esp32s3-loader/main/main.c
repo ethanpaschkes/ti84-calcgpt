@@ -1,12 +1,13 @@
-/* The box: an ESP32-S3 as USB HOST with its own power, plugged into any TI-84 Plus CE.
+/* The box: an ESP32-S3 with a small battery, plugged into any TI-84 Plus CE (../../BOX_DESIGN.md).
  *
- *   calculator at its home screen  -> loader.c puts CALC, CALCGPT, SOLVER, their libraries and (OS 5.5+) the jailbreak on it
- *   calculator running CALC/CALCGPT -> link_cdc.c + the bridge (../../esp32s3-bridge/main/bridge.c, the same code as the
- *                                      device-mode board) carry its messages over Wi-Fi to the CalcGPT server or calcnet
+ *   as the USB host (on battery)   loader.c puts CALC, CALCGPT, SOLVER, their libraries and (OS 5.5+) the jailbreak on the
+ *                                  calculator and starts CALC; then role.c hands the host role to the calculator.
+ *   as the USB device (calculator powers the box)   the bridge (../../esp32s3-bridge/main/bridge.c, the same code as the
+ *                                  device-mode board) carries CALC's and CALCGPT's messages over Wi-Fi to the CalcGPT server.
  *
- * Wiring: the board's USB pins (GPIO19 = D-, GPIO20 = D+) go to a USB-A socket that also gets 5 V and ground (../ESP_SETUP.md);
- * the calculator is on a normal mini-USB (B) cable, and the board's 5 V comes from a battery or power bank on the 5V/GND pins,
- * never from its USB-C port marked USB (that port shares GPIO19/20). Settings are the bridge's main/secrets.h. */
+ * On the bare DevKitC-1 (BOX_HW 0) the box is always the host: the bridge then talks to CALC through link_cdc.c, and the board
+ * must be powered from its UART USB-C port or 5V pin, never from the USB-C port marked USB (that port shares GPIO19/20, the
+ * calculator link). Settings are the bridge's main/secrets.h. */
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_log.h"
@@ -16,6 +17,7 @@
 #include "bridge.h"
 #include "calclink.h"
 #include "loader.h"
+#include "role.h"
 
 static const char *TAG = "calcbox";
 
@@ -28,20 +30,34 @@ static void usb_library_task(void *arg)
     }
 }
 
-void app_main(void)
+static void host_mode(void)
 {
     const usb_host_config_t host = {.skip_phy_setup = false, .intr_flags = ESP_INTR_FLAG_LEVEL1};
+    ESP_ERROR_CHECK(usb_host_install(&host));
+    xTaskCreate(usb_library_task, "usb_lib", 4096, NULL, 10, NULL);
+    ESP_ERROR_CHECK(cdc_acm_host_install(NULL));
+    loader_start();                 /* calculators at their home screen */
+    calclink_use(&link_cdc);        /* calculators running a program with a serial link (DevKitC-1 only: the box hands over) */
+    ESP_LOGI(TAG, "host: waiting for a calculator: at its home screen it gets CALC and friends, then CALC is started");
+}
+
+static void device_mode(void)
+{
+    calclink_use(&link_jtag);
+    role_watch_button();
+    ESP_LOGI(TAG, "device: waiting for CALC or CALCGPT on the calculator to set up the USB link");
+}
+
+void app_main(void)
+{
     esp_err_t err = nvs_flash_init();
     if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND) {
         ESP_ERROR_CHECK(nvs_flash_erase());
         err = nvs_flash_init();
     }
     ESP_ERROR_CHECK(err);
-    ESP_ERROR_CHECK(usb_host_install(&host));
-    xTaskCreate(usb_library_task, "usb_lib", 4096, NULL, 10, NULL);
-    ESP_ERROR_CHECK(cdc_acm_host_install(NULL));
-    loader_start();      /* calculators at their home screen */
-    calclink_start();    /* calculators running a program with a serial link */
+    if (role_decide() == ROLE_HOST) host_mode();
+    else device_mode();
+    calclink_start();
     bridge_start();
-    ESP_LOGI(TAG, "waiting for a calculator: at its home screen it gets CALC and friends; running CALC or CALCGPT it is bridged");
 }

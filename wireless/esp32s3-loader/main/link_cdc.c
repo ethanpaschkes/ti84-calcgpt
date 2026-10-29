@@ -59,25 +59,27 @@ static void open_task(void *arg)
     }
 }
 
-void calclink_start(void)
+static void cdc_start(void)
 {
     from_calc = xStreamBufferCreate(8192, 1);
     xTaskCreate(open_task, "link_cdc", 4096, NULL, 7, NULL);
 }
 
-int calclink_read(uint8_t *buf, size_t n, TickType_t wait)
+static int cdc_read(uint8_t *buf, size_t n, TickType_t wait)
 {
     return (int)xStreamBufferReceive(from_calc, buf, n, wait);
 }
 
-int calclink_write(const uint8_t *buf, size_t n, TickType_t wait)
+static int cdc_write(const uint8_t *buf, size_t n, TickType_t wait)
 {
     cdc_acm_dev_hdl_t d = dev;
     if (!connected || !d) return -1;
     return cdc_acm_host_data_tx_blocking(d, buf, n, wait * portTICK_PERIOD_MS) == ESP_OK ? (int)n : -1;
 }
 
-bool calclink_connected(void)
+static bool cdc_connected(void)
 {
     return connected;
 }
+
+const struct calclink_ops link_cdc = {cdc_start, cdc_read, cdc_write, cdc_connected};
