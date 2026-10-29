@@ -38,11 +38,18 @@ Rule at power-on (role.c, `role_decide`): if the restart flag says "device", be 
 | N-MOSFET, small | 2N7000 / BSS138 + 100 k pull-down | grounds the ID pin when `PIN_ID_LOW` is high |
 | 2 resistors 100 k | | divider from the cable's 5 V to `PIN_VBUS_SENSE` (2.5 V = high) |
 | Schottky diode | | so the boost's 5 V never back-feeds the calculator's 5 V (or power the ESP from the LiPo only and keep the two 5 V rails apart) |
-| Cable | an OTG adapter opened up: cut its ID-to-GND bridge and bring ID out to the MOSFET; or a mini-A plug | the only plug into the calculator |
+| Cable | Ethan's existing OTG adapter (mini plug -> USB-A socket), opened: cut its ID-to-GND bridge and bring ID out on a wire to the MOSFET; plus the existing USB-A-to-Dupont jumper cable | the only plug into the calculator; no coupler or extra cable needed |
 
 Pins (placeholders in `esp32s3-loader/main/box_pins.h`; change them to the wiring when it exists): VBUS sense GPIO4, boost enable
 GPIO5, ID-low GPIO6. The ESP32-S3's own USB data pins stay GPIO19/GPIO20. `BOX_HW 0` = the DevKitC-1 as it is today (host mode
 only, powered from its UART USB-C port or the 5V pin); `BOX_HW 1` = the box above.
+
+First host-mode test (before the battery build): modified OTG adapter with ID left open -> jumper cable -> board (5V pin now
+feeds the cable, with the board powered from its UART USB-C port). The calculator should wake as a device and the loader run.
+
+Parts check 2026-10-29 evening: Ethan has a 1S RC-plane LiPo and probably a 1S USB charger stick (check its printed current: usable
+if 0.1-0.2 A), the OTG adapter and the jumper cable. To order: boost (TPS61023 with EN), 2N7000 MOSFET, 1N5819 diodes, a resistor
+assortment; the charger board only if the RC stick is 0.3 A or more.
 
 ## Power budget (rough)
 
