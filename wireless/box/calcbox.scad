@@ -14,6 +14,7 @@
 //   openscad --export-format binstl -o base.stl -D 'wiring="dupont"' -D 'part="base"' calcbox.scad
 wiring = "dupont";
 part = "exploded";
+use_models = true;                  // true: draw the boost and charger from Adafruit's STL files in models/ (same sizes as the numbers above)
 
 // --- the DevKitC-1 (Espressif) -----------------------------------------------------------------
 pcb_w = 25.4; pcb_l = 62.8; pcb_t = 1.6;
@@ -37,8 +38,8 @@ solder_wire_d = 1.0;                // 28 AWG silicone wire if soldered instead
 
 // --- the other parts (MEASURE) -----------------------------------------------------------------
 lipo = [17, 30, 4.0];               // 1S 150 mAh pouch from the RC plane: width across the board, length along it, thickness
-charger = [15.5, 23, 4.0];          // Adafruit Micro-Lipo MCP73831 incl. micro-USB; the RC USB charger stick is MUCH bigger: measure it
-boost = [17, 12, 3.5];              // TPS61023 board: 17 across the board, 12 along it
+charger = [19.05, 21.0, 6.37];      // Adafruit Micro-Lipo 1904, from Adafruit's CAD (models/adafruit_1904_microlipo.stl); the RC charger stick is bigger: measure it
+boost = [17.78, 11.43, 5.07];       // Adafruit MiniBoost 4654, from Adafruit's CAD (models/adafruit_4654_miniboost.stl); long side across the board
 mosfet = [4.6, 5.2, 3.7];           // 2N7000 TO-92 lying on its flat face
 diode = [2.7, 4.1, 2.7];            // 1N5819 DO-41 body
 resistor = [2.4, 6.3, 2.4];         // 1/4 W
@@ -104,9 +105,14 @@ slack_l = end_room - 4;                      // the coil of spare wire fills the
 slack_p = [1.0, er_y + 2.0, -bay_h + 4.5];
 
 module parts() {
-    blk(charger_p, charger, "#1f4e6b");
+    if (use_models) {
+        color("#1f4e6b") at(charger_p) translate([0.66, 0, 0]) import("models/adafruit_1904_microlipo.stl");   // its bbox starts at x = -0.66
+        color("#1f6e8b") at(boost_p) import("models/adafruit_4654_miniboost.stl");
+    } else {
+        blk(charger_p, charger, "#1f4e6b");
+        blk(boost_p, boost, "#1f6e8b");
+    }
     blk(lipo_p, lipo, "#b9bcc4");
-    blk(boost_p, boost, "#1f6e8b");
     blk(mosfet_p, mosfet, "#2c2c2a");
     blk(diode_p, diode, "#3a3a3a");
     for (r = res_p) blk(r, resistor, "#e8d5b5");
