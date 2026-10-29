@@ -53,14 +53,16 @@ untouched (for REELS, BROWSER and the other Mac programs).
 ## 3. Messages between the calculator and the board itself (never sent to the server)
 
 The board reads the calculator's messages (section 1 framing) whenever it is offline or logged in with `CALCNET2`, and keeps these
-for itself:
+for itself. Which server it picks follows the program: the first byte from the calculator is `I` (CALC) or `R` (CALCGPT) for
+programs that need the CalcGPT server, so the board leaves a `CALCNET1` relay it had joined (at home, calcnet comes first) and
+logs in to the `CALCNET2` server instead; REELS (`S`) and BROWSER (`Q`, `G`, `X`, `K`, `Z`) stay on calcnet:
 
 Calculator -> board:
 
 | Bytes | Meaning |
 |---|---|
 | `W` | scan for Wi-Fi networks |
-| `J` len ssid len password | join this network and remember it (password len 0 = open network) |
+| `J` len ssid len password | join this network and remember it (password len 0 = an open network, or a remembered one: the board uses the password it saved) |
 | `I` | send the connection state (`V`) now |
 
 Board -> calculator (sent only between whole server messages, never in the middle of one):

@@ -1,6 +1,6 @@
 /* TI's "DUSB" link protocol, host side: what TI Connect CE uses to put variables on a TI-84 Plus CE that sits at its home screen
  * (the calculator's own USB device, 0451:E008). Only what the loader needs: say hello, read the OS version, list the variables,
- * send a variable. Written from libticalcs2 (github.com/debrouxl/tilibs: dusb_rpkt.cc, dusb_vpkt.cc, dusb_cmd.cc, calc_84p.cc). */
+ * send a variable or an app. Written from libticalcs2 (github.com/debrouxl/tilibs: dusb_rpkt.cc, dusb_vpkt.cc, dusb_cmd.cc, calc_84p.cc). */
 #pragma once
 #include <stdbool.h>
 #include <stdint.h>
@@ -37,3 +37,5 @@ bool dusb_os_version(dusb_t *d, uint8_t version[3]);
 bool dusb_list(dusb_t *d, dusb_var_cb cb, void *arg);
 /* puts one variable on the calculator (replacing one of the same name) */
 bool dusb_send_var(dusb_t *d, const char *name, uint8_t type, uint8_t version, bool archived, const uint8_t *data, uint32_t size);
+/* puts a flash app on the calculator (the signed data after a .8ek file's 0x4E-byte header); the calculator checks the signature */
+bool dusb_send_app(dusb_t *d, const char *name, const uint8_t *data, uint32_t size);

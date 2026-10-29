@@ -1,7 +1,9 @@
 """Checks the calculator-side chat code on this computer.  Run: python3 test_calcgpt.py  (needs clang)
  1. the chat store unit test
  2. real replies from calcgptd.py, fed to the chat store in random pieces, give the same wrapped rows as an independent reference
- 3. the typing table copy is identical to the browser's (one source: reels/mac/calckeys.py)"""
+ 3. the shared typing table (../../shared) is identical to the browser's (one source: reels/mac/calckeys.py)
+ 4. the key numbers in shared/keys.h match CEdev's keypadc.h ([mode] = 14 etc.; needs ~/CEdev or $CEDEV)
+ 5. the keys and screens (src/ui.c + shared/wifi_screen.c): [mode] opens Wi-Fi, [trace] the model menu, [clear] goes back..."""
 import filecmp, os, subprocess, sys, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -9,6 +11,8 @@ sys.path.insert(0, os.path.join(HERE, "..", "mac"))
 import calcgptd as G
 
 SRC = os.path.join(HERE, "..", "src")
+SHARED = os.path.join(HERE, "..", "..", "shared")
+CEDEV = os.environ.get("CEDEV", os.path.expanduser("~/CEdev"))
 tmp = tempfile.mkdtemp()
 fails = 0
 
@@ -20,9 +24,9 @@ def check(what, ok, detail=""):
         fails += 1
 
 
-def build(name, *files):
+def build(name, *files, include=()):
     exe = os.path.join(tmp, name)
-    r = subprocess.run(["clang", "-Wall", "-Wextra", "-o", exe] + list(files), capture_output=True, text=True)
+    r = subprocess.run(["clang", "-Wall", "-Wextra", "-o", exe] + [f"-I{d}" for d in include] + list(files), capture_output=True, text=True)
     if r.returncode != 0:
         sys.exit(f"could not build {name}:\n{r.stderr}")
     return exe
@@ -99,10 +103,24 @@ for chunk in (1, 3, 16, 5000):
     check(f"every row fits the screen (chunk {chunk})", all(len(t) <= (36 if r == "U" else 38) for r, t in got))
 
 check("typing table is the same as the browser's",
-      filecmp.cmp(os.path.join(SRC, "typing_tables.h"), os.path.join(HERE, "..", "..", "browser", "src", "typing_tables.h"), shallow=False)
+      filecmp.cmp(os.path.join(SHARED, "typing_tables.h"), os.path.join(HERE, "..", "..", "browser", "src", "typing_tables.h"), shallow=False)
       if os.path.exists(os.path.join(HERE, "..", "..", "browser", "src", "typing_tables.h")) else True)
 check("typing code is the same as the browser's",
-      all(filecmp.cmp(os.path.join(SRC, f), os.path.join(HERE, "..", "..", "browser", "src", f), shallow=False) for f in ("typing.c", "typing.h"))
+      all(filecmp.cmp(os.path.join(SHARED, f), os.path.join(HERE, "..", "..", "browser", "src", f), shallow=False) for f in ("typing.c", "typing.h"))
       if os.path.exists(os.path.join(HERE, "..", "..", "browser", "src", "typing.c")) else True)
+
+# the key numbers against the real CEdev header (bug (b) of 2026-10-29: [mode] had no test)
+if os.path.exists(os.path.join(CEDEV, "include", "keypadc.h")):
+    keys = build("keys_test", os.path.join(HERE, "keys_test.c"), include=[os.path.join(CEDEV, "include")])
+    r = subprocess.run([keys], capture_output=True, text=True)
+    check("key numbers match keypadc.h", r.returncode == 0, r.stdout)
+else:
+    print("note: CEdev not found, the key-number check was skipped (set CEDEV)")
+
+# the keys and screens, pressed without a calculator
+ui = build("ui_test", os.path.join(HERE, "ui_test.c"), os.path.join(SRC, "ui.c"), os.path.join(SRC, "chatmodel.c"),
+           *[os.path.join(SHARED, f) for f in ("wifi_screen.c", "outbuf.c", "typing.c")], include=[SRC, SHARED])
+r = subprocess.run([ui], capture_output=True, text=True)
+check("keys and screens", r.returncode == 0 and "all passed" in r.stdout, r.stdout)
 print(f"{fails} FAILED" if fails else "calcgpt (calculator side): all passed")
 sys.exit(1 if fails else 0)

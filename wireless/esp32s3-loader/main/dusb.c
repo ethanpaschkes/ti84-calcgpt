@@ -366,13 +366,14 @@ bool dusb_list(dusb_t *d, dusb_var_cb cb, void *arg)
     }
 }
 
-bool dusb_send_var(dusb_t *d, const char *name, uint8_t type, uint8_t version, bool archived, const uint8_t *data, uint32_t size)
+/* RTS: no folder | name length | name + 0 | size | 1 | attributes: type (F0 0F 00 type), archived, and for a variable its version
+ * (an app has none: that is how TI Connect CE sends .8ek files) */
+static bool send_rts(dusb_t *d, const char *name, uint8_t type, bool with_version, uint8_t version, bool archived, uint32_t size)
 {
     uint8_t rts[64];
     size_t n = strlen(name), j = 0;
 
     if (n > 8) return false;
-    /* no folder | name length | name + 0 | size | 1 | 3 attributes: type (F0 0F 00 type), archived, version */
     rts[j++] = 0;
     rts[j++] = (uint8_t)n;
     memcpy(rts + j, name, n + 1);
@@ -381,17 +382,32 @@ bool dusb_send_var(dusb_t *d, const char *name, uint8_t type, uint8_t version, b
     j += 4;
     rts[j++] = 0x01;
     rts[j++] = 0;
-    rts[j++] = 3;
+    rts[j++] = with_version ? 3 : 2;
     rts[j++] = 0, rts[j++] = AID_VAR_TYPE, rts[j++] = 0, rts[j++] = 4;
     rts[j++] = 0xF0, rts[j++] = 0x0F, rts[j++] = 0x00, rts[j++] = type;
     rts[j++] = 0, rts[j++] = AID_ARCHIVED, rts[j++] = 0, rts[j++] = 1;
     rts[j++] = archived;
-    rts[j++] = 0, rts[j++] = AID_VAR_VERSION, rts[j++] = 0, rts[j++] = 4;
-    rts[j++] = 0, rts[j++] = 0, rts[j++] = 0, rts[j++] = version;
+    if (with_version) {
+        rts[j++] = 0, rts[j++] = AID_VAR_VERSION, rts[j++] = 0, rts[j++] = 4;
+        rts[j++] = 0, rts[j++] = 0, rts[j++] = 0, rts[j++] = version;
+    }
+    return vpkt_send(d, VPKT_RTS, rts, j) && vpkt_expect(d, VPKT_DATA_ACK);
+}
 
-    if (!vpkt_send(d, VPKT_RTS, rts, j) || !vpkt_expect(d, VPKT_DATA_ACK)) return false;
+static bool send_contents(dusb_t *d, const uint8_t *data, uint32_t size)
+{
     if (!vpkt_send(d, VPKT_VAR_CNTS, data, size) || !vpkt_expect(d, VPKT_DATA_ACK)) return false;
     if (!vpkt_send(d, VPKT_EOT, NULL, 0)) return false;
     vTaskDelay(pdMS_TO_TICKS(50));   /* libticalcs waits too ("needed") */
     return true;
+}
+
+bool dusb_send_var(dusb_t *d, const char *name, uint8_t type, uint8_t version, bool archived, const uint8_t *data, uint32_t size)
+{
+    return send_rts(d, name, type, true, version, archived, size) && send_contents(d, data, size);
+}
+
+bool dusb_send_app(dusb_t *d, const char *name, const uint8_t *data, uint32_t size)
+{
+    return send_rts(d, name, 0x24, false, 0, true, size) && send_contents(d, data, size);
 }

@@ -3,7 +3,7 @@
 #include <string.h>
 #include "../src/notesmodel.h"
 #include "../src/registry.h"
-#include "../src/timefmt.h"
+#include "../../shared/timefmt.h"
 
 static int fails;
 #define CHECK(what, got, want) do { int g_ = (got), w_ = (want); if (g_ != w_) { printf("FAIL %s: got %d want %d\n", what, g_, w_); fails++; } } while (0)
