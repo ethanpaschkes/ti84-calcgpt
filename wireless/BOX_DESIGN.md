@@ -28,6 +28,23 @@ Rule at power-on (role.c, `role_decide`): if the restart flag says "device", be 
 (the calculator is already the host), be the device. Else be the host. The BOOT button in device mode goes back to host mode
 (re-install or restart CALC).
 
+
+## What Ethan already has (Amazon orders of 2026-10-27, seen 10-29)
+
+| Have | What it is | Role in the box |
+|---|---|---|
+| Lonely Binary ESP32-S3 N16R8 | a DevKitC-1 copy (same 25.4 x 62.8 board, 44 pins) with the pin headers already soldered on the underside | the brain |
+| rgzhihuifz USB mini-B male to USB-A female adapter, 2 pcs | the OTG adapter (ID grounded inside), 36 mm long | the plug into the calculator; one gets opened for the ID wire |
+| MEIRIYFA USB 2.0 A to 4-pin Dupont cable | USB-A plug, ~30 cm, four single female Dupont housings | today's link: housings on the 5V, GND, GPIO19, GPIO20 pins |
+| MELIFE USB 2.0 breakout boards, 10 pcs | USB-A female sockets on tiny PCBs | a clean socket for a later version |
+| EDGELEC 20 cm Dupont jumpers, 120 pcs | male/female jumper wires | the sense / boost EN / ID gate wires |
+| 1S LiPo from an RC plane, probably a 1S USB charger stick | | battery; charger if the stick is 0.1-0.2 A |
+
+Two ways to wire the box (`wiring` in `box/calcbox.scad`):
+- **dupont** (what the parts above allow, no soldering of the board): headers stay, Dupont housings push onto the pins, the long
+  wires coil in the end room. Box about 93 x 31 x 28 mm. Fine for the first working box.
+- **soldered** (the slim one): headers cut flush, short wires soldered to the stubs. Box about 82 x 31 x 14 mm.
+
 ## Parts (first build on the DevKitC-1; a bare ESP32-S3-WROOM-1 module later)
 
 | Part | Example | Role |
