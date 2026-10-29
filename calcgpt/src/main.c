@@ -1,9 +1,10 @@
 /* CALCGPT: a chat on the calculator. A language model runs on the Mac (mac/calcgptd.py, through Ollama); you type on the
- * calculator and the answer streams onto its screen. The messages are described at the top of calcgptd.py.
+ * calculator and the answer streams onto its screen. The messages are described at the top of calcgptd.py, and the Wi-Fi
+ * setup messages for the bridge board in ../wireless/PROTOCOL.md (section 3).
  *
  * Keys: type your question (Alpha switches to letters, 2nd is a one-shot shift), Enter sends, Up/Down scroll,
  * Window/Zoom page up/down, Del erases, Graph starts a new chat, Y= stops an answer, Trace picks the AI model,
- * Clear erases the line then quits. */
+ * Mode opens the Wi-Fi setup, Clear erases the line then quits. */
 #include <graphx.h>
 #include <keypadc.h>
 #include <srldrvce.h>
@@ -20,6 +21,11 @@
 #define ROW_H 10
 #define MARGIN 8
 #define FOOT_Y 228
+#define WIFI_Y 40        /* the first row of the Wi-Fi list */
+#define WIFI_ROW 14
+#define WIFI_ROWS 12     /* rows of the list on screen */
+#define WIFI_PASS_MAX 63 /* the longest WPA password */
+#define SECOND 32768u    /* timer 1 ticks */
 
 /* colours, as palette numbers */
 enum { C_BLACK, C_LINK, C_GRAY, C_RED, C_GREEN, C_LINE, C_SEL, C_GBLUE, C_GRED, C_GYELLOW, C_GGREEN, C_WHITE = 255 };
@@ -31,11 +37,15 @@ enum { C_BLACK, C_LINK, C_GRAY, C_RED, C_GREEN, C_LINE, C_SEL, C_GBLUE, C_GRED, 
 #define K_ZOOM K(1, 2)
 #define K_WINDOW K(1, 3)
 #define K_YEQU K(1, 4)
+#define K_MODE K(1, 6)
 #define K_DEL K(1, 7)
 #define K_ENTER K(6, 0)
 #define K_CLEAR K(6, 6)
 #define K_DOWN K(7, 0)
 #define K_UP K(7, 3)
+
+/* what is on screen: the chat, the Wi-Fi list, or typing a hidden network's name or a password */
+enum { SCR_CHAT, SCR_WIFI, SCR_SSID, SCR_PASS };
 
 static srl_device_t srl;
 static bool has_srl;
@@ -48,9 +58,18 @@ static char input[CHAT_INPUT_MAX + 1];
 static int input_len;
 static bool dirty = true;
 static bool quit;
+static int screen;
 static bool menu_open;       /* the model menu is showing */
 static int menu_sel;
 static bool asked_models;    /* the list of models was asked for since the Mac link came up */
+static uint32_t asked_at;    /* when it was last asked for */
+static bool asked_conn;      /* the Wi-Fi board was asked for its connection line since the link came up */
+static uint32_t scan_at;     /* when the last Wi-Fi scan was asked for */
+static int wifi_sel, wifi_top;   /* the chosen row of the Wi-Fi list (the last row is "Other network") and the first on screen */
+static char wifi_ssid[CHAT_SSID_MAX + 1];
+static int wifi_ssid_len;
+static char wifi_pass[WIFI_PASS_MAX + 1];
+static int wifi_pass_len;
 
 static usb_error_t handle_usb_event(usb_event_t event, void *event_data, usb_callback_data_t *callback_data)
 {
@@ -71,12 +90,15 @@ static usb_error_t handle_usb_event(usb_event_t event, void *event_data, usb_cal
         srl_Close(&srl);
         has_srl = false;
         asked_models = false;
+        asked_conn = false;
+        chat.conn[0] = 0;
+        chat.scanning = 0;
         dirty = true;
     }
     return USB_SUCCESS;
 }
 
-/* ---- requests to the Mac ---- */
+/* ---- requests to the Mac and the Wi-Fi board ---- */
 
 static void send_bytes(const uint8_t *data, int n)
 {
@@ -97,6 +119,28 @@ static void send_question(const char *s)
     msg[1] = (uint8_t)n;
     memcpy(msg + 2, s, (size_t)n);
     send_bytes(msg, 2 + n);
+}
+
+static void start_scan(void)
+{
+    send_cmd('W');
+    chat.scanning = has_srl;
+    scan_at = timer_Get(1);
+}
+
+/* 'J' len ssid len password (length 0 = an open network) */
+static void send_join(void)
+{
+    uint8_t msg[3 + CHAT_SSID_MAX + WIFI_PASS_MAX];
+    int n = 0;
+    msg[n++] = 'J';
+    msg[n++] = (uint8_t)wifi_ssid_len;
+    memcpy(msg + n, wifi_ssid, (size_t)wifi_ssid_len);
+    n += wifi_ssid_len;
+    msg[n++] = (uint8_t)wifi_pass_len;
+    memcpy(msg + n, wifi_pass, (size_t)wifi_pass_len);
+    n += wifi_pass_len;
+    send_bytes(msg, n);
 }
 
 /* ---- drawing ---- */
@@ -123,15 +167,39 @@ static void text_at(const char *s, int x, int y, uint8_t color)
     gfx_PrintStringXY(s, x, y);
 }
 
-static void draw_header(void)
+/* a copy of s that is at most w pixels wide, with bytes the font cannot show (a network's name may have any) drawn as '?' */
+static const char *fit(const char *s, unsigned int w)
+{
+    static char out[CHAT_COLS + 1];
+    int n = 0;
+    while (s[n] && n < CHAT_COLS) {
+        out[n] = s[n] >= 32 && s[n] < 127 ? s[n] : '?';
+        n++;
+    }
+    out[n] = 0;
+    while (n > 0 && gfx_GetStringWidth(out) > w) out[--n] = 0;
+    return out;
+}
+
+static void draw_title(const char *title)
 {
     gfx_SetColor(C_LINE);
     gfx_HorizLine(0, HEAD_H, SCREEN_W);
-    text_at("CalcGPT", 6, 3, C_BLACK);
+    text_at(title, 6, 3, C_BLACK);
+}
+
+/* "CalcGPT", the Wi-Fi connection line (when a bridge board sent one) and the model in use */
+static void draw_header(void)
+{
+    int x = 6 + (int)gfx_GetStringWidth("CalcGPT") + 12, right = SCREEN_W - 6;
+    draw_title("CalcGPT");
     if (chat.nmodels > 0) {
         const char *name = chat.models[chat.model_sel];
-        text_at(name, SCREEN_W - 6 - 8 * (int)strlen(name), 3, C_GRAY);
+        right -= (int)gfx_GetStringWidth(name);
+        text_at(name, right, 3, C_GRAY);
+        right -= 10;
     }
+    if (chat.conn[0] && right > x) text_at(fit(chat.conn, (unsigned int)(right - x)), x, 3, C_LINK);
 }
 
 static void draw_welcome(void)
@@ -155,6 +223,19 @@ static void draw_welcome(void)
     if (!has_srl) text_at("Not connected: run calcgptd.py on the Mac", 18, 184, C_RED);
 }
 
+/* a scroll bar at the right edge, when there are more rows than fit */
+static void draw_scrollbar(int y, int track, int top, int view, int total)
+{
+    int thumb, pos;
+    if (total <= view) return;
+    thumb = track * view / total;
+    pos = (track - thumb) * top / (total - view);
+    gfx_SetColor(C_LINE);
+    gfx_FillRectangle(SCREEN_W - 5, y, 3, track);
+    gfx_SetColor(C_LINK);
+    gfx_FillRectangle(SCREEN_W - 5, y + pos, 3, thumb < 4 ? 4 : thumb);
+}
+
 static void draw_chat(void)
 {
     int i;
@@ -172,14 +253,7 @@ static void draw_chat(void)
             text_at(buf, x, y, C_BLACK);
         }
     }
-    if (chat.nrows > CHAT_VIEW_ROWS) {
-        int track = CHAT_VIEW_ROWS * ROW_H, thumb = track * CHAT_VIEW_ROWS / chat.nrows;
-        int pos = (track - thumb) * chat.top / (chat.nrows - CHAT_VIEW_ROWS);
-        gfx_SetColor(C_LINE);
-        gfx_FillRectangle(SCREEN_W - 5, BODY_Y, 3, track);
-        gfx_SetColor(C_LINK);
-        gfx_FillRectangle(SCREEN_W - 5, BODY_Y + pos, 3, thumb < 4 ? 4 : thumb);
-    }
+    draw_scrollbar(BODY_Y, CHAT_VIEW_ROWS * ROW_H, chat.top, CHAT_VIEW_ROWS, chat.nrows);
 }
 
 /* a rounded box for the line being typed */
@@ -196,16 +270,17 @@ static void pill(int x0, int y0, int x1, int h, uint8_t border)
     gfx_FillRectangle(x0 + r, y0 + 1, x1 - x0 - 2 * r, h - 2);
 }
 
-static void draw_input(void)
+/* a line being typed (the question, a network name or a password), its end shown when it is long, and the typing layer */
+static void draw_field(const char *s, int len, int y, bool active)
 {
-    int shown = input_len > 30 ? input_len - 30 : 0;
-    pill(6, 201, 314, 20, chat.busy ? C_LINE : C_GBLUE);
-    text_at(input + shown, 20, 207, C_BLACK);
-    if (!chat.busy) {
+    const char *shown = s + (len > 30 ? len - 30 : 0);
+    pill(6, y, 314, 20, active ? C_GBLUE : C_LINE);
+    text_at(shown, 20, y + 6, C_BLACK);
+    if (active) {
         gfx_SetColor(C_BLACK);
-        gfx_VertLine(20 + (input_len - shown) * 8, 204, 11);
+        gfx_VertLine(20 + (int)gfx_GetStringWidth(shown), y + 3, 11);
     }
-    text_at(ty.alpha ? (ty.shift ? "ABC" : "abc") : (ty.shift ? "^" : "123"), 284, 207, C_GRAY);
+    text_at(ty.alpha ? (ty.shift ? "ABC" : "abc") : (ty.shift ? "^" : "123"), 284, y + 6, C_GRAY);
 }
 
 /* the list of AI models, drawn over the chat */
@@ -234,23 +309,133 @@ static void draw_menu(void)
     text_at("Up/Down  Enter: use  Clear: back", x + 8, y + h - 14, C_GRAY);
 }
 
+/* signal strength as four bars of growing height, the first `level` of them dark */
+static void draw_bars(int x, int y, int level)
+{
+    int i;
+    for (i = 0; i < 4; i++) {
+        gfx_SetColor(i < level ? C_BLACK : C_LINE);
+        gfx_FillRectangle(x + i * 4, y + 6 - i * 2, 3, 2 + i * 2);
+    }
+}
+
+/* the chosen row stays inside the list (it can shrink after a new scan) and on screen */
+static void wifi_keep_sel(void)
+{
+    if (wifi_sel > chat.nwifi) wifi_sel = chat.nwifi;
+    if (wifi_sel < wifi_top) wifi_top = wifi_sel;
+    if (wifi_sel >= wifi_top + WIFI_ROWS) wifi_top = wifi_sel - WIFI_ROWS + 1;
+}
+
+static void draw_wifi_list(void)
+{
+    int n = chat.nwifi + 1, i;   /* the networks, then "Other network" */
+    wifi_keep_sel();
+    for (i = wifi_top; i < n && i < wifi_top + WIFI_ROWS; i++) {
+        int y = WIFI_Y + (i - wifi_top) * WIFI_ROW;
+        if (i == wifi_sel) {
+            gfx_SetColor(C_SEL);
+            gfx_FillRectangle(4, y - 3, SCREEN_W - 12, WIFI_ROW);
+        }
+        if (i == chat.nwifi) {
+            text_at("Other network...", 48, y, C_LINK);
+        } else {
+            const struct chat_wifi *w = &chat.wifi[i];
+            draw_bars(10, y, w->signal);
+            if (w->locked) text_at("*", 30, y, C_GRAY);
+            if (w->known) text_at("+", 38, y, C_GREEN);
+            text_at(w->ssid[0] ? fit(w->ssid, SCREEN_W - 60) : "(no name)", 48, y, C_BLACK);
+        }
+    }
+    if (chat.nwifi == 0) text_at(chat.scanning ? "Looking for networks..." : "No networks found. Mode: look again",
+                                 48, WIFI_Y + 2 * WIFI_ROW, C_GRAY);
+    draw_scrollbar(WIFI_Y - 3, WIFI_ROWS * WIFI_ROW, wifi_top, WIFI_ROWS, n);
+    text_at("*  needs a password    +  remembered", 10, 212, C_GRAY);
+}
+
+/* typing a hidden network's name, or the password of the chosen network */
+static void draw_wifi_entry(void)
+{
+    if (screen == SCR_SSID) {
+        text_at("Name of the network:", 10, 52, C_BLACK);
+        draw_field(wifi_ssid, wifi_ssid_len, 66, true);
+    } else {
+        text_at("Password for", 10, 46, C_BLACK);
+        text_at(fit(wifi_ssid, SCREEN_W - 20), 10, 58, C_LINK);
+        draw_field(wifi_pass, wifi_pass_len, 72, true);
+        text_at("Leave it empty for an open network.", 10, 122, C_GRAY);
+    }
+    text_at("Alpha = letters, 2nd = capitals/symbols", 10, 108, C_GRAY);
+}
+
+static void draw_wifi(void)
+{
+    draw_title("Wi-Fi");
+    if (chat.scanning) text_at("Scanning...", SCREEN_W - 6 - (int)gfx_GetStringWidth("Scanning..."), 3, C_RED);
+    if (!has_srl) text_at("Not connected to the Wi-Fi board", 6, 20, C_RED);
+    else if (chat.conn[0]) text_at(fit(chat.conn, SCREEN_W - 12), 6, 20, C_LINK);
+    else text_at("No answer from a Wi-Fi board yet", 6, 20, C_GRAY);
+    gfx_SetColor(C_LINE);
+    gfx_HorizLine(0, 32, SCREEN_W);
+    if (screen == SCR_WIFI) draw_wifi_list();
+    else draw_wifi_entry();
+}
+
+/* the longest of these hints that fits the footer */
+static const char *hint(const char *long_hint, const char *short_hint)
+{
+    return gfx_GetStringWidth(long_hint) <= SCREEN_W - 8 ? long_hint : short_hint;
+}
+
+static void draw_footer(void)
+{
+    const char *h;
+    gfx_SetColor(C_LINE);
+    gfx_HorizLine(0, FOOT_Y - 3, SCREEN_W);
+    if (chat.status[0]) {
+        text_at(chat.status, 4, FOOT_Y, C_RED);
+        return;
+    }
+    if (screen == SCR_CHAT && chat.busy) {
+        text_at("Answering...   Y=: stop", 4, FOOT_Y, C_RED);
+        return;
+    }
+    if (screen == SCR_CHAT) h = hint("Trace: model  Mode: Wi-Fi  Graph: new  Clear: quit", "Trace: model  Mode: Wi-Fi  Graph: new");
+    else if (screen == SCR_WIFI) h = hint("Enter: join  Mode: scan again  Clear: back", "Enter: join  Mode: scan  Clear: back");
+    else h = screen == SCR_SSID ? "Enter: next  Del: erase  Clear: back" : "Enter: join  Del: erase  Clear: back";
+    text_at(h, 4, FOOT_Y, C_GRAY);
+}
+
 static void redraw(void)
 {
     gfx_FillScreen(C_WHITE);
-    draw_header();
-    if (chat.nrows == 0 && !chat.busy) draw_welcome();
-    else draw_chat();
-    draw_input();
-    gfx_SetColor(C_LINE);
-    gfx_HorizLine(0, FOOT_Y - 3, SCREEN_W);
-    if (chat.status[0]) text_at(chat.status, 4, FOOT_Y, C_RED);
-    else if (chat.busy) text_at("Answering...   Y=: stop", 4, FOOT_Y, C_RED);
-    else text_at("Trace: model  Graph: new  Clear: quit", 4, FOOT_Y, C_GRAY);
+    if (screen == SCR_CHAT) {
+        draw_header();
+        if (chat.nrows == 0 && !chat.busy) draw_welcome();
+        else draw_chat();
+        draw_field(input, input_len, 201, !chat.busy);
+    } else {
+        draw_wifi();
+    }
+    draw_footer();
     if (menu_open) draw_menu();
     gfx_SwapDraw();
 }
 
 /* ---- keys ---- */
+
+/* a key typed into a line of text: Del erases, other keys go through the typing layer */
+static void type_into(char *line, int *len, int max, int key)
+{
+    char ch = 0;
+    if (key == K_DEL) {
+        if (*len) line[--*len] = 0;
+        typing_used_other_key(&ty);
+    } else if (typing_key(&ty, key, &ch) == TY_CHAR && *len < max) {
+        line[(*len)++] = ch;
+        line[*len] = 0;
+    }
+}
 
 static void handle_menu_key(int key)
 {
@@ -269,6 +454,57 @@ static void handle_menu_key(int key)
     }
 }
 
+/* Enter on the Wi-Fi list: an open network is joined at once, a locked one asks for its password, "Other network" for a name.
+ * Nothing is sent until a Wi-Fi board has answered: over the cable the Mac would read the name's letters as commands. */
+static void pick_network(void)
+{
+    const struct chat_wifi *w = &chat.wifi[wifi_sel];
+    if (!chat.conn[0]) return;
+    wifi_pass_len = 0;
+    wifi_pass[0] = 0;
+    if (wifi_sel == chat.nwifi) {
+        wifi_ssid_len = 0;
+        wifi_ssid[0] = 0;
+        screen = SCR_SSID;
+        return;
+    }
+    strcpy(wifi_ssid, w->ssid);
+    wifi_ssid_len = (int)strlen(wifi_ssid);
+    if (w->locked) screen = SCR_PASS;
+    else send_join();
+}
+
+static void handle_wifi_key(int key)
+{
+    char *line = screen == SCR_SSID ? wifi_ssid : wifi_pass;
+    int *len = screen == SCR_SSID ? &wifi_ssid_len : &wifi_pass_len;
+    if (screen == SCR_WIFI) {
+        if (key == K_UP && wifi_sel > 0) wifi_sel--;
+        else if (key == K_DOWN && wifi_sel < chat.nwifi) wifi_sel++;
+        else if (key == K_ENTER) pick_network();
+        else if (key == K_MODE || key == K_GRAPH) start_scan();
+        else if (key == K_CLEAR) screen = SCR_CHAT;
+        wifi_keep_sel();
+    } else if (key == K_ENTER) {
+        typing_used_other_key(&ty);
+        if (screen == SCR_PASS) {
+            send_join();
+            screen = SCR_WIFI;
+        } else if (wifi_ssid_len) {
+            screen = SCR_PASS;
+        }
+    } else if (key == K_CLEAR) {
+        if (*len) {
+            *len = 0;
+            line[0] = 0;
+        } else {
+            screen = SCR_WIFI;
+        }
+    } else {
+        type_into(line, len, screen == SCR_SSID ? CHAT_SSID_MAX : WIFI_PASS_MAX, key);
+    }
+}
+
 static void handle_key(int key)
 {
     dirty = true;
@@ -276,10 +512,19 @@ static void handle_key(int key)
         handle_menu_key(key);
         return;
     }
+    if (screen != SCR_CHAT) {
+        handle_wifi_key(key);
+        return;
+    }
     if (key == K_TRACE) {
         if (chat.nmodels == 0) send_cmd('R');
         menu_sel = chat.model_sel;
         menu_open = true;
+    } else if (key == K_MODE) {
+        screen = SCR_WIFI;
+        wifi_sel = 0;
+        wifi_top = 0;
+        start_scan();
     } else if (key == K_ENTER) {
         if (input_len && !chat.busy && has_srl) {
             chat_user(&chat, input);
@@ -287,9 +532,6 @@ static void handle_key(int key)
             input_len = 0;
             input[0] = 0;
         }
-        typing_used_other_key(&ty);
-    } else if (key == K_DEL) {
-        if (input_len) input[--input_len] = 0;
         typing_used_other_key(&ty);
     } else if (key == K_CLEAR) {
         if (input_len) {
@@ -312,12 +554,7 @@ static void handle_key(int key)
     } else if (key == K_ZOOM) {
         chat_scroll(&chat, CHAT_VIEW_ROWS - 1, CHAT_VIEW_ROWS);
     } else {
-        char ch = 0;
-        int r = typing_key(&ty, key, &ch);
-        if (r == TY_CHAR && input_len < CHAT_INPUT_MAX) {
-            input[input_len++] = ch;
-            input[input_len] = 0;
-        }
+        type_into(input, &input_len, CHAT_INPUT_MAX, key);
     }
 }
 
@@ -351,9 +588,22 @@ int main(void)
         uint32_t now;
 
         usb_HandleEvents();
-        if (has_srl && !asked_models) {
-            send_cmd('R');                 /* the Mac answers with its list of models */
+        /* the Mac answers with its list of models. Asked again each second until it does: over the wireless bridge the first
+         * request can be lost while the board is still starting up, and the Mac also uses it to tell CALCGPT from other programs */
+        if (has_srl && chat.nmodels == 0 && (!asked_models || timer_Get(1) - asked_at > SECOND)) {
+            send_cmd('R');
             asked_models = true;
+            asked_at = timer_Get(1);
+        }
+        /* a Wi-Fi bridge board answers with its connection line ('V'); the Mac ignores this */
+        if (has_srl && !asked_conn) {
+            send_cmd('I');
+            asked_conn = true;
+        }
+        /* no list within 10 seconds (no Wi-Fi board, only the Mac): stop showing "Scanning..." */
+        if (chat.scanning && timer_Get(1) - scan_at > 10 * SECOND) {
+            chat.scanning = 0;
+            dirty = true;
         }
         if (has_srl) {
             n = srl_Read(&srl, in_buf, sizeof(in_buf));

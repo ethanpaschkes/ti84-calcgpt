@@ -1,0 +1,36 @@
+# Fly.io settings for the CalcGPT cloud server. Before the first deploy: change the app name below (it becomes
+# NAME.fly.dev, the address the boards connect to), then follow "Deploy to Fly.io" in cloud/README.md.
+app = "calcgpt-CHANGE-ME"
+primary_region = "ewr"          # New Jersey; `fly platform regions` lists the others
+
+[env]
+  CALCGPT_DEVICES = "/data/devices.json"   # usage.json is kept next to it
+  CALCGPT_PROXY_PROTOCOL = "1"             # the proxy tells the server each board's real address (for the login limits)
+  TZ = "America/New_York"
+
+# one small disk for devices.json and usage.json: `fly volumes create calcgpt_data --size 1 --region ewr`
+[[mounts]]
+  source = "calcgpt_data"
+  destination = "/data"
+
+# the boards connect with TLS to NAME.fly.dev:443; Fly's proxy does the TLS and passes plain TCP to port 7979
+[[services]]
+  protocol = "tcp"
+  internal_port = 7979
+  auto_stop_machines = "off"    # always on, so a board never waits for the server to start
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "proxy_proto"]
+    proxy_proto_options = { version = "v2" }
+
+  [services.concurrency]
+    type = "connections"
+    soft_limit = 200
+    hard_limit = 250
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"

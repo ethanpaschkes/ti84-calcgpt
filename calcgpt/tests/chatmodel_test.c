@@ -32,6 +32,161 @@ static void row_text(int i, char *out)
     out[c.rows[i].len] = 0;
 }
 
+/* ---- messages from the Wi-Fi bridge board: 'V' connection line, 'X' new list, 'Y' one network ---- */
+
+static uint8_t wire[4096];
+static int wire_n;
+
+static void put_text(char tag, const char *text)
+{
+    int n = (int)strlen(text);
+    wire[wire_n++] = (uint8_t)tag;
+    wire[wire_n++] = (uint8_t)n;
+    memcpy(wire + wire_n, text, (size_t)n);
+    wire_n += n;
+}
+
+static void put_network(int signal, int locked, int known, const char *ssid)
+{
+    int n = (int)strlen(ssid);
+    wire[wire_n++] = 'Y';
+    wire[wire_n++] = (uint8_t)(3 + n);
+    wire[wire_n++] = (uint8_t)signal;
+    wire[wire_n++] = locked ? '*' : ' ';
+    wire[wire_n++] = known ? '+' : ' ';
+    memcpy(wire + wire_n, ssid, (size_t)n);
+    wire_n += n;
+}
+
+/* feeds everything put so far in pieces of `chunk` bytes (0: pieces of 1, 2, 3, ... bytes, so the cuts fall everywhere) */
+static void send_wire(int chunk)
+{
+    int pos = 0, k = 1;
+    while (pos < wire_n) {
+        int n = chunk ? chunk : k++;
+        if (n > wire_n - pos) n = wire_n - pos;
+        chat_feed(&c, wire + pos, n);
+        pos += n;
+    }
+    wire_n = 0;
+}
+
+static void wifi_tests(void)
+{
+    static const int chunks[] = {1, 2, 3, 5, 7, 4096, 0};
+    const char *long_ssid = "ThisNetworkNameIsMuchLongerThanThirtyTwoCharacters";   /* 50 characters */
+    int k, i;
+    for (k = 0; k < (int)(sizeof(chunks) / sizeof(chunks[0])); k++) {
+        int chunk = chunks[k];
+        chat_init(&c);
+        put_text('V', "Wi-Fi: Home | online");
+        put_text('T', "Joining School...");
+        wire[wire_n++] = 'X';
+        wire[wire_n++] = 4;
+        put_network(4, 1, 1, "Home");
+        put_network(2, 0, 0, "Cafe Free WiFi");
+        put_network(9, 1, 0, long_ssid);
+        put_network(0, 0, 1, "Odd\x01\xc3\xa9name");
+        put_text('A', "still talking");
+        send_wire(chunk);
+        CHECK("connection line", strcmp(c.conn, "Wi-Fi: Home | online"), 0);
+        CHECK("a status between bridge messages", strcmp(c.status, "Joining School..."), 0);
+        CHECK("four networks", c.nwifi, 4);
+        CHECK("the count the board announced", c.wifi_expect, 4);
+        CHECK("first: name", strcmp(c.wifi[0].ssid, "Home"), 0);
+        CHECK("first: signal, locked, remembered", c.wifi[0].signal * 100 + c.wifi[0].locked * 10 + c.wifi[0].known, 411);
+        CHECK("second: open and new", c.wifi[1].signal * 100 + c.wifi[1].locked * 10 + c.wifi[1].known, 200);
+        CHECK("second: name with spaces", strcmp(c.wifi[1].ssid, "Cafe Free WiFi"), 0);
+        CHECK("a long name is cut at 32", (int)strlen(c.wifi[2].ssid), CHAT_SSID_MAX);
+        CHECK("the cut name is the start of it", strncmp(c.wifi[2].ssid, long_ssid, CHAT_SSID_MAX), 0);
+        CHECK("signal above 4 counts as 4", c.wifi[2].signal, 4);
+        CHECK("any other bytes in a name are kept as sent", strcmp(c.wifi[3].ssid, "Odd\x01\xc3\xa9name"), 0);
+        CHECK("remembered open network", c.wifi[3].locked * 10 + c.wifi[3].known, 1);
+        CHECK("answer text after the list", has_text("still talking"), 1);
+        CHECK("parser in step after the list", c.state, 0);
+    }
+
+    /* a long connection line is cut to the screen width; an empty one clears it */
+    chat_init(&c);
+    put_text('V', "Wi-Fi: A network with a really long name | no server at all");
+    send_wire(3);
+    CHECK("long connection line cut", (int)strlen(c.conn), CHAT_COLS);
+    CHECK("parser in step after a long line", c.state, 0);
+    c.changed = 0;
+    put_text('V', "");
+    send_wire(1);
+    CHECK("empty connection line clears it", c.conn[0], 0);
+    CHECK("an empty line still asks for a redraw", c.changed, 1);
+
+    /* more networks than fit: the first 16 are kept, the rest are read and dropped */
+    for (k = 0; k < (int)(sizeof(chunks) / sizeof(chunks[0])); k++) {
+        char name[40];
+        chat_init(&c);
+        wire[wire_n++] = 'X';
+        wire[wire_n++] = 25;
+        for (i = 0; i < 25; i++) {
+            sprintf(name, "net %d", i);
+            put_network(i % 5, i & 1, 0, name);
+        }
+        put_text('V', "Wi-Fi: none");
+        send_wire(chunks[k]);
+        CHECK("no more than 16 networks", c.nwifi, CHAT_WIFI_MAX);
+        CHECK("the 16th network is net 15", strcmp(c.wifi[CHAT_WIFI_MAX - 1].ssid, "net 15"), 0);
+        CHECK("the 16th network's signal", c.wifi[CHAT_WIFI_MAX - 1].signal, 15 % 5);
+        CHECK("messages after a too-long list still work", strcmp(c.conn, "Wi-Fi: none"), 0);
+    }
+
+    /* a new scan replaces the list and ends "Scanning..." */
+    c.scanning = 1;
+    wire[wire_n++] = 'X';
+    wire[wire_n++] = 1;
+    put_network(3, 0, 0, "Only");
+    send_wire(2);
+    CHECK("X ends the scanning state", c.scanning, 0);
+    CHECK("the new list replaced the old one", c.nwifi * 10 + (strcmp(c.wifi[0].ssid, "Only") == 0), 11);
+    wire[wire_n++] = 'X';
+    wire[wire_n++] = 0;
+    send_wire(1);
+    CHECK("an empty scan empties the list", c.nwifi, 0);
+
+    /* odd entries: an empty one is skipped, a short one (no name) is kept with an empty name */
+    wire[wire_n++] = 'Y';
+    wire[wire_n++] = 0;
+    wire[wire_n++] = 'Y';
+    wire[wire_n++] = 2;
+    wire[wire_n++] = 1;
+    wire[wire_n++] = '*';
+    put_network(1, 0, 0, "after");
+    {
+        static const uint8_t zero[] = {'Y', 5, 1, ' ', ' ', 'a', 0};
+        memcpy(wire + wire_n, zero, sizeof(zero));
+        wire_n += (int)sizeof(zero);
+    }
+    send_wire(1);
+    CHECK("empty entry skipped, short entry kept", c.nwifi, 3);
+    CHECK("a 0 byte in a name becomes ?", strcmp(c.wifi[2].ssid, "a?"), 0);
+    CHECK("short entry has no name", c.wifi[0].ssid[0], 0);
+    CHECK("short entry: locked", c.wifi[0].locked, 1);
+    CHECK("entry after the odd ones", strcmp(c.wifi[1].ssid, "after"), 0);
+
+    /* the Wi-Fi messages leave the chat and the model list alone */
+    chat_init(&c);
+    chat_feed(&c, (const uint8_t *)"KL\x05LocalU\x00", 10);
+    chat_user(&c, "hi");
+    feed_a("hello");
+    put_text('V', "Wi-Fi: Home | online");
+    wire[wire_n++] = 'X';
+    wire[wire_n++] = 1;
+    put_network(4, 1, 1, "Home");
+    send_wire(1);
+    chat_layout(&c, CHAT_VIEW_ROWS);
+    CHECK("model list kept", c.nmodels * 10 + (strcmp(c.models[0], "Local") == 0), 11);
+    CHECK("chat rows kept", c.nrows, 2);
+    CHECK("still busy (no D yet)", c.busy, 1);
+    chat_clear(&c);
+    CHECK("a new chat keeps the Wi-Fi state", c.nwifi * 10 + (c.conn[0] != 0), 11);
+}
+
 int main(void)
 {
     char t[64];
@@ -184,6 +339,8 @@ int main(void)
         feed_a("after");
         CHECK("text still works after the list", has_text("after"), 1);
     }
+
+    wifi_tests();
 
     printf(fails ? "%d FAILED\n" : "chatmodel: all passed\n", fails);
     return fails != 0;

@@ -33,3 +33,7 @@ experiments/chat/testing/check_triggpt
 experiments/chat/testing/nn_train_calcgpt
 solver/tests/t_*
 !solver/tests/t_*.c
+
+# CalcGPT cloud server: every board's secret, and daily use
+cloud/devices.json
+cloud/usage.json

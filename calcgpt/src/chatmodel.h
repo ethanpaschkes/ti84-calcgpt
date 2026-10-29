@@ -10,7 +10,12 @@
  *   'A' len text   more of the assistant's answer         'D'  the answer is complete
  *   'T' len text   a status such as "Thinking..." (length 0 clears it)        'C'  clear the conversation
  *   'K'            the list of AI models is about to be sent again          'L' len text   one model's name, added to the list
- *   'U' index      which model in the list is the one in use (index is one byte, not text) */
+ *   'U' index      which model in the list is the one in use (index is one byte, not text)
+ *
+ * And from the Wi-Fi bridge board itself (../../wireless/PROTOCOL.md, section 3):
+ *   'V' len text   the connection line, e.g. "Wi-Fi: Home | online"
+ *   'X' count      a new list of Wi-Fi networks follows (count is one byte)
+ *   'Y' len entry  one network: signal 0-4, '*' locked or space, '+' remembered or space, then the name */
 
 #define CHAT_BUF 6000
 #define CHAT_COLS 38
@@ -20,6 +25,8 @@
 #define CHAT_INPUT_MAX 200
 #define CHAT_MODELS 8
 #define CHAT_MODEL_LABEL 20
+#define CHAT_WIFI_MAX 16
+#define CHAT_SSID_MAX 32
 
 enum { ROLE_USER = 'U', ROLE_AI = 'A' };
 
@@ -28,6 +35,13 @@ struct chat_row {
     uint8_t len;
     uint8_t role;
     uint8_t first;    /* the first row of a message */
+};
+
+struct chat_wifi {
+    uint8_t signal;                /* 0 to 4 bars */
+    uint8_t locked;                /* needs a password */
+    uint8_t known;                 /* the board remembers it */
+    char ssid[CHAT_SSID_MAX + 1];  /* as sent (a 0 byte becomes '?'); the screen shows odd bytes as '?' */
 };
 
 struct chat {
@@ -45,6 +59,11 @@ struct chat {
     char models[CHAT_MODELS][CHAT_MODEL_LABEL + 1];   /* the AI models the Mac offers, by name */
     int nmodels;
     int model_sel;                 /* the one in use */
+    char conn[CHAT_COLS + 1];      /* the Wi-Fi connection line from the bridge (empty until one answers) */
+    struct chat_wifi wifi[CHAT_WIFI_MAX];   /* the networks of the last scan */
+    int nwifi;
+    int wifi_expect;               /* how many networks the board said it would send */
+    int scanning;                  /* set by the program when it asks for a scan, cleared when the list ('X') arrives */
 };
 
 void chat_init(struct chat *c);

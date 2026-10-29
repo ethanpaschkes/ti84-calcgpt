@@ -1,7 +1,8 @@
 #include "chatmodel.h"
 #include <string.h>
 
-enum { S_CMD, S_A_LEN, S_A_TEXT, S_T_LEN, S_T_TEXT, S_L_LEN, S_L_TEXT, S_U_INDEX };
+enum { S_CMD, S_A_LEN, S_A_TEXT, S_T_LEN, S_T_TEXT, S_L_LEN, S_L_TEXT, S_U_INDEX, S_V_LEN, S_V_TEXT, S_X_COUNT,
+       S_Y_LEN, S_Y_TEXT };
 
 void chat_clear(struct chat *c)
 {
@@ -75,6 +76,50 @@ static int last_role(const struct chat *c)
     return c->len > 0 ? c->buf[i] : 0;
 }
 
+/* the start of a short line of text (a status or the connection line); an empty one is complete at once */
+static void line_start(struct chat *c, char *line, uint8_t len, int text_state)
+{
+    c->want = len;
+    c->have = 0;
+    line[0] = 0;
+    c->changed = 1;
+    c->state = len ? text_state : S_CMD;
+}
+
+/* one byte of a short line: kept up to the screen width, the rest is dropped */
+static void line_byte(struct chat *c, char *line, uint8_t b)
+{
+    if (c->have < CHAT_COLS) line[c->have] = (char)b;
+    c->have++;
+    if (c->have == c->want) {
+        line[c->have < CHAT_COLS ? c->have : CHAT_COLS] = 0;
+        c->changed = 1;
+        c->state = S_CMD;
+    }
+}
+
+/* one byte of a Wi-Fi network entry ('Y'), stored in the slot after the last network until it is complete;
+ * past CHAT_WIFI_MAX networks the entry is read and dropped */
+static void wifi_byte(struct chat *c, uint8_t b)
+{
+    if (c->nwifi < CHAT_WIFI_MAX) {
+        struct chat_wifi *w = &c->wifi[c->nwifi];
+        int at = c->have - 3;
+        if (c->have == 0) w->signal = b > 4 ? 4 : b;
+        else if (c->have == 1) w->locked = b == '*';
+        else if (c->have == 2) w->known = b == '+';
+        else if (at < CHAT_SSID_MAX) {
+            w->ssid[at] = b ? (char)b : '?';   /* kept as sent, so joining sends the exact name back */
+            w->ssid[at + 1] = 0;
+        }
+    }
+    if (++c->have == c->want) {
+        if (c->nwifi < CHAT_WIFI_MAX) c->nwifi++;
+        c->changed = 1;
+        c->state = S_CMD;
+    }
+}
+
 static void byte_in(struct chat *c, uint8_t b)
 {
     switch (c->state) {
@@ -84,6 +129,9 @@ static void byte_in(struct chat *c, uint8_t b)
         case 'T': c->state = S_T_LEN; break;
         case 'L': c->state = S_L_LEN; break;
         case 'U': c->state = S_U_INDEX; break;
+        case 'V': c->state = S_V_LEN; break;
+        case 'X': c->state = S_X_COUNT; break;
+        case 'Y': c->state = S_Y_LEN; break;
         case 'K':
             c->nmodels = 0;
             c->model_sel = 0;
@@ -116,21 +164,24 @@ static void byte_in(struct chat *c, uint8_t b)
         }
         break;
     }
-    case S_T_LEN:
+    case S_T_LEN: line_start(c, c->status, b, S_T_TEXT); break;
+    case S_T_TEXT: line_byte(c, c->status, b); break;
+    case S_V_LEN: line_start(c, c->conn, b, S_V_TEXT); break;
+    case S_V_TEXT: line_byte(c, c->conn, b); break;
+    case S_X_COUNT:
+        c->nwifi = 0;
+        c->wifi_expect = b;
+        c->scanning = 0;
+        c->changed = 1;
+        c->state = S_CMD;
+        break;
+    case S_Y_LEN:
         c->want = b;
         c->have = 0;
-        c->status[0] = 0;
-        c->changed = 1;
-        c->state = b ? S_T_TEXT : S_CMD;
+        c->state = b ? S_Y_TEXT : S_CMD;
+        if (c->nwifi < CHAT_WIFI_MAX) memset(&c->wifi[c->nwifi], 0, sizeof(c->wifi[0]));
         break;
-    case S_T_TEXT:
-        if (c->have < CHAT_COLS) c->status[c->have] = (char)b;
-        c->have++;
-        if (c->have == c->want) {
-            c->status[c->have < CHAT_COLS ? c->have : CHAT_COLS] = 0;
-            c->state = S_CMD;
-        }
-        break;
+    case S_Y_TEXT: wifi_byte(c, b); break;
     case S_L_LEN:
         c->want = b;
         c->have = 0;

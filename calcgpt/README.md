@@ -19,7 +19,14 @@ cloud company and each answer costs money). Answers are asked to be short, plain
 
 Run: send `CALCGPT.8xp`, start it on the calculator, then `python3 mac/calcgptd.py`.
 Keys: Enter sends, Up/Down and Window/Zoom scroll, Del erases, Graph starts a new chat, Y= stops an answer, Trace picks the model
-(Up/Down, Enter), Clear erases the line then quits.
+(Up/Down, Enter), Mode opens the Wi-Fi setup, Clear erases the line then quits.
+
+Wi-Fi setup (with the ESP32-S3 bridge board; messages in `../wireless/PROTOCOL.md`, section 3): **Mode** opens the Wi-Fi screen and
+scans. The top line is the board's connection state (also shown in the chat's title bar, e.g. `Wi-Fi: Home | online`). Each network
+shows its signal bars, `*` if it needs a password and `+` if the board remembers it. Up/Down picks, Enter joins (an open network at
+once; a locked one asks for the password, typed like a question and shown as typed), Mode or Graph scans again, Clear goes back.
+"Other network..." at the end of the list joins a hidden network by name. Join progress (`Joining...`, `Wrong password?`) shows in
+the footer. Nothing is joined until a board has answered, so a calculator on the Mac's cable never sends a name the Mac would misread.
 
 Tests (no calculator, no model needed): `python3 mac/test_calcgptd.py` and `python3 tests/test_calcgpt.py` (needs clang).
 Status: works on a real TI-84 Plus CE, over the USB cable and wirelessly through the ESP32-S3 bridge (`../wireless/ESP_SETUP.md`).
