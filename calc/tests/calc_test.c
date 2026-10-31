@@ -19,7 +19,7 @@ static void test_tiles(void)
     CHECK("tile 2 is ChatGPT", strcmp(HOME_TILES[TILE_CHATGPT].title, "ChatGPT"), 0);
     CHECK("tile 3 is Math", strcmp(HOME_TILES[TILE_MATH].title, "Math"), 0);
     CHECK("ChatGPT runs CALCGPT", strcmp(HOME_TILES[TILE_CHATGPT].program, "CALCGPT"), 0);
-    CHECK("Math runs SOLVER", strcmp(HOME_TILES[TILE_MATH].program, "SOLVER"), 0);
+    CHECK("Math runs MATH", strcmp(HOME_TILES[TILE_MATH].program, "MATH"), 0);
     CHECK("Messages and Settings are screens inside CALC", HOME_TILES[TILE_MESSAGES].program[0] == 0 && HOME_TILES[TILE_SETTINGS].program[0] == 0, 1);
 
     CHECK("starts on Messages", h.sel, TILE_MESSAGES);

@@ -5,7 +5,7 @@ const struct tile HOME_TILES[TILE_COUNT] = {
     {"Messages", ""},
     {"Settings", ""},
     {"ChatGPT", "CALCGPT"},
-    {"Math", "SOLVER"},
+    {"Math", "MATH"},
 };
 
 int home_key(struct home *h, int key)

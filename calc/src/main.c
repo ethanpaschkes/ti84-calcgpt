@@ -1,5 +1,5 @@
 /* CALC: a phone-like home screen for the TI-84 Plus CE, made for the Wi-Fi bridge box. Four tiles: Messages (coming soon),
- * Settings (the Wi-Fi setup screen shared with CALCGPT), ChatGPT (runs CALCGPT) and Math (runs SOLVER). The status bar shows the
+ * Settings (the Wi-Fi setup screen shared with CALCGPT), ChatGPT (runs CALCGPT) and Math (runs MATH). The status bar shows the
  * time and Online / Offline: Online when the box is plugged in and its board says it has a server. Unplugged, Math and Settings
  * still work. It runs on top of the calculator's own operating system (it does not replace it).
  *

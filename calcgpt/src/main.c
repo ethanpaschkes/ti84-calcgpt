@@ -2,22 +2,30 @@
  * the Wi-Fi bridge board; you type on the calculator and the answer streams onto its screen. The messages are described at the
  * top of calcgptd.py and in ../wireless/PROTOCOL.md.
  *
+ * The model has tools (mac/tools.py): besides working things out exactly on the server, it can put cards on this screen: a form
+ * to fill in, a list to pick from, answers, worked steps, a drawn triangle / parabola / lines / unit circle / dot plot. Those
+ * requests arrive as marked status messages and are handled by tools.c; the cards are drawn with ../math/src/cards.c.
+ *
  * This file is the drawing and the main loop. The keys and screens are in ui.c (tested on a computer), the Wi-Fi setup screen in
  * ../../shared/wifi_screen.c + wifi_draw.c (shared with CALC), the USB link in ../../shared/link.c.
  *
  * Keys: type your question (Alpha switches to letters, 2nd is a one-shot shift), Enter sends, Up/Down scroll,
  * Window/Zoom page up/down, Del erases, Graph starts a new chat, Y= stops an answer, Trace picks the AI model,
- * Mode opens the Wi-Fi setup, Clear erases the line then quits. */
+ * Mode opens the Wi-Fi setup, Clear erases the line then quits. On a card: the help line says. */
 #include <graphx.h>
 #include <keypadc.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
+#include <sys/power.h>
+#include <sys/rtc.h>
 #include <sys/timers.h>
+#include "cards.h"
 #include "chatmodel.h"
 #include "draw.h"
 #include "keys.h"
 #include "link.h"
+#include "tools.h"
 #include "ui.h"
 #include "wifi_draw.h"
 
@@ -28,11 +36,13 @@
 
 static struct chat chat;
 static struct ui ui;
+static struct tool_ui tool;
 static uint8_t in_buf[2048];
 static bool dirty = true;
 static bool asked_models;    /* the list of models was asked for since the link came up */
 static uint32_t asked_at;    /* when it was last asked for */
 static bool asked_conn;      /* the Wi-Fi board was asked for its connection line since the link came up */
+static bool said_hello;      /* the server was told this program can show tool cards */
 
 /* ---- drawing ---- */
 
@@ -63,9 +73,9 @@ static void draw_welcome(void)
     }
     gfx_SetTextScale(1, 1);
     text_at("Ask anything. Trace picks the AI model.", 24, 90, C_GRAY);
-    text_at("Try:  what is sin 30?", 24, 112, C_BLACK);
-    text_at("      explain the law of sines", 24, 124, C_BLACK);
-    text_at("      plan my study week", 24, 136, C_BLACK);
+    text_at("Try:  triangle problem", 24, 112, C_BLACK);
+    text_at("      solve x^2 - 5x + 6 = 0", 24, 124, C_BLACK);
+    text_at("      explain the law of sines", 24, 136, C_BLACK);
     text_at("Alpha = letters, 2nd = capitals/symbols", 24, 156, C_GRAY);
     text_at("made by Ethan Paschkes", 24, 170, C_GRAY);
     if (!link_up()) text_at("Not connected: run calcgptd.py on the Mac", 18, 184, C_RED);
@@ -122,8 +132,43 @@ static void draw_chat_footer(void)
     else draw_footer_text(hint("Trace: model  Mode: Wi-Fi  Graph: new  Clear: quit", "Trace: model  Mode: Wi-Fi  Graph: new"), C_GRAY);
 }
 
+static bool online(void)
+{
+    return link_up() && strstr(chat.conn, "| online") != NULL;
+}
+
+/* a card ChatGPT asked for, in the Math look */
+static void draw_tool(void)
+{
+    const char *lines[ANS_LINES];
+    int i;
+    cards_palette();
+    cards_background("ChatGPT", online());
+    switch (tool.kind) {
+    case TOOL_FORM: card_form(&tool.form, "Done"); break;
+    case TOOL_CHOICE: card_choice(tool.title, NULL, tool.options, tool.noptions, tool.sel); break;
+    case TOOL_STEPS: card_steps(tool.title, tool.ans.steps); break;
+    default:
+        for (i = 0; i < tool.ans.n; i++) lines[i] = tool.ans.line[i];
+        card_answers(tool.title, lines, tool.ans.n, tool.ans.rule, -1);
+        if (tool.kind == TOOL_TRIANGLE) diagram_triangle(&tool.tri);
+        else if (tool.kind == TOOL_PARABOLA) diagram_quadratic(tool.qa, tool.qb, tool.qc, &tool.quad);
+        else if (tool.kind == TOOL_LINES) diagram_lines(tool.la, tool.lb, tool.lc, tool.ld, tool.lkind, tool.lx);
+        else if (tool.kind == TOOL_CIRCLE) diagram_unit_circle(&tool.trig);
+        else if (tool.kind == TOOL_DOTS) diagram_dots(&tool.stats);
+        break;
+    }
+    cards_help(tool_help(&tool));
+}
+
 static void redraw(void)
 {
+    if (tool.open) {
+        draw_tool();
+        gfx_SwapDraw();
+        return;
+    }
+    ui_palette();
     gfx_FillScreen(C_WHITE);
     if (ui.screen == SCR_CHAT) {
         draw_header();
@@ -140,11 +185,17 @@ static void redraw(void)
 
 /* ---- the link ---- */
 
-static void press(int key, uint32_t now)
+static void flush_out(void)
 {
-    ui_key(&ui, &chat, key, link_up(), now);
     link_send(ui.out.buf, ui.out.len);
     ui.out.len = 0;
+}
+
+static void press(int key, uint32_t now)
+{
+    if (tool.open) tool_key(&tool, key, &ui.out);
+    else ui_key(&ui, &chat, key, link_up(), now);
+    flush_out();
     dirty = true;
 }
 
@@ -174,6 +225,32 @@ static void keep_in_touch(uint32_t now)
         link_send(&cmd, 1);
         asked_conn = true;
     }
+    /* once a server has answered (the model list arrived), it is told that this program can show tool cards; a server that
+     * does not know tools reads it as a question it never answers with text (it starts with a marker byte) */
+    if (chat.nmodels == 0) {
+        said_hello = false;
+    } else if (!said_hello) {
+        static const char hello[] = "\x01hello|tools=1";
+        out_msg(&ui.out, 'Q', hello, (int)sizeof(hello) - 1);
+        flush_out();
+        said_hello = true;
+    }
+}
+
+/* a tool request from the server: answered at once, or a card opens */
+static void run_tool(void)
+{
+    struct calc_status st;
+    uint8_t hh, mm, ss;
+    boot_GetTime(&ss, &mm, &hh);
+    st.hh = hh;
+    st.mm = mm;
+    st.battery = boot_GetBatteryStatus();
+    st.online = online();
+    chat.tool_ready = 0;
+    tool_open(&tool, chat.tool, chat.tool_len, &ui.out, &st);
+    flush_out();
+    dirty = true;
 }
 
 int main(void)
@@ -191,6 +268,7 @@ int main(void)
     timer_Set(1, 0);
     chat_init(&chat);
     ui_init(&ui);
+    tools_init(&tool);
     if (!link_init()) {
         gfx_End();
         return 1;
@@ -206,6 +284,7 @@ int main(void)
         if (wifi_ui_tick(&ui.wifi, &chat, now)) dirty = true;
         n = link_read(in_buf, sizeof(in_buf));
         if (n > 0) chat_feed(&chat, in_buf, n);
+        if (chat.tool_ready) run_tool();
         if (chat.changed) {
             chat.changed = 0;
             dirty = true;

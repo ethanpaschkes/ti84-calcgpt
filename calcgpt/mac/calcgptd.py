@@ -29,8 +29,12 @@ Messages, Mac to calculator (every length is one byte):
   'U' index        which model in the list is in use (one byte, not text)
 Messages, calculator to Mac:
   'Q' len text     a question          'N'  new conversation          'S'  stop the answer          'Z'  quit
-  'R'              send me the list of models                         'M' index      use this model (one byte)"""
-import argparse, glob, json, os, re, select, subprocess, sys, threading, time, tty, unicodedata, urllib.error, urllib.request
+  'R'              send me the list of models                         'M' index      use this model (one byte)
+Tools (tools.py, PROTOCOL.md section 5): a 'T' whose text starts with byte 1 is a request for the calculator ("form|...", "triangle|...");
+a 'Q' whose text starts with byte 1 is the calculator's reply ("form|a=3|b=4"), or "hello|tools=1" once, meaning it can show cards."""
+import argparse, glob, inspect, json, os, queue, re, select, subprocess, sys, threading, time, tty, unicodedata, urllib.error, urllib.request
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import tools as T  # noqa: E402  (the tools the model can call: exact maths here, cards on the calculator)
 
 OLLAMA = "http://localhost:11434/api/chat"
 OLLAMA_PS = "http://localhost:11434/api/ps"
@@ -234,13 +238,17 @@ def cloud_error(e):
     return ascii_text(msg or f"HTTP {e.code}").replace("\n", " ")[:150]
 
 
-def openai_stream(entry, key, messages):
-    """Yields the pieces of text of a reply from an OpenAI-compatible service. Raises OSError with a readable reason."""
+def openai_stream(entry, key, messages, tools=None):
+    """Yields the pieces of text of a reply from an OpenAI-compatible service, and at the end, if the model called tools,
+    one ("tool_calls", [{id, name, arguments}, ...]) item. Raises OSError with a readable reason."""
     body = {"model": entry["model"], "messages": messages, "stream": True, "max_completion_tokens": entry.get("max_tokens", CLOUD_MAX_TOKENS)}
     if entry.get("reasoning_effort"):
         body["reasoning_effort"] = entry["reasoning_effort"]
+    if tools:
+        body["tools"] = tools
     url = (entry.get("base_url") or OPENAI_BASE).rstrip("/") + "/chat/completions"
     req = urllib.request.Request(url, json.dumps(body).encode(), {"Content-Type": "application/json", "Authorization": "Bearer " + key})
+    pending = {}   # tool calls arrive in pieces, by index
     try:
         with urllib.request.urlopen(req, timeout=120) as r:
             for raw in r:
@@ -249,13 +257,31 @@ def openai_stream(entry, key, messages):
                     continue
                 data = line[5:].strip()
                 if data == "[DONE]":
-                    return
+                    break
                 choices = json.loads(data).get("choices") or []
-                piece = choices[0].get("delta", {}).get("content") if choices else None
+                delta = choices[0].get("delta", {}) if choices else {}
+                piece = delta.get("content")
                 if piece:
                     yield piece
+                for tc in delta.get("tool_calls") or []:
+                    p = pending.setdefault(tc.get("index", 0), {"id": "", "name": "", "arguments": ""})
+                    if tc.get("id"):
+                        p["id"] = tc["id"]
+                    fn = tc.get("function") or {}
+                    p["name"] += fn.get("name") or ""
+                    p["arguments"] += fn.get("arguments") or ""
     except urllib.error.HTTPError as e:
         raise OSError("cloud says: " + cloud_error(e))
+    if pending:
+        yield ("tool_calls", [pending[i] for i in sorted(pending)])
+
+
+def takes_tools(stream):
+    """Does this stream function accept a tools argument? (test fakes may not)"""
+    try:
+        return len(inspect.signature(stream).parameters) >= 4
+    except (TypeError, ValueError):
+        return False
 
 
 def list_cloud(entry, key):
@@ -281,6 +307,9 @@ class Chat:
         self.api_key = api_key
         self.busy = busy or gpu_busy
         self.history = []
+        self.tools_on = takes_tools(self.cloud_stream)   # the model gets tools (cloud models only)
+        self.calc_tools = False                          # the calculator said it can show tool cards
+        self.calc_replies = queue.Queue()                # the calculator's answers to tool requests, from the reader thread
 
     def new(self):
         self.history = []
@@ -293,6 +322,69 @@ class Chat:
     def select(self, index):
         if 0 <= index < len(self.models):
             self.selected = index
+
+    def calc_reply(self, text):
+        """The calculator answered a tool request (the text after the marker)."""
+        self.calc_replies.put(text)
+
+    def _wait_calc(self, cancelled):
+        """The calculator's answer to the tool request just sent, as a dict; None if the question was stopped meanwhile."""
+        deadline = time.time() + T.CALC_WAIT
+        while time.time() < deadline:
+            if cancelled():
+                return None
+            try:
+                return T.parse_calc_reply(self.calc_replies.get(timeout=0.2))
+            except queue.Empty:
+                pass
+        return {"error": "no answer from the calculator (the user did not fill it in); continue without it"}
+
+    def _cloud_rounds(self, entry, messages, cancelled):
+        """The cloud model with tools: yields text pieces, and raw wire messages (bytes) for the calculator's tool cards; runs
+        the tools the model calls and asks it again, up to T.MAX_ROUNDS times."""
+        tools = T.schemas(calc=self.calc_tools)
+        for _ in range(T.MAX_ROUNDS):
+            text, calls = "", []
+            for item in self.cloud_stream(entry, self.api_key, messages, tools):
+                if isinstance(item, str):
+                    text += item
+                    yield item
+                elif item and item[0] == "tool_calls":
+                    calls = item[1]
+                if cancelled():
+                    return
+            if not calls:
+                return
+            messages.append({"role": "assistant", "content": text or None, "tool_calls": [
+                {"id": c["id"], "type": "function", "function": {"name": c["name"], "arguments": c["arguments"]}} for c in calls]})
+            for c in calls:
+                if cancelled():
+                    return
+                try:
+                    args = json.loads(c["arguments"] or "{}")
+                    if not isinstance(args, dict):
+                        raise ValueError("not an object")
+                    result = None
+                except ValueError:
+                    result = {"error": "the arguments were not valid JSON"}
+                if result is not None:
+                    pass
+                elif c["name"] in T.SERVER_TOOLS:
+                    result = T.run_server_tool(c["name"], args)
+                elif c["name"] in T.CALC_TOOLS:
+                    if not self.calc_tools:
+                        result = {"error": "calculator cards are not available in this session: answer in text"}
+                    else:
+                        while not self.calc_replies.empty():   # a stale answer from an earlier card
+                            self.calc_replies.get_nowait()
+                        yield T.tool_message(T.calc_payload(c["name"], args))
+                        result = self._wait_calc(cancelled)
+                        if result is None:
+                            return
+                else:
+                    result = {"error": f"unknown tool {c['name']}"}
+                messages.append({"role": "tool", "tool_call_id": c["id"], "content": json.dumps(result)})
+        yield "\n(Too many tool steps: ask again more simply.)"
 
     def reply(self, question, cancelled=lambda: False):
         """Yields the messages to send for one question, in order."""
@@ -309,7 +401,10 @@ class Chat:
             yield b"D"
             return
         yield encode_text(b"T", "Loading the model (about a minute)..." if not cloud and self.loaded(entry["model"]) is False else "Thinking...")
-        if cloud:
+        if cloud and self.tools_on:
+            messages[0]["content"] += T.prompt_addition(self.calc_tools)
+            source = self._cloud_rounds(entry, messages, cancelled)
+        elif cloud:
             source = self.cloud_stream(entry, self.api_key, messages)
         else:
             source = self.stream({"model": entry["model"], "stream": True, "think": False, "keep_alive": self.keep_alive,
@@ -319,6 +414,12 @@ class Chat:
             for piece in source:
                 if cancelled():
                     break
+                if isinstance(piece, bytes):   # a tool card for the calculator: goes out as it is, between the text
+                    for i in range(0, len(buf), 200):
+                        yield encode_text(b"A", buf[i:i + 200])
+                    buf = ""
+                    yield piece
+                    continue
                 text = cleaner.feed(piece)
                 if not text:
                     continue
@@ -462,6 +563,11 @@ def main():
                         send_listing()
                         if not a.quiet:
                             print("   model:", chat.models[chat.selected]["label"])
+                elif cmd == "Q" and arg.startswith(T.MARK):   # the calculator's answer to a tool card, or its hello
+                    if arg[1:].startswith("hello"):
+                        chat.calc_tools = True
+                    else:
+                        chat.calc_reply(arg[1:])
                 elif cmd == "Q" and arg.strip() and not (worker[0] and worker[0].is_alive()):
                     if not a.quiet:
                         print("   asked:", arg[:60])

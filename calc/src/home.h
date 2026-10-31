@@ -1,7 +1,7 @@
 #ifndef HOME_H
 #define HOME_H
 
-/* CALC's home screen: four tiles, Messages / Settings / ChatGPT / Math, and what the keys do to them. No drawing in here, so
+/* CALC's home screen: four tiles, Messages / Settings / ChatGPT / Math (runs MATH), and what the keys do to them. No drawing in here, so
  * tests/calc_test.c presses the keys on a computer. Key numbers: ../../shared/keys.h */
 
 enum { TILE_MESSAGES, TILE_SETTINGS, TILE_CHATGPT, TILE_MATH, TILE_COUNT };

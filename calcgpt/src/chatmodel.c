@@ -2,7 +2,7 @@
 #include <string.h>
 
 enum { S_CMD, S_A_LEN, S_A_TEXT, S_T_LEN, S_T_TEXT, S_L_LEN, S_L_TEXT, S_U_INDEX, S_V_LEN, S_V_TEXT, S_X_COUNT,
-       S_Y_LEN, S_Y_TEXT };
+       S_Y_LEN, S_Y_TEXT, S_TOOL_TEXT };
 
 void chat_clear(struct chat *c)
 {
@@ -165,7 +165,28 @@ static void byte_in(struct chat *c, uint8_t b)
         break;
     }
     case S_T_LEN: line_start(c, c->status, b, S_T_TEXT); break;
-    case S_T_TEXT: line_byte(c, c->status, b); break;
+    case S_T_TEXT:
+        if (c->have == 0 && b == 1) {   /* not a status: a tool request for the calculator */
+            c->tool_len = 0;
+            c->tool[0] = 0;
+            c->have = 1;
+            c->state = c->have == c->want ? S_CMD : S_TOOL_TEXT;
+            if (c->state == S_CMD) c->tool_ready = 1;
+            break;
+        }
+        line_byte(c, c->status, b);
+        break;
+    case S_TOOL_TEXT:
+        if (c->tool_len < CHAT_TOOL_MAX) {
+            c->tool[c->tool_len++] = (char)b;
+            c->tool[c->tool_len] = 0;
+        }
+        if (++c->have == c->want) {
+            c->tool_ready = 1;
+            c->changed = 1;
+            c->state = S_CMD;
+        }
+        break;
     case S_V_LEN: line_start(c, c->conn, b, S_V_TEXT); break;
     case S_V_TEXT: line_byte(c, c->conn, b); break;
     case S_X_COUNT:

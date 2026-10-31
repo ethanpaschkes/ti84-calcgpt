@@ -9,6 +9,7 @@
  * Messages, Mac to calculator (every length is one byte):
  *   'A' len text   more of the assistant's answer         'D'  the answer is complete
  *   'T' len text   a status such as "Thinking..." (length 0 clears it)        'C'  clear the conversation
+ *                  a status whose text starts with byte 1 is a tool request for the calculator (tools.c): kept in `tool`
  *   'K'            the list of AI models is about to be sent again          'L' len text   one model's name, added to the list
  *   'U' index      which model in the list is the one in use (index is one byte, not text)
  *
@@ -27,6 +28,7 @@
 #define CHAT_MODEL_LABEL 20
 #define CHAT_WIFI_MAX 16
 #define CHAT_SSID_MAX 32
+#define CHAT_TOOL_MAX 254
 
 enum { ROLE_USER = 'U', ROLE_AI = 'A' };
 
@@ -64,6 +66,9 @@ struct chat {
     int nwifi;
     int wifi_expect;               /* how many networks the board said it would send */
     int scanning;                  /* set by the program when it asks for a scan, cleared when the list ('X') arrives */
+    char tool[CHAT_TOOL_MAX + 1];  /* the last tool request's text (after the marker byte) */
+    int tool_len;
+    int tool_ready;                /* a whole tool request is waiting; the program clears this when it has run it */
 };
 
 void chat_init(struct chat *c);

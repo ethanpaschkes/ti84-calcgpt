@@ -11,6 +11,7 @@ The protocol is wireless/PROTOCOL.md, sections 1 and 2 (login `CALCNET2`):
   board -> server:  device id (16 ASCII bytes, padded with zero bytes) + HMAC-SHA256(key, challenge + "calc") (32 bytes)
                     where key = the 32 bytes the device secret's 64 hex characters stand for (as the board's firmware does)
   server -> board:  "OK" and the model list, then CalcGPT messages both ways; a failed login just gets the connection closed.
+The model has tools (calcgpt/mac/tools.py): exact maths here, and cards on the calculator's screen (PROTOCOL.md section 5).
 
 Each answer comes from the blocking OpenAI stream in calcgpt/mac/calcgptd.py, run in a worker thread, so many boards are served
 at once. Only cloud (openai) models are offered: an "ollama" entry in models.json is skipped, so no local model is ever started.
@@ -333,6 +334,11 @@ class Server:
                         if not busy():  # not while an answer is being written: the listing says what is still in use
                             chat.select(arg)
                         await send(*chat.listing())
+                    elif cmd == "Q" and arg.startswith(G.T.MARK):   # the calculator's answer to a tool card, or its hello
+                        if arg[1:].startswith("hello"):
+                            chat.calc_tools = True
+                        else:
+                            chat.calc_reply(arg[1:])
                     elif cmd == "Q" and arg.strip() and not busy():
                         if self.devices.find(device_id) is None:  # switched off (or removed) while connected
                             log(f"{name} was switched off: closing")

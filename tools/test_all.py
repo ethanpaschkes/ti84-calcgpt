@@ -1,13 +1,15 @@
 """Runs every test in the project on this computer (no calculator, no board, no model):
 calculator programs (clang), Mac/cloud Python, the bridge firmware's pure parts, and the send/ freshness check.
-Run: python3 tools/test_all.py        Add --build to also run `make` for CALC and CALCGPT first (needs ~/CEdev)."""
+Run: python3 tools/test_all.py        Add --build to also run `make` for CALC, CALCGPT and MATH first (needs ~/CEdev)."""
 import os, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TESTS = [
     "calcgpt/tests/test_calcgpt.py",
     "calcgpt/mac/test_calcgptd.py",
+    "calcgpt/mac/test_tools.py",
     "calc/tests/test_calc.py",
+    "math/tests/test_math.py",
     "calcos/tests/test_calcos.py",
     "cloud/test_server.py",
     "wireless/esp32s3-bridge/tests/test_protocol.py",
@@ -15,7 +17,7 @@ TESTS = [
     "wireless/test_calcnet.py",
     "tools/check_send.py",
 ]
-BUILDS = ["calc", "calcgpt"]
+BUILDS = ["calc", "calcgpt", "math"]
 
 
 def run(args, cwd=None, env=None):
