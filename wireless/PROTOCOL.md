@@ -84,3 +84,20 @@ The board sends `V` when CALCGPT starts (on `R` or `I`) and every time the state
 The board keeps up to 8 networks in its flash (NVS), newest first; the networks built into the firmware come after them. A join
 that works moves that network to the front; when the list is full the oldest is dropped. It tries the remembered networks it can
 see, strongest signal first.
+
+## 5. Tools: ChatGPT acting on the calculator (2026-10-30)
+
+The model answers with tools (`calcgpt/mac/tools.py`, OpenAI function calling). Server-side tools (a calculator, triangle /
+quadratic / linear / system solvers, statistics, trig values, number facts, fractions, unit conversion, points, dates) run on the
+server and never touch the link. Calculator-side tools put a card on the calculator's screen. Their messages ride inside the
+existing frames so the board's firmware passes them through unchanged:
+
+| Bytes | Meaning |
+|---|---|
+| `T` len `0x01` text | server -> calculator: a tool request. `text` is `name\|part\|part...` (254 bytes at most): `form\|Title\|hint\|a\|b\|c`, `choice\|Title\|opt\|opt`, `answers\|Title\|rule\|line\|line`, `steps\|Title\|line\|line`, `triangle\|a\|b\|c\|A\|B\|C`, `parabola\|a\|b\|c`, `lines\|a\|b\|c\|d`, `circle\|deg`, `dots\|n\|n...`, `decimals\|n`, `status` |
+| `Q` len `0x01` text | calculator -> server: the reply. `form\|a=3\|b=4` (empty fields left out) or `form\|cancel`; `choice\|option` or `choice\|cancel`; `ok` for a card that needs no answer; `status\|time=9:05\|battery=3 of 4\|online=yes`; `error\|why` |
+| `Q` len `0x01` `hello\|tools=1` | calculator -> server, once after the model list arrived: this program can show cards. Without it the server offers the model no calculator tools (MATH's Ask ChatGPT, or an older CALCGPT) |
+
+A form or a choice waits for the user (up to 180 s; Y= / a new chat stops the wait). The other cards answer `ok` at once and stay
+on the screen until Enter or Clear. A `0x01` reply is never counted as a question for the daily limit. Calculator side:
+`calcgpt/src/tools.c` (parsing, keys, replies) and `math/src/cards.c` (drawing).

@@ -82,3 +82,77 @@ assortment; the charger board only if the RC stick is 0.3 A or more.
 3. How fast CALC's `usb_Init` follows `dusb_execute`: the box restarts into device mode in about 1 s; CALC retries its link,
    so a late start should be fine.
 4. Whether `BOOT` is the right "install again" button for the final case.
+
+## Parts check 2026-10-30 (school engineering room, loose Arduino parts)
+Found and taken: NPN transistor (2N2222-class; replaces the 2N7000 MOSFET for the ID-pin pull-down: base through 10 k to the
+GPIO, emitter to GND, collector to ID), 2x 100 k resistors (VBUS sense divider), passive buzzer 12 mm (message beep on a GPIO),
+slide switch 3-leg (box power switch). Not found: 1N4007/Schottky diode, boost converter, charger board (the room has no
+power modules). Sound: no I2S mic exists in Arduino kits; the KY-038 "sound sensor" cannot capture speech -> if voice input is
+wanted later, order an INMP441 (I2S) module. Still to order: boost 5 V with EN (Adafruit MiniBoost TPS61023 #4654 or MT3608),
+1N5819 Schottky diodes, LiPo 150 mAh (Adafruit 1317) unless the RC-plane cell fits, charger (TP4056 or Adafruit 1904) only if
+the RC charger stick is 0.3 A or more.
+
+## Inventory from Ethan's photos, 2026-10-30 15:20 (home desk)
+Have: Lonely Binary ESP32-S3 DevKitC-1 + USB-C cable; 2x mini-B male -> USB-A female OTG adapters (one opened, grey ID wire
+attached); 6x USB-A female breakout boards (VBUS/D+/D-/GND pads, one with wires soldered); school parts (NPN transistor, buzzer,
+push button, slide switch, 2x 100 k); a donor TI-84 Plus CE in pieces (GECKO mainboard with mini-B, keypad, grey shell);
+batteries: black 1S 3.7 V 500 mAh 651740 pack with white JST (THE box battery; 1.85 Wh), SkyViper drone 1S pack (red plug),
+small silver 1S pack (white plug); Urgenex 1800 mAh 2S 7.4 V (NOT usable, two cells); Elegoo MB102 breadboard power module
+(steps down only, skip); Grove speaker board (could replace the buzzer) and Grove sound sensor (clap detector, not a mic);
+a 220 uF electrolytic capacitor (smooth the 5 V rail).
+Not owned: boost, charger, Schottky diode, JST PH pigtail, heat shrink, soldering iron (Ethan has none, home or school).
+BUY LIST (~$50): Adafruit MiniBoost TPS61023 #4654 or MT3608 2-pack; TP4056 charger 5-pack (plain version; add protection only
+if the 500 mAh pack has none); 1N5819 x20; JST PH 2.0 pigtails 10-pack; heat-shrink assortment; a basic soldering iron kit
+(~$20, temperature-controlled, with solder and a stand).
+Update 2026-10-30 15:40: no spare power bank at home (a power-bank board would have replaced boost + charger). Ethan HAS the
+SkyViper USB charger (current unreadable, assume 0.5-1 A, fine for the 500 mAh pack) -> charger OFF the buy list; its plug
+fits the SkyViper pack only, so JST pigtails stay. Final buy list: boost (TPS61023 #4654 or MT3608), 1N5819 x20, JST PH
+pigtails, heat shrink (or electrical tape for the first build), soldering iron kit (or one sitting at the school iron).
+Size target (Ethan, 2026-10-30 15:50): the box must be about a LARGE USB DRIVE (~70 x 25 x 12 mm). The slim DevKitC-1 box
+(82 x 31 x 14) misses that. Proposal: final box on a Seeed XIAO ESP32S3 (21 x 17.5 mm, same chip, USB-C, on-board LiPo charger
+on the BAT pads -> no TP4056, no pigtail-to-charger wiring) + MiniBoost + the 500 mAh pack + USB-A breakout on one end
+= about 48-62 x 22 x 12 mm. DevKitC-1 stays the development board; firmware needs only a pin table for the XIAO
+(role.c / box_pins.h). Cost ~$7.50. Not yet approved by Ethan.
+2026-10-30 15:55: XIAO ESP32S3 PROPOSED for the final box, NOT decided (Ethan wants to see the shop links first). Household tools confirmed: hot glue gun, multimeter, spare USB
+cables to cut, tape/zip ties. Heat shrink dropped (hot glue + tape). CANDIDATE BUY LIST (to review): Seeed XIAO ESP32S3 (~$7.50), Adafruit
+MiniBoost TPS61023 #4654 (~$5) or MT3608, 1N5819 x20 (~$5), JST PH 2.0 pigtails (~$6), soldering iron kit (~$20) unless the
+school iron is used. Next firmware step: pin table + sdkconfig for the XIAO in esp32s3-loader (BOX_HW), keeping the DevKitC-1
+build. Box model (wireless/box/*.scad) needs a XIAO variant.
+2026-10-30 16:30: Ethan picked the Seeed XIAO ESP32S3 SENSE (camera OV2640 + PDM digital mic + microSD, $23.99 on Amazon
+B0C69FFVHH, $13.99 at Seeed) for the candidate list. Only the S3 variants can be USB host (C3/C6 XIAOs cannot -> never
+substitute). Future features it unlocks (after the plain box works): photo-solve (capture JPEG -> server -> GPT vision -> answer
++ drawn diagram on the calculator), voice questions (PDM mic -> server speech-to-text), photo preview on the 320x240 screen.
+Camera board adds ~2 mm thickness. Classroom note: looks like a cheating device; homework tool only. Still NOT ordered.
+2026-10-30 17:00 ORDERED (Ethan): XIAO ESP32S3 Sense (arrives Nov 10), generic TPS61023 boost module with EN, 60 W soldering
+iron kit, and probably JST-PH pigtails (or a socket harvested from a spare charger) -- the non-XIAO items arrive ~Oct 31/Nov 1.
+Plan: week of Nov 1 = test rig on the DevKitC-1 (battery + boost + switch + opened adapter): prove the loader wakes a
+calculator from battery and installs CALC. Nov 10 = move the wiring to the XIAO, print the small case at school. Before the
+10th: write the XIAO pin table (box_pins.h / BOX_HW) so the firmware builds for both boards.
+Final size spec with the XIAO Sense (2026-10-30 17:30), 1.5 mm printed walls, adapter outside:
+parts: XIAO Sense 21 x 17.8, ~8 mm tall with camera board; battery 651740 = 40 x 17 x 6.5; TPS61023 module ~18 x 11 x 3;
+USB-A socket 14 x 14 x 6; slide switch 9 x 4 x 4. The 12 x 9.5 mm buzzer does not fit layout A; use a flat piezo disc or drop it.
+Layout A (stacked, battery under XIAO + boost): 58 x 22 x 17.5 mm outer. Layout B (side by side): 58 x 39 x 11 mm.
+Large USB drive for reference: ~70 x 22 x 11. Recommended: A (USB-drive length and width, 6 mm thicker, camera window on top,
+USB-A on the short end, switch on the long side). Off-the-shelf fallback for A: a plastic Tic Tac box (68 x 43 x 20) with foam;
+no metal tins (block Wi-Fi). Primary case: 3D print at school from wireless/box (needs a XIAO variant of calcbox.scad).
+Verified from Seeed docs 2026-10-30 18:00: XIAO Sense charger is only 50-100 mA (500 mAh pack = 5-10 h from the calculator);
+camera module varies by batch (OV2640 / OV3660 / OV5640); 8 MB octal PSRAM + 8 MB flash (sdkconfig must say OCTAL PSRAM);
+PDM mic on GPIO41 (data) / GPIO42 (clock); microSD over SPI, 32 GB FAT max. USB D+/D- exist ONLY on the XIAO's USB-C socket
+(no pads) -> the box needs a short USB-C plug pigtail inside (cut from a spare cable), +~10 mm: layout A becomes ~68 x 22 x 17.5.
+UNVERIFIED: USB host through the XIAO's USB-C socket (chip supports it; first XIAO test proves it). Capability table given to
+Ethan (old bridge vs new box): everything Wi-Fi/ChatGPT/CALC carries over; new = self-loading, battery, photo-solve, voice,
+SD cache, standalone; far-fetched = wake word, face detect, live video, BLE phone/keyboard, USB-keyboard output, speech out.
+
+## PRODUCT PLAN (Ethan, 2026-10-30 18:30): build 10 boxes and sell them
+- Price: $89 each with the first year of ChatGPT included (floor $69). Parts ~$42/unit at Amazon prices, ~$32 in bulk from
+  Seeed/AliExpress; server ~$5/month + ~$1-2/month per active user. ~1 h soldering per unit.
+- Buttons: BUTTON 1 = INSTALL (box as USB host: wake calculator, install the arTIfiCE hook if OS >= 5.5, copy CALC + apps,
+  start CALC). BUTTON 2 = SETUP (hold: box becomes hotspot "CALC-xxxx" with a captive portal page for the buyer's Wi-Fi name +
+  password; short press later = photo shutter). Two tactile push buttons from school.
+- Must exist before unit 1 ships: loader proven on OS 5.4 and 5.5+; Setup hotspot + portal; public server on Fly.io with one
+  account per device, usage caps, OpenAI key never on the box; protected cells only, drop-tested case, ground shipping;
+  quick-start card; a parent handles payments/tax/returns (Ethan is 15); sell as a homework tool, expect school bans.
+Form-factor options discussed 2026-10-30 19:00: (A) clip-on printed BACK PANEL replacing the slide-off cover, module flat
+inside (~4 mm thicker), short cable looping into the mini-B port: calculator untouched, any CE, removable. (B) module in the
+BATTERY BAY with the stock 1200 mAh pack swapped for the 500 mAh one; needs 4 wires soldered to the main board's USB pads +
+an internal plug: invisible but not "any calculator", and halves the calculator's battery life. Not decided.
